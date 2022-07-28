@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Setting;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -14,6 +15,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('contact');
+        $setting      = Setting::find(1);
+        return view('contact',compact('setting'));
     }
 }

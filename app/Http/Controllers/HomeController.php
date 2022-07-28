@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Member;
 use App\Models\Service;
+use App\Models\Setting;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 

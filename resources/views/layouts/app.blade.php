@@ -30,7 +30,9 @@
 <body class="active-light-mode">
     <main id="app" class="page-wrapper">
 
-
+        @php
+            $setting  = App\Models\Setting::find(1);
+        @endphp
 
         <div class="header-transparent-with-topbar">
             <div class="header-top-bar">
@@ -44,40 +46,40 @@
                                 <div class="address-content">
                                     <p>
                                         <i class="feather-map-pin"></i>
-                                        <span>1035 US Highway 46 East, Clifton, NJ 07013</span>
+                                        <span>{{ $setting->address }}</span>
                                     </p>
                                     <p>
                                         <i class="feather-phone"></i>
-                                        <span><a href="tel:(973) 956-1040">(973) 956-1040</a></span>
+                                        <span><a href="tel:{{$setting->phone}}">{{ $setting->phone }}</a></span>
                                     </p>
                                 </div>
                                 <div class="social-icon-wrapper">
                                     <ul class="social-icon social-default icon-naked">
                                         <li>
-                                            <a href="https://web.facebook.com/Precision.Accounting.Intl?_rdc=1&_rdr"
+                                            <a href="{{ $setting->facebook }}"
                                                 target="_blank">
                                                 <i class="feather-facebook"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://twitter.com/IntlPrecision" target="_blank">
+                                            <a href="{{ $setting->twitter }}" target="_blank">
                                                 <i class="feather-twitter"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://www.youtube.com/channel/UCPB2_XDDen5BiL0ye_kvoeQ"
+                                            <a href="{{ $setting->youtube }}"
                                                 target="_blank">
                                                 <i class="feather-youtube"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://www.linkedin.com/company/precision-accounting-llc-clifton-nj"
+                                            <a href="{{ $setting->linkedin }}"
                                                 target="_blank">
                                                 <i class="feather-linkedin"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="sms:(973) 304-5553" target="_blank">
+                                            <a href="mailto:{{$setting->email}}" target="_blank">
                                                 <i class="feather-mail"></i>
                                             </a>
                                         </li>
@@ -316,7 +318,7 @@
                                                 <i class="feather-mail"></i>
                                             </div>
                                             <div class="footer-contact-text">
-                                                <span><a href="#">info@cpapai.com</a></span>
+                                                <span><a href="mailto:{{$setting->email}}">{{$setting->email}}</a></span>
                                             </div>
                                         </div>
                                         <div class="d-flex footer-contact-address">
@@ -324,9 +326,10 @@
                                                 <i class="feather-map"></i>
                                             </div>
                                             <div class="footer-contact-text">
-                                                <span><a href="https://g.page/PrecisionAccountingIntl?share"
-                                                        target="_blank">1035 US Highway 46 East, Clifton, NJ
-                                                        07013</a></span>
+                                                <span><a href="{{ $setting->location }}"
+                                                        target="_blank">
+                                                        {{ $setting->address }}
+                                                    </a></span>
                                             </div>
                                         </div>
                                         <div class="d-flex footer-contact-phone">
@@ -334,7 +337,7 @@
                                                 <i class="feather-phone"></i>
                                             </div>
                                             <div class="footer-contact-text">
-                                                <span><a href="tel:(973) 956-1040">(973) 956-1040</a></span>
+                                                <span><a href="tel:{{$setting->phone}}">{{$setting->phone}}</a></span>
                                             </div>
                                         </div>
                                         <div class="d-flex footer-contact-sms">
@@ -342,7 +345,7 @@
                                                 <i class="feather-message-circle"></i>
                                             </div>
                                             <div class="footer-contact-text">
-                                                <span><a href="sms:(973) 304-5553">(973) 304-5553</a></span>
+                                                <span><a href="sms:{{$setting->sms}}">{{ $setting->sms }}</a></span>
                                             </div>
                                         </div>
                                     </div>

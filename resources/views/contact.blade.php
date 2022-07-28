@@ -26,8 +26,8 @@
                                     </div>
                                     <div class="inner">
                                         <h4 class="title">Contact Phone Number</h4>
-                                        <p><a href="tel:(973) 956-1040">(973) 956-1040</a></p>
-                                        <p><a href="sms:(973) 304-5553">(973) 304-5553</a></p>
+                                        <p><a href="tel:{{$setting->phone}}">{{$setting->phone}}</a></p>
+                                        <p><a href="sms:{{$setting->sms}}">{{$setting->sms}}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="inner">
                                         <h4 class="title">Our Email Address</h4>
-                                        <p><a href="mailto:info@cpapai.com">info@cpapai.com</a></p>
+                                        <p><a href="mailto:{{$setting->email}}">{{$setting->email}}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@
                                     </div>
                                     <div class="inner">
                                         <h4 class="title">Our Location</h4>
-                                        <p>USA: 1035 US Highway 46 East, Clifton, NJ 07013 -- Egypt: 283 khaled bn elwaleed St, Sidibihr, Alexandria</p>
+                                        <p>{{ $setting->address }}</p>
                                     </div>
                                 </div>
                             </div>
