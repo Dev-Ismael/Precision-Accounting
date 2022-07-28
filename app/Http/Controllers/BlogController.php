@@ -23,9 +23,15 @@ class BlogController extends Controller
         return view('blog',compact('categories','lasted_articles','articles'));
     }
 
-    public function post()
+    public function article($slug)
     {
-        return view('post');
+        $categories      = Category::all();
+        $article = Article::where('slug',$slug)->first();
+        // if article Not Found
+        if( !$article ){
+            return redirect('/');
+        }
+        return view('article',compact('article','categories'));
     }
 
 

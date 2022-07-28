@@ -46,7 +46,7 @@
                                             <div class="rn-card undefined">
                                                 <div class="inner">
                                                     <div class="thumbnail"><a class="image"
-                                                            href="{{ route('post', $article->slug) }}"><img
+                                                            href="{{ route('article', $article->slug) }}"><img
                                                                 src="{{ asset('images/articles/'.$article->img) }}"
                                                                 alt="Blog Image"></a>
                                                     </div>
@@ -56,7 +56,7 @@
                                                             <li class="separator">/</li>
                                                             <li>{{date( 'm-d-Y', strtotime( $article->created_at) )}}</li>
                                                         </ul>
-                                                        <h4 class="title"><a href="{{ route('post', $article->slug) }}">
+                                                        <h4 class="title"><a href="{{ route('article', $article->slug) }}">
                                                             {{$article->title }}
                                                             </a></h4>
                                                     </div>
@@ -102,7 +102,7 @@
                                 <div class="inner">
                                     <ul>
                                         @foreach ($lasted_articles as $lasted_article)
-                                            <li><a class="d-block" href="{{ route('post', 'post-slug') }}">
+                                            <li><a class="d-block" href="{{ route('article', 'post-slug') }}">
                                                     {{ $lasted_article->title }}
                                                 </a><span class="cate"> {{ $lasted_article->category->title }} </span>
                                             </li>

@@ -72,86 +72,27 @@
             </div>
 
             <div class="row row--15 service-wrapper">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700">
-                    <div class="service service__style--1 icon-circle-style text-center">
-                        <div class="service-icon pb-3">
-                            <img src="{{ asset('doob_template_assets/images/services/service-01.png') }}" width="100" alt="service-icon">
-                        </div>
-                        <div class="content">
-                            <h4 class="title w-600"><a href="#">Individual Tax Services</a></h4>
-                            <p class="description b1 color-gray mb--0">We gauge our worth by the personal and
-                                business successes of our clients and industries.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700"
-                    data-sal-delay="100">
-                    <div class="service service__style--1 icon-circle-style text-center">
-                        <div class="service-icon pb-3">
-                            <img  src="{{ asset('doob_template_assets/images/services/service-02.png') }}" width="100" alt="service-icon">
-                        </div>
-                        <div class="content">
-                            <h4 class="title w-600"><a href="#">Bookkeeping Services</a></h4>
-                            <p class="description b1 color-gray mb--0">We serve a range of industries and customers,
-                                in an organized, friendly, and reliable way.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700"
-                    data-sal-delay="200">
-                    <div class="service service__style--1 icon-circle-style text-center">
-                        <div class="service-icon pb-3">
-                            <img  src="{{ asset('doob_template_assets/images/services/service-03.png') }}" width="100" alt="service-icon">
-                        </div>
-                        <div class="content">
-                            <h4 class="title w-600"><a href="#">Business Tax Services</a></h4>
-                            <p class="description b1 color-gray mb--0">We are in a position to identify tax planning
-                                shots that reduce both your now, future tax liabilities</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700">
-                    <div class="service service__style--1 icon-circle-style text-center">
-                        <div class="service-icon pb-3">
-                            <img  src="{{ asset('doob_template_assets/images/services/service-03.png') }}" width="100" alt="service-icon">
-                        </div>
-                        <div class="content">
-                            <h4 class="title w-600"><a href="#">Payroll</a></h4>
-                            <p class="description b1 color-gray mb--0">Our principal aim is to provide customized
-                                services and highly favorable pricing for you.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700"
-                    data-sal-delay="100">
-                    <div class="service service__style--1 icon-circle-style text-center">
-                        <div class="service-icon pb-3">
-                            <img  src="{{ asset('doob_template_assets/images/services/service-02.png') }}" width="100" alt="service-icon">
-                        </div>
-                        <div class="content">
-                            <h4 class="title w-600"><a href="#">Part-Time CFO Services</a></h4>
-                            <p class="description b1 color-gray mb--0">Growing businesses often reach a point where
-                                fit financial advice is required from Part-Time CFO.</p>
+                @foreach ( $services as $service )
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700"
+                        data-sal-delay="100">
+                        <div class="service service__style--1 icon-circle-style text-center">
+                            <div class="service-icon pb-3">
+                                <img  src="{{ asset('images/services/'.$service->icon ) }}" width="100" alt="service-icon">
+                            </div>
+                            <div class="content">
+                                <h4 class="title w-600"><a href="#"> {{ $service->title }} </a></h4>
+                                <p class="description b1 color-gray mb--0">
+                                    {{ $service->summary }}
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700"
-                    data-sal-delay="200">
-                    <div class="service service__style--1 icon-circle-style text-center">
-                        <div class="service-icon pb-3">
-                            <img  src="{{ asset('doob_template_assets/images/services/service-01.png') }}" width="100" alt="service-icon">
-                        </div>
-                        <div class="content">
-                            <h4 class="title w-600"><a href="#">IRS Resolution</a></h4>
-                            <p class="description b1 color-gray mb--0">We assist you set up your non-profit
-                                organization by handling all the authority reportage.</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
         </div>
@@ -210,135 +151,40 @@
             <div class="row mt_dec--30">
                 <div class="col-lg-12">
                     <div class="row row--15">
-                        <div class="col-lg-4 col-md-6 col-12 mt--30 sal-animate" data-sal="slide-up"
-                            data-sal-duration="700">
-                            <div class="rn-card box-card-style-default">
-                                <div class="inner">
-                                    <div class="thumbnail"><a class="image" href="{{ route('post','post-slug') }}"><img
-                                                class="w-100"  src="{{ asset('doob_template_assets/images/blog/blog-01.jfif') }}"
-                                                alt="Blog Image"></a>
-                                    </div>
-                                    <div class="content">
-                                        <ul class="rn-meta-list">
-                                            <li><a href="#">Irin Pervin</a></li>
-                                            <li class="separator">/</li>
-                                            <li>10 Dec 2021</li>
-                                        </ul>
-                                        <h4 class="title"><a href="{{ route('post','post-slug') }}">Best Corporate Tips You
-                                                Will
-                                                Read This Year.</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 mt--30 sal-animate" data-sal="slide-up"
-                            data-sal-duration="700" data-sal-delay="100">
-                            <div class="rn-card box-card-style-default">
-                                <div class="inner">
-                                    <div class="thumbnail"><a class="image" href="{{ route('post','post-slug') }}"><img
-                                                class="w-100"  src="{{ asset('doob_template_assets/images/blog/blog-02.jfif') }}"
-                                                alt="Blog Image"></a>
-                                    </div>
-                                    <div class="content">
-                                        <ul class="rn-meta-list">
-                                            <li><a href="#">Fatima Asrafy</a></li>
-                                            <li class="separator">/</li>
-                                            <li>30 Nov 2021</li>
-                                        </ul>
-                                        <h4 class="title"><a href="{{ route('post','post-slug') }}">Should Fixing Corporate
-                                                Take
-                                                100 Steps.</a></h4>
+
+
+
+                        @foreach ( $articles as $article )
+                            <div class="col-lg-4 col-md-6 col-12 mt--30 sal-animate" data-sal="slide-up"
+                                data-sal-duration="700" data-sal-delay="100">
+                                <div class="rn-card box-card-style-default">
+                                    <div class="inner">
+                                        <div class="thumbnail"><a class="image" href="{{ route('article', $article->slug ) }}"><img
+                                                    class="w-100"  src="{{ asset('images/articles/'.$article->img ) }}"
+                                                    alt="Blog Image"></a>
+                                        </div>
+                                        <div class="content">
+                                            <ul class="rn-meta-list">
+                                                <li><a href="#"> {{ $article->author }} </a></li>
+                                                <li class="separator">/</li>
+                                                <li> {{date( 'm-d-Y', strtotime( $article->created_at) )}} </li>
+                                            </ul>
+                                            <h4 class="title"><a href="{{ route('article','post-slug') }}">
+                                                {{ $article->title }}
+                                                </a></h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 mt--30 sal-animate" data-sal="slide-up"
-                            data-sal-duration="700" data-sal-delay="200">
-                            <div class="rn-card box-card-style-default">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <a class="image" href="{{ route('post','post-slug') }}">
-                                            <img class="w-100"  src="{{ asset('doob_template_assets/images/blog/blog-03.jfif') }}" alt="Blog Image">
-                                        </a>
-                                    </div>
-                                    <div class="content">
-                                        <ul class="rn-meta-list">
-                                            <li><a href="#">John Dou</a></li>
-                                            <li class="separator">/</li>
-                                            <li>12 Oct 2021</li>
-                                        </ul>
-                                        <h4 class="title"><a href="{{ route('post','post-slug') }}">The Next 100 Things To
-                                                Immediately Do About.</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 mt--30 sal-animate" data-sal="slide-up"
-                            data-sal-duration="700" data-sal-delay="300">
-                            <div class="rn-card box-card-style-default">
-                                <div class="inner">
-                                    <div class="thumbnail"><a class="image" href="{{ route('post','post-slug') }}"><img
-                                                class="w-100"  src="{{ asset('doob_template_assets/images/blog/blog-04.jfif') }}"
-                                                alt="Blog Image"></a>
-                                    </div>
-                                    <div class="content">
-                                        <ul class="rn-meta-list">
-                                            <li><a href="#">Jannin</a></li>
-                                            <li class="separator">/</li>
-                                            <li>25 Aug 2021</li>
-                                        </ul>
-                                        <h4 class="title"><a href="{{ route('post','post-slug') }}">Top 5 Lessons About
-                                                Corporate To Learn Before.</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 mt--30 sal-animate" data-sal="slide-up"
-                            data-sal-duration="700" data-sal-delay="100">
-                            <div class="rn-card box-card-style-default">
-                                <div class="inner">
-                                    <div class="thumbnail"><a class="image" href="{{ route('post','post-slug') }}"><img
-                                                class="w-100"  src="{{ asset('doob_template_assets/images/blog/blog-05.jfif') }}"
-                                                alt="Blog Image"></a>
-                                    </div>
-                                    <div class="content">
-                                        <ul class="rn-meta-list">
-                                            <li><a href="#">Jannin</a></li>
-                                            <li class="separator">/</li>
-                                            <li>23 Jul 2021</li>
-                                        </ul>
-                                        <h4 class="title"><a href="{{ route('post','post-slug') }}">Master The Art Of
-                                                Corporate
-                                                With These 5 Tips.</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 mt--30 sal-animate" data-sal="slide-up"
-                            data-sal-duration="700" data-sal-delay="200">
-                            <div class="rn-card box-card-style-default">
-                                <div class="inner">
-                                    <div class="thumbnail"><a class="image" href="{{ route('post','post-slug') }}"><img
-                                                class="w-100"  src="{{ asset('doob_template_assets/images/blog/blog-06.jfif') }}"
-                                                alt="Blog Image"></a>
-                                    </div>
-                                    <div class="content">
-                                        <ul class="rn-meta-list">
-                                            <li><a href="#">John Dou</a></li>
-                                            <li class="separator">/</li>
-                                            <li>30 Jun 2021</li>
-                                        </ul>
-                                        <h4 class="title"><a href="{{ route('post','post-slug') }}">Corporate Is Your Worst
-                                                Enemy. 5 Ways To Defeat It.</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+
+
+
                     </div>
                 </div>
                 <div class="col-lg-12 text-center">
                     <div class="rwt-load-more text-center mt--60">
-                        <a class="btn-default" href="blog-grid.html">View More Post
+                        <a class="btn-default" href="{{ route("blog") }}">View More Post
                             <i class="feather-loader"></i>
                         </a>
                     </div>
