@@ -218,41 +218,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="rbt-single-widget widget_archive mt--40">
-                                <h3 class="title">Archives</h3>
-                                <div class="inner">
-                                    <ul>
-                                        <li><span class="cate">10 Dec 2021</span></li>
-                                        <li><span class="cate">30 Nov 2021</span></li>
-                                        <li><span class="cate">12 Oct 2021</span></li>
-                                        <li><span class="cate">25 Aug 2021</span></li>
-                                        <li><span class="cate">23 Jul 2021</span></li>
-                                        <li><span class="cate">30 Jun 2021</span></li>
-                                        <li><span class="cate">21 Apl 2021</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="rbt-single-widget widget_tag_cloud mt--40">
-                                <h3 class="title">Tags</h3>
-                                <div class="inner mt--20">
-                                    <div class="tagcloud">
-                                        <a href="#">Corporate</a>
-                                        <a href="#">Agency</a>
-                                        <a href="#">Creative</a>
-                                        <a href="#">Design</a>
-                                        <a href="#">Minimal</a>
-                                        <a href="#">Company</a>
-                                        <a href="#">Development</a>
-                                        <a href="#">App Landing</a>
-                                        <a href="#">Startup</a>
-                                        <a href="#">App</a>
-                                        <a href="#">Business</a>
-                                        <a href="#">Software</a>
-                                        <a href="#">Landing</a>
-                                        <a href="#">Art</a>
-                                    </div>
-                                </div>
-                            </div>
                         </aside>
                     </div>
                 </div>

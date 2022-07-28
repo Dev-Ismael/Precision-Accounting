@@ -36,6 +36,11 @@ class DatabaseSeeder extends Seeder
             'img' => 'img',
         ]);
 
+        \App\Models\Category::factory()->create([
+            'title' => 'title',
+            'slug' => 'slug',
+        ]);
+
         \App\Models\Resource::factory()->create([
             'title' => 'title',
             'content' => 'content',
