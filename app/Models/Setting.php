@@ -12,6 +12,8 @@ class Setting extends Model
 
 
     protected $fillable = [
+        'head_title',
+        'seo_title',
         'seo_description',
         'seo_keywords',
         'address' ,

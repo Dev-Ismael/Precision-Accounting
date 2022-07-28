@@ -17,7 +17,7 @@ class Article extends Model
      */
 
      protected $fillable = [
-        'title', 'slug', 'content', 'seo_description', 'seo_keywords', 'author', 'category' , 'img'
+        'title', 'slug', 'content', 'seo_title', 'seo_description', 'seo_keywords', 'author', 'category' , 'img'
     ];
 
 

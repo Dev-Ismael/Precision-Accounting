@@ -40,7 +40,7 @@
                 </div>
             </div>
         @endif
-        
+
         <div class="row">
             <div class="col-12 col-xl-7 col-xxl-8 mb-4">
                 <div class="row">
@@ -83,6 +83,24 @@
                                                 <div class="tab-pane fade show active" id="general">
 
                                                     <br>
+
+                                                    <!----------------- head_title -------------------->
+                                                    <div class="mb-4 input-content">
+                                                        <label for="head_title" class="capitalize"> <i class="fa-solid fa-file-signature"></i> Head Title </label>
+                                                        <input type="text" name="head_title" id="head_title" class="form-control @error('head_title') is-invalid @enderror" value="{{ $setting->head_title }}" aria-describedby="emailHelp" placeholder="Type Head Title..." autocomplete="nope" />
+                                                        @error('head_title')
+                                                            <small class="form-text text-danger">{{ $message }}</small>
+                                                        @enderror
+                                                    </div>
+
+                                                    <!----------------- head_title -------------------->
+                                                    <div class="mb-4 input-content">
+                                                        <label for="head_title" class="capitalize"> <i class="fa-solid fa-chart-line"></i> SEO Title </label>
+                                                        <input type="text" name="head_title" id="head_title" class="form-control @error('head_title') is-invalid @enderror" value="{{ $setting->head_title }}" aria-describedby="emailHelp" placeholder="Type SEO Title For Website..." autocomplete="nope" />
+                                                        @error('head_title')
+                                                            <small class="form-text text-danger">{{ $message }}</small>
+                                                        @enderror
+                                                    </div>
 
                                                     <!----------------- seo_description -------------------->
                                                     <div class="mb-4 input-content">
