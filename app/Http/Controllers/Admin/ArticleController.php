@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Article;
 use App\Http\Requests\Articles\StoreArticleRequest;
 use App\Http\Requests\Articles\UpdateArticleRequest;
+use App\Models\Category;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
@@ -21,9 +22,12 @@ class ArticleController extends Controller
      */
     public function perPage( $num=10 )
     {
+        // Get Parent Rows Count
+        $categoriesCount = Category::count();
+
         // Dynamic pagination
         $articles = Article::orderBy('id','desc')->paginate( $num );
-        return view("admin.article.index",compact("articles"));
+        return view("admin.article.index",compact("articles","categoriesCount"));
     }
 
 
@@ -34,8 +38,11 @@ class ArticleController extends Controller
      */
     public function index()
     {
+        // Get Parent Rows Count
+        $categoriesCount = Category::count();
+
         $articles = Article::orderBy('id','desc')->paginate( 10 );
-        return view("admin.article.index",compact("articles"));
+        return view("admin.article.index",compact("articles","categoriesCount"));
     }
 
     /**
@@ -45,7 +52,8 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view("admin.article.create");
+        $categories = Category::select('id','title')->get();
+        return view("admin.article.create",compact('categories'));
     }
 
     /**
@@ -110,7 +118,8 @@ class ArticleController extends Controller
     {
         // find id in Db With Error 404
         $article = Article::findOrFail($id);
-        return view("admin.article.edit" , compact("article") ) ;
+        $categories = Category::select('id','title')->get();
+        return view("admin.article.edit" , compact("article","categories") ) ;
     }
 
     /**

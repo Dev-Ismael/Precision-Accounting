@@ -20,5 +20,10 @@ class Category extends Model
         'title', 'slug',
     ];
 
+    ############################## Relations ################################
+    public function articles(){
+        return  $this -> hasMany("App\Models\Article") ;
+    }
+
 
 }

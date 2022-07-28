@@ -30,7 +30,7 @@ use Illuminate\Foundation\Http\FormRequest;
             'seo_description' => ['required' , 'string' , 'max:500'],
             'seo_keywords'    => ['required' , 'string' , 'max:500'],
             'author'          => ['required' , 'string' , 'max:55'],
-            'category'        => ['required' , 'string' , 'max:55'],
+            'category_id'     => ['required' , 'numeric'],
             'img'             => ['required' , 'mimes:jpeg,png,jpg' , 'max:2048'],
         ];
     }

@@ -24,7 +24,13 @@ class DatabaseSeeder extends Seeder
             'is_admin' => '1',
         ]);
 
+        \App\Models\Category::factory()->create([
+            'title' => 'title',
+            'slug' => 'slug',
+        ]);
+        
         \App\Models\Article::factory()->create([
+            'category_id' => 1,
             'title' => 'title',
             'slug' => 'slug',
             'content' => 'content',
@@ -32,14 +38,9 @@ class DatabaseSeeder extends Seeder
             'seo_description' => 'seo_description',
             'seo_keywords' => 'seo_keywords',
             'author' => 'author',
-            'category' => 'category',
             'img' => 'img',
         ]);
 
-        \App\Models\Category::factory()->create([
-            'title' => 'title',
-            'slug' => 'slug',
-        ]);
 
         \App\Models\Resource::factory()->create([
             'title' => 'title',

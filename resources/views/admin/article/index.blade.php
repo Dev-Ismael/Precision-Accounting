@@ -24,9 +24,13 @@
                 <h2 class="h4"> <i class="fa-brands fa-blogger-b text-primary"></i> Articles List</h2>
                 <p class="mb-0">Your web analytics dashboard template.</p>
             </div>
-            <div class="btn-toolbar mb-2 mb-md-0"><a href="{{ route('admin.article.create') }}"
-                    class="btn btn-sm btn-primary d-inline-flex align-items-center"> <i class="fa-solid fa-plus"></i> &nbsp; New Article</a>
-            </div>
+            <!--------------- If No SubCategory hide create btn --------------->
+            @if (isset($categoriesCount) && $categoriesCount > 0)
+                <div class="btn-toolbar mb-2 mb-md-0"><a href="{{ route('admin.article.create') }}"
+                        class="btn btn-sm btn-primary d-inline-flex align-items-center"> <i class="fa-solid fa-plus"></i> &nbsp; New Article</a>
+                </div>
+            @endif
+
         </div>
 
         <div class="table-settings mb-4">

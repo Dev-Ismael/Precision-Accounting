@@ -16,9 +16,14 @@ class Article extends Model
      * @return array
      */
 
-     protected $fillable = [
-        'title', 'slug', 'content', 'seo_title', 'seo_description', 'seo_keywords', 'author', 'category' , 'img'
+    protected $fillable = [
+        'title', 'slug', 'content', 'seo_title', 'seo_description', 'seo_keywords', 'author', 'category_id' , 'img'
     ];
 
+
+    ############################## Relations ################################
+    public function category(){
+        return  $this -> belongsTo("App\Models\Category") ;
+    }
 
 }

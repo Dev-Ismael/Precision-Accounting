@@ -101,11 +101,16 @@
                                         </div>
 
 
-                                        <!----------------- Category -------------------->
+                                        <!----------------- Category_id -------------------->
                                         <div class="mb-4 input-content">
-                                            <label for="category" class="capitalize"> <i class="fa-solid fa-code-branch"></i> Category </label>
-                                            <input type="text" name="category" id="category" class="form-control @error('category') is-invalid @enderror" value="{{ old('category') }}" aria-describedby="emailHelp" placeholder="Type Category..." autocomplete="nope" />
-                                            @error('category')
+                                            <label for="category_id" class="capitalize"> <i class="fa-solid fa-code-branch"></i> Category </label>
+                                            <select class="form-select form-control @error('category_id') is-invalid @enderror" name="category_id" id="service"  aria-label="Default select example" >
+                                                <option></option>
+                                                @foreach ( $categories as $category )
+                                                    <option value="{{ $category->id }}"  {{ old('category_id') == $category->id ? "selected" : "" }} >{{ $category->title }}</option>
+                                                @endforeach
+                                            </select>
+                                            @error('category_id')
                                                 <small class="form-text text-danger">{{ $message }}</small>
                                             @enderror
                                         </div>
