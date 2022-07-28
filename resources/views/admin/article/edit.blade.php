@@ -51,6 +51,33 @@
                                         </div>
 
 
+                                        <!----------------- Author -------------------->
+                                        <div class="mb-4 input-content">
+                                            <label for="author" class="capitalize"> <i class="fa-solid fa-user-pen"></i> Author </label>
+                                            <input type="text" name="author" id="author" class="form-control @error('author') is-invalid @enderror" value="{{ $article->author }}" aria-describedby="emailHelp" placeholder="Type Author..." autocomplete="nope" />
+                                            @error('author')
+                                                <small class="form-text text-danger">{{ $message }}</small>
+                                            @enderror
+                                        </div>
+
+
+
+
+                                        <!----------------- Catrgory_id -------------------->
+                                        <div class="mb-4 input-content">
+                                            <label for="category_id" class="capitalize"> <i class="fa-solid fa-code-branch"></i> Parent Service (Optional) </label>
+                                            <select class="form-select form-control @error('category_id') is-invalid @enderror" name="category_id" id="service"  aria-label="Default select example" >
+                                                <option></option>
+                                                @foreach ( $categories as $category )
+                                                    <option value="{{ $category->id }}"  {{ $category->id == $article->category->id ? "selected" : "" }} >{{ $category->title }}</option>
+                                                @endforeach
+                                            </select>
+                                            @error('category_id')
+                                                <small class="form-text text-danger">{{ $message }}</small>
+                                            @enderror
+                                        </div>
+
+
                                         <!----------------- Content -------------------->
                                         <div class="mb-4 input-content">
                                             <label for="content" class="capitalize"> <i class="fa-solid fa-align-left"></i> Article Content </label>
@@ -90,32 +117,6 @@
                                             @enderror
                                         </div>
 
-
-                                        <!----------------- Author -------------------->
-                                        <div class="mb-4 input-content">
-                                            <label for="author" class="capitalize"> <i class="fa-solid fa-user-pen"></i> Author </label>
-                                            <input type="text" name="author" id="author" class="form-control @error('author') is-invalid @enderror" value="{{ $article->author }}" aria-describedby="emailHelp" placeholder="Type Author..." autocomplete="nope" />
-                                            @error('author')
-                                                <small class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
-                                        </div>
-
-
-
-
-                                        <!----------------- Catrgory_id -------------------->
-                                        <div class="mb-4 input-content">
-                                            <label for="category_id" class="capitalize"> <i class="fa-solid fa-code-branch"></i> Parent Service (Optional) </label>
-                                            <select class="form-select form-control @error('category_id') is-invalid @enderror" name="category_id" id="service"  aria-label="Default select example" >
-                                                <option></option>
-                                                @foreach ( $categories as $category )
-                                                    <option value="{{ $category->id }}"  {{ $category->id == $article->category->id ? "selected" : "" }} >{{ $category->title }}</option>
-                                                @endforeach
-                                            </select>
-                                            @error('category_id')
-                                                <small class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
-                                        </div>
 
 
                                         <!----------------- Img -------------------->

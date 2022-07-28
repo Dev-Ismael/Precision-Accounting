@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**************************************
- CSS Index  
+ CSS Index
 ****************************
 
 /--- Default Styles -----/
@@ -9603,7 +9603,7 @@ xclip
   }
 }
 /**************************************
-            Elements 
+            Elements
 ***************************************/
 /*====================
     Breadcrump Area 
@@ -13187,7 +13187,25 @@ iframe {
 }
 
 /**************************************
-            Blog 
+            pagintation
+***************************************/
+div.pagination-container {
+  display: none;
+}
+div.pagination-container li {
+  width: 30px;
+  text-align: center;
+}
+div.pagination-container li .page-link {
+  color: #0f3e65;
+}
+div.pagination-container li.active .page-link {
+  background-color: #0f3e65;
+  border-color: #0f3e65;
+}
+
+/**************************************
+            Blog
 ***************************************/
 /*----------------------
     Blog Styles  

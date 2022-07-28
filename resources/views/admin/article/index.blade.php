@@ -21,7 +21,7 @@
                         <li class="breadcrumb-item active" aria-current="page">Articles</li>
                     </ol>
                 </nav>
-                <h2 class="h4"> <i class="fa-brands fa-blogger-b text-primary"></i> Articles List</h2>
+                <h2 class="h4"> <i class="fa-solid fa-file-lines text-primary"></i> Articles List</h2>
                 <p class="mb-0">Your web analytics dashboard template.</p>
             </div>
             <!--------------- If No SubCategory hide create btn --------------->
