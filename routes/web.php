@@ -25,10 +25,8 @@ Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->na
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
 Route::get('/blog/{slug}', [App\Http\Controllers\BlogController::class, 'post'])->name('post');
 Route::get('/service/{slug}', [App\Http\Controllers\ServiceController::class, 'index'])->name('service');
-
-
+Route::get('tax-center/{slug}', [App\Http\Controllers\TaxcenterController::class, 'index'])->name('tax_center');
 Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'index'])->name('resources');
-Route::get('/{slug}', [App\Http\Controllers\TaxcenterController::class, 'index'])->name('tax_center');
 
 /*===========================================================================
 ========== Admin Routes =====================================================

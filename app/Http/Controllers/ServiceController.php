@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -14,9 +15,14 @@ class ServiceController extends Controller
     */
 
 
-    public function index()
+    public function index($slug)
     {
-        return view('service');
+        $service = Service::where('slug',$slug)->first();
+        // if service Not Found
+        if( !$service ){
+            return redirect('/');
+        }
+        return view('service',compact("service"));
     }
 
 
