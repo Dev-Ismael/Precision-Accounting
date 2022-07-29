@@ -29,7 +29,11 @@ Route::get('/service/{slug}', [App\Http\Controllers\ServiceController::class, 'i
 Route::get('tax-center/{slug}', [App\Http\Controllers\TaxcenterController::class, 'index'])->name('tax_center');
 Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'index'])->name('resources');
 Route::get('/consulting', [App\Http\Controllers\ConsultingController::class, 'index'])->name('consulting');
+
+
+
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
+Route::post('/contact/send', [App\Http\Controllers\ContactController::class, 'send'])->name('contact.send');
 
 // Blog
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');

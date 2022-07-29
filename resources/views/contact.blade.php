@@ -60,27 +60,35 @@
 
             <div class="row mt--40 row--15 pt--15">
                 <div class="col-lg-7">
-                    <form class="contact-form-1 rwt-dynamic-form" id="contact-form" method="POST" action="mail.php">
+                    <form class="contact-form-1 rwt-dynamic-form" id="contact-form" action="{{ route("contact.send") }}" method="POST" >
+                        @csrf
                         <div class="form-group">
-                            <input type="text" name="contact-name" id="contact-name" placeholder="Your Name">
+                            <input type="text" name="name" id="name" placeholder="Your Name..." value="{{ old("name") }}" />
+                            @error('name')
+                                <div class="invalid-feedback d-block">{{ $message }}.</div>
+                            @enderror
                         </div>
                         <div class="form-group">
-                            <input type="text" name="contact-phone" id="contact-phone" placeholder="Phone Number">
+                            <input type="text" name="phone" id="phone" placeholder="Your Phone Number..." value="{{ old("phone") }}"/>
+                            @error('phone')
+                                <div class="invalid-feedback d-block">{{ $message }}.</div>
+                            @enderror
                         </div>
                         <div class="form-group">
-                            <input type="email" id="contact-email" name="contact-email" placeholder="Your Email">
+                            <input type="text" name="email" id="email" placeholder="Your Email Address..." value="{{ old("email") }}"/>
+                            @error('email')
+                                <div class="invalid-feedback d-block">{{ $message }}.</div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <textarea name="messege" id="messege" placeholder="Your Message...">{{ old("messege") }}</textarea>
+                            @error('messege')
+                                <div class="invalid-feedback d-block">{{ $message }}.</div>
+                            @enderror
                         </div>
 
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Your Subject">
-                        </div>
-
-                        <div class="form-group">
-                            <textarea name="contact-message" id="contact-message" placeholder="Your Message"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <button name="submit" type="submit" id="submit" class="btn-default btn-large rn-btn">
+                            <button type="submit" id="submit" class="btn-default btn-large rn-btn">
                                 <span>Submit Now</span>
                             </button>
                         </div>

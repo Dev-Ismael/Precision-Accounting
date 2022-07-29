@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Setting;
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
@@ -18,4 +19,14 @@ class ContactController extends Controller
         $setting      = Setting::find(1);
         return view('contact',compact('setting'));
     }
+
+
+    public function send(ContactRequest $reaquest)
+    {
+
+        dd($reaquest);
+
+    }
+
+
 }
