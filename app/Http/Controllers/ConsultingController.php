@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ConsultingRequest;
 use Illuminate\Http\Request;
 
 class ConsultingController extends Controller
@@ -16,4 +17,17 @@ class ConsultingController extends Controller
     {
         return view('consulting');
     }
+
+
+
+    public function send(ConsultingRequest $request )
+    {
+        return view('consulting');
+    }
+
+
+
+
+
+    
 }

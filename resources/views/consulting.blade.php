@@ -21,28 +21,41 @@
 
             <div class="row mt--40 row--15 pt--15">
                 <div class="col-lg-7">
-                    <form class="contact-form-1 rwt-dynamic-form" id="contact-form" method="POST" action="mail.php">
+                    <form class="contact-form-1 rwt-dynamic-form" id="contact-form" method="POST" action="{{ route('consulting.send') }}">
+                        @csrf
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
-                                    <input type="text" name="first_name" id="first_name" placeholder="First Name..." required/>
+                                    <input type="text" name="first_name" id="first_name" placeholder="Your First Name......" value="{{ old("first_name") }}" required/>
+                                    @error('first_name')
+                                        <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-group">
-                                    <input type="text" name="last_name" id="last_name" placeholder="Last Name..." required/>
+                                    <input type="text" name="last_name" id="last_name" placeholder="Your Last Name......" value="{{ old("last_name") }}" required/>
+                                    @error('last_name')
+                                        <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
-                                    <input type="text" name="phone" id="phone" placeholder="Phone Number..." required/>
+                                    <input type="text" name="phone" id="phone" placeholder="Your Phone Number..." value="{{ old("phone") }}" required/>
+                                    @error('phone')
+                                        <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-group">
-                                    <input type="text" name="email" id="email" placeholder="Email Address..." required/>
+                                    <input type="email" name="email" id="email" placeholder="Your Email Address..." value="{{ old("email") }}" required/>
+                                    @error('email')
+                                        <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -50,26 +63,35 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
-                                    <input type="text" name="business_name" id="business_name" placeholder="Business Name..." required/>
+                                    <input type="text" name="address" id="address" placeholder="Your Address..." value="{{ old("address") }}" required/>
+                                    @error('address')
+                                        <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-group">
-                                    <input type="text" name="business_service" id="business_service" placeholder="Business Service..." required/>
+                                    <input type="text" name="business_service" id="business_service" placeholder="Your Business Service..." value="{{ old("business_service") }}" required/>
+                                    @error('business_service')
+                                        <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
-                                    <input type="text" name="business_type" id="business_type" placeholder="Business Type..." required/>
+                                    <input type="text" name="business_type" id="business_type" placeholder="Your Business Type..." value="{{ old("business_type") }}" required/>
+                                    @error('business_type')
+                                        <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-group">
-                                    <select name="state" required="">
+                                    <select name="state" id="state" required>
 
-                                        <option selected="selected" disabled="">Select a State...</option>
+                                        <option selected="selected" value="" disabled="">Select a State...</option>
 
                                         <option value="AL">Alabama</option>
 
@@ -174,14 +196,18 @@
                                         <option value="WY">Wyoming</option>
 
                                     </select>
+                                    @error('state')
+                                        <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                                    @enderror
+
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <select name="meeting" required="">
+                            <select name="meeting" id="meeting" required>
 
-                                <option selected="selected" disabled="" style="color:#000;">Meeting Type </option>
+                                <option selected="selected" value="" disabled="" style="color:#000;">Meeting Type </option>
 
                                 <option value="Zoom Meeting">Zoom Meeting </option>
 
@@ -190,11 +216,17 @@
                                 <option value="Office Meeting">Office Meeting </option>
 
                             </select>
+                            @error('meeting')
+                                <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                            @enderror
                         </div>
 
 
                         <div class="form-group">
-                            <textarea name="contact-message" id="contact-message" placeholder="Your Message"></textarea>
+                            <textarea name="messege" id="messege" placeholder="Your Message..." required>{{ old("messege") }}</textarea>
+                            @error('messege')
+                                <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                            @enderror
                         </div>
 
 

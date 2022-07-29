@@ -153,7 +153,7 @@
                                 </nav>
                                 <!-- Start Header Btn  -->
                                 <div class="header-btn"><a class="btn-default text-uppercase rounded-0"
-                                        target="_blank" href="{{ route('consulting') }}">Free Consulting</a></div>
+                                         href="{{ route('consulting') }}">Free Consulting</a></div>
                                 <!-- End Header Btn  -->
 
                                 <!-- Start Mobile-Menu-Bar -->
