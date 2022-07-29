@@ -16,7 +16,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $articles        = Article::orderBy('id','desc')->paginate(1);
+        $articles        = Article::orderBy('id','desc')->paginate(10);
         $categories      = Category::all();
         $lasted_articles = Article::orderBy('id','desc')->limit(5)->get();
         // return $categories;
@@ -32,6 +32,20 @@ class BlogController extends Controller
             return redirect('/');
         }
         return view('article',compact('article','categories'));
+    }
+
+    public function search(Request $request)
+    {
+        // validate search and redirect back
+        $this->validate($request, [
+            'search'     =>  ['required', 'string', 'max:55'],
+        ]);
+
+        $articles = Article::where('title', 'like', "%{$request->search}%")->paginate( 20 );
+        $categories      = Category::all();
+        $lasted_articles = Article::orderBy('id','desc')->limit(5)->get();
+        return view('blog',compact('categories','lasted_articles','articles'));
+
     }
 
 
