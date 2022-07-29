@@ -1088,7 +1088,7 @@ All Extend Here
 }
 
 .tagcloud a,
-.wp-block-tag-cloud a, .rbt-single-widget.widget_recent_comments ul li span, .rbt-single-widget.widget_recent_entries ul li span, .rbt-single-widget.widget_archive ul li span, .rbt-single-widget.widget_categories ul li span, .rbt-single-widget.widget_meta ul li span, .rbt-single-widget.widget_pages ul li span, .rbt-single-widget.widget_nav_menu ul li span, .rbt-single-widget.widget_recent_comments ul li a, .rbt-single-widget.widget_recent_entries ul li a, .rbt-single-widget.widget_archive ul li a, .rbt-single-widget.widget_categories ul li a, .rbt-single-widget.widget_meta ul li a, .rbt-single-widget.widget_pages ul li a, .rbt-single-widget.widget_nav_menu ul li a, .rn-address .inner p a, .rn-slick-dot .slick-dots li button::after, .filter-button-default button, .rwt-card .inner .content .title a, .rwt-card .inner .thumbnail .card-image img, .rwt-card, .card-box .inner .content .title a, .service.service__style--2 .content p, .service.service__style--2 .content .title a, .service.service__style--2 .content .title, .service.gallery-style .content p, .service.gallery-style .content .title a, .service.gallery-style .content .title, .service.service__style--1 .content p, .service.service__style--1 .content .title a, .service.service__style--1 .content .title, .service.service__style--1 .icon, .mainmenu-nav .mainmenu li.has-droupdown .submenu li a, .form-group textarea, .form-group input, #scrollUp, ul li a, ol li a {
+.wp-block-tag-cloud a, .rbt-single-widget.widget_recent_comments ul li span, .rbt-single-widget.widget_recent_entries ul li span, .rbt-single-widget.widget_archive ul li span, .rbt-single-widget.widget_categories ul li span, .rbt-single-widget.widget_meta ul li span, .rbt-single-widget.widget_pages ul li span, .rbt-single-widget.widget_nav_menu ul li span, .rbt-single-widget.widget_recent_comments ul li a, .rbt-single-widget.widget_recent_entries ul li a, .rbt-single-widget.widget_archive ul li a, .rbt-single-widget.widget_categories ul li a, .rbt-single-widget.widget_meta ul li a, .rbt-single-widget.widget_pages ul li a, .rbt-single-widget.widget_nav_menu ul li a, .rn-address .inner p a, .rn-slick-dot .slick-dots li button::after, .filter-button-default button, .rwt-card .inner .content .title a, .rwt-card .inner .thumbnail .card-image img, .rwt-card, .card-box .inner .content .title a, .service.service__style--2 .content p, .service.service__style--2 .content .title a, .service.service__style--2 .content .title, .service.gallery-style .content p, .service.gallery-style .content .title a, .service.gallery-style .content .title, .service.service__style--1 .content p, .service.service__style--1 .content .title a, .service.service__style--1 .content .title, .service.service__style--1 .icon, .mainmenu-nav .mainmenu li.has-droupdown .submenu li a, .form-group textarea, .form-group select, .form-group input, #scrollUp, ul li a, ol li a {
   transition: var(--transition);
 }
 
@@ -7854,6 +7854,7 @@ input {
 }
 
 select {
+  background-color: inherit;
   transition: 0.3s;
   height: 60px;
   line-height: 28px;
@@ -7871,6 +7872,7 @@ select {
   padding-right: 30px;
 }
 
+select,
 input[type=text],
 input[type=password],
 input[type=email],
@@ -7891,6 +7893,7 @@ textarea {
   color: var(--color-body);
   /* -- Placeholder -- */
 }
+select::placeholder,
 input[type=text]::placeholder,
 input[type=password]::placeholder,
 input[type=email]::placeholder,
@@ -7901,6 +7904,7 @@ textarea::placeholder {
   /* Firefox */
   opacity: 1;
 }
+select:-ms-input-placeholder,
 input[type=text]:-ms-input-placeholder,
 input[type=password]:-ms-input-placeholder,
 input[type=email]:-ms-input-placeholder,
@@ -7911,6 +7915,7 @@ textarea:-ms-input-placeholder {
   color: var(--body-color);
   opacity: 1;
 }
+select::-ms-input-placeholder,
 input[type=text]::-ms-input-placeholder,
 input[type=password]::-ms-input-placeholder,
 input[type=email]::-ms-input-placeholder,
@@ -7921,7 +7926,10 @@ textarea::-ms-input-placeholder {
   color: var(--body-color);
   opacity: 1;
 }
-input[type=text].p-holder__active, .input-active input[type=text], input[type=text].input-active,
+select.p-holder__active, select.input-active,
+input[type=text].p-holder__active,
+.input-active input[type=text],
+input[type=text].input-active,
 input[type=password].p-holder__active,
 .input-active input[type=password],
 input[type=password].input-active,
@@ -7939,7 +7947,10 @@ textarea.input-active {
   border-color: var(--color-primary);
   /* -- Placeholder -- */
 }
-input[type=text].p-holder__active::placeholder, .input-active input[type=text]::placeholder, input[type=text].input-active::placeholder,
+select.p-holder__active::placeholder, select.input-active::placeholder,
+input[type=text].p-holder__active::placeholder,
+.input-active input[type=text]::placeholder,
+input[type=text].input-active::placeholder,
 input[type=password].p-holder__active::placeholder,
 .input-active input[type=password]::placeholder,
 input[type=password].input-active::placeholder,
@@ -7958,7 +7969,10 @@ textarea.input-active::placeholder {
   /* Firefox */
   opacity: 1;
 }
-input[type=text].p-holder__active:-ms-input-placeholder, .input-active input[type=text]:-ms-input-placeholder, input[type=text].input-active:-ms-input-placeholder,
+select.p-holder__active:-ms-input-placeholder, select.input-active:-ms-input-placeholder,
+input[type=text].p-holder__active:-ms-input-placeholder,
+.input-active input[type=text]:-ms-input-placeholder,
+input[type=text].input-active:-ms-input-placeholder,
 input[type=password].p-holder__active:-ms-input-placeholder,
 .input-active input[type=password]:-ms-input-placeholder,
 input[type=password].input-active:-ms-input-placeholder,
@@ -7976,7 +7990,10 @@ textarea.input-active:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--color-primary);
 }
-input[type=text].p-holder__active::-ms-input-placeholder, .input-active input[type=text]::-ms-input-placeholder, input[type=text].input-active::-ms-input-placeholder,
+select.p-holder__active::-ms-input-placeholder, select.input-active::-ms-input-placeholder,
+input[type=text].p-holder__active::-ms-input-placeholder,
+.input-active input[type=text]::-ms-input-placeholder,
+input[type=text].input-active::-ms-input-placeholder,
 input[type=password].p-holder__active::-ms-input-placeholder,
 .input-active input[type=password]::-ms-input-placeholder,
 input[type=password].input-active::-ms-input-placeholder,
@@ -7994,7 +8011,10 @@ textarea.input-active::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--color-primary);
 }
-input[type=text].p-holder__error, .input-error input[type=text], input[type=text].input-error,
+select.p-holder__error, select.input-error,
+input[type=text].p-holder__error,
+.input-error input[type=text],
+input[type=text].input-error,
 input[type=password].p-holder__error,
 .input-error input[type=password],
 input[type=password].input-error,
@@ -8012,7 +8032,10 @@ textarea.input-error {
   border-color: #f4282d;
   /* -- Placeholder -- */
 }
-input[type=text].p-holder__error::placeholder, .input-error input[type=text]::placeholder, input[type=text].input-error::placeholder,
+select.p-holder__error::placeholder, select.input-error::placeholder,
+input[type=text].p-holder__error::placeholder,
+.input-error input[type=text]::placeholder,
+input[type=text].input-error::placeholder,
 input[type=password].p-holder__error::placeholder,
 .input-error input[type=password]::placeholder,
 input[type=password].input-error::placeholder,
@@ -8031,7 +8054,10 @@ textarea.input-error::placeholder {
   /* Firefox */
   opacity: 1;
 }
-input[type=text].p-holder__error:-ms-input-placeholder, .input-error input[type=text]:-ms-input-placeholder, input[type=text].input-error:-ms-input-placeholder,
+select.p-holder__error:-ms-input-placeholder, select.input-error:-ms-input-placeholder,
+input[type=text].p-holder__error:-ms-input-placeholder,
+.input-error input[type=text]:-ms-input-placeholder,
+input[type=text].input-error:-ms-input-placeholder,
 input[type=password].p-holder__error:-ms-input-placeholder,
 .input-error input[type=password]:-ms-input-placeholder,
 input[type=password].input-error:-ms-input-placeholder,
@@ -8049,7 +8075,10 @@ textarea.input-error:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #f4282d;
 }
-input[type=text].p-holder__error::-ms-input-placeholder, .input-error input[type=text]::-ms-input-placeholder, input[type=text].input-error::-ms-input-placeholder,
+select.p-holder__error::-ms-input-placeholder, select.input-error::-ms-input-placeholder,
+input[type=text].p-holder__error::-ms-input-placeholder,
+.input-error input[type=text]::-ms-input-placeholder,
+input[type=text].input-error::-ms-input-placeholder,
 input[type=password].p-holder__error::-ms-input-placeholder,
 .input-error input[type=password]::-ms-input-placeholder,
 input[type=password].input-error::-ms-input-placeholder,
@@ -8067,7 +8096,10 @@ textarea.input-error::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #f4282d;
 }
-input[type=text].p-holder__error:focus, .input-error input[type=text]:focus, input[type=text].input-error:focus,
+select.p-holder__error:focus, select.input-error:focus,
+input[type=text].p-holder__error:focus,
+.input-error input[type=text]:focus,
+input[type=text].input-error:focus,
 input[type=password].p-holder__error:focus,
 .input-error input[type=password]:focus,
 input[type=password].input-error:focus,
@@ -8084,6 +8116,7 @@ textarea.p-holder__error:focus,
 textarea.input-error:focus {
   border-color: #f4282d;
 }
+select:focus,
 input[type=text]:focus,
 input[type=password]:focus,
 input[type=email]:focus,
@@ -8159,18 +8192,23 @@ input[type=radio] ~ label::after {
   border-radius: 50%;
 }
 
+.active-light-mode .contact-form-1 .form-group select {
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+}
+
 .form-group {
   margin-bottom: 20px;
   display: inline-block;
 }
-.form-group input {
+.form-group select, .form-group input {
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius);
   height: 50px;
   font-size: 16px;
   padding: 0 15px;
 }
-.form-group input:focus {
+.form-group select:focus, .form-group input:focus {
   border-color: var(--color-primary);
 }
 .form-group textarea {
@@ -10396,7 +10434,7 @@ div.btn-default.rounded-player.sm-size {
   overflow: visible;
 }
 .progress .progress-bar.bar-color-2 {
-  background: #fb5343;
+  background: rgb(251, 83, 67);
 }
 .progress .progress-bar.bar-color-3 {
   background: #E33FA1;
@@ -11352,7 +11390,7 @@ Timeline Area
   left: 0;
   width: 4px;
   height: 100%;
-  background: rgba(196, 196, 196, 0.22);
+  background: hsla(0deg, 0%, 76.9%, 0.22);
 }
 .timeline-line::before, .timeline-line::after {
   content: "";
@@ -12338,7 +12376,7 @@ Timeline Area
 /*==========================
     Contact Address
 ============================*/
-.contact-form-1 .form-group input {
+.contact-form-1 .form-group input, .contact-form-1 .form-group select {
   height: 70px;
   padding: 0 20px;
 }
@@ -13976,7 +14014,7 @@ div.pagination-container li.active .page-link {
   top: 0;
   left: 0;
   background-color: transparent;
-  background-image: linear-gradient(90deg, #060606 0%, #06060600 90%);
+  background-image: linear-gradient(90deg, #060606 0%, rgba(6, 6, 6, 0) 90%);
   content: "";
 }
 
@@ -15056,10 +15094,10 @@ body.active-light-mode .footer-style-default .newsletter-form .form-group input,
 body.active-light-mode .newsletter-area .border-top-bottom,
 body.active-light-mode .rn-comment-form .inner .rnform-group textarea,
 body.active-light-mode .rwt-portfolio-details .content-left .single-list-wrapper .single-list + .single-list {
-  border-color: #00000024;
+  border-color: rgba(0, 0, 0, 0.1411764706);
 }
 body.active-light-mode .service.service__style--1.with-working-process .line {
-  background-color: #00000024;
+  background-color: rgba(0, 0, 0, 0.1411764706);
   width: 83%;
 }
 body.active-light-mode .mainmenu-nav .mainmenu li.has-droupdown .submenu li a:hover {
@@ -15070,7 +15108,7 @@ body.active-light-mode .mainmenu-nav .mainmenu li.with-megamenu .rn-megamenu .wr
   color: var(--color-primary);
 }
 body.active-light-mode .btn-read-more span::after {
-  background: #00000024;
+  background: rgba(0, 0, 0, 0.1411764706);
 }
 body.active-light-mode .breadcrumb-inner ul.page-list li a:hover,
 body.active-light-mode .rn-address .inner p a:hover,
@@ -15122,7 +15160,7 @@ body.active-light-mode [class*=col]:nth-child(3) .counter-style-2.color-variatio
   background-color: #eef2f3;
 }
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(4) .service.service__style--1.icon-circle-style .icon {
-  background-color: #eb008b24;
+  background-color: rgba(235, 0, 139, 0.1411764706);
 }
 body.active-light-mode .logo a img.logo-light {
   display: none;
@@ -15131,22 +15169,22 @@ body.active-light-mode .rn-back-top i {
   color: #333;
 }
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(5) .service.service__style--1.icon-circle-style .icon {
-  background-color: #009aff29;
+  background-color: rgba(0, 154, 255, 0.1607843137);
 }
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(6) .service.service__style--1.icon-circle-style .icon {
-  background-color: #3000ff29;
+  background-color: rgba(48, 0, 255, 0.1607843137);
 }
 
 body.active-light-mode .service.service__style--1.icon-circle-style .icon {
-  background-color: #059dff0f;
+  background-color: rgba(5, 157, 255, 0.0588235294);
 }
 
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(2) .service.service__style--1.icon-circle-style .icon {
-  background-color: #fb53431a;
+  background-color: rgba(251, 83, 67, 0.1019607843);
 }
 
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(3) .service.service__style--1.icon-circle-style .icon {
-  background-color: #6549d51f;
+  background-color: rgba(101, 73, 213, 0.1215686275);
 }
 
 body.active-light-mode .timeline-dot::after {
@@ -15245,7 +15283,7 @@ body.active-light-mode .brand-style-1 li {
 }
 
 body.active-light-mode hr {
-  border-top: 1px solid #00000024;
+  border-top: 1px solid rgba(0, 0, 0, 0.1411764706);
 }
 
 body.active-light-mode .rn-card {
@@ -15254,7 +15292,7 @@ body.active-light-mode .rn-card {
 
 body.active-light-mode .rn-pricing.active .pricing-table-inner .pricing-header,
 body.active-light-mode .rn-pricing .pricing-table-inner .pricing-header {
-  border-color: #0000000a;
+  border-color: rgba(0, 0, 0, 0.0392156863);
 }
 
 body.active-light-mode .advance-tab-button-1 .tab-button-list .tab-button::after {
@@ -15265,7 +15303,7 @@ body.active-light-mode .advance-tab-button-1 .tab-button-list .tab-button::after
 
 body.active-light-mode a.btn-default.btn-border,
 body.active-light-mode button.btn-default.btn-border {
-  border-color: #00000024;
+  border-color: rgba(0, 0, 0, 0.1411764706);
   color: #181818;
 }
 
@@ -15376,7 +15414,7 @@ body.active-light-mode .logo-dark {
 
 body.active-light-mode .slider-area.bg-transparent .inner a.btn-default.btn-border,
 body.active-light-mode .slider-area.bg-transparent .inner button.btn-default.btn-border {
-  border-color: #00000024;
+  border-color: rgba(0, 0, 0, 0.1411764706);
   color: #181818;
 }
 
