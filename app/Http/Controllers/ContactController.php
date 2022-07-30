@@ -42,7 +42,8 @@ class ContactController extends Controller
         $contactData += ['subject' => static::MAIL_SUBJECT ];
         Mail::to(static::RECIVER_MAIL)->            // Our Email 'reciver'
             send( new ContactMail( $contactData ) );
-        return "thanks for submition";
+
+        return view('submission');
     }
 
 

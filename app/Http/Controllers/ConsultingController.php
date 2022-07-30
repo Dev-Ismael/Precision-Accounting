@@ -40,7 +40,7 @@ class ConsultingController extends Controller
         $consultingData += ['subject' => static::MAIL_SUBJECT ];
         Mail::to(static::RECIVER_MAIL)->            // Our Email 'reciver'
             send( new ConsultingMail( $consultingData ) );
-        return "thanks for submition";
+            return view('submission');
     }
 
 
