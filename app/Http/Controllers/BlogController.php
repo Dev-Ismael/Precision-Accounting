@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Category;
 use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\TwitterCard;
 use Illuminate\Http\Request;
+use App\Traits\SEOTrait;
 
 class BlogController extends Controller
 {
-
+    use SEOTrait;
     /**
      * Show the application dashboard.
      *
@@ -33,10 +35,8 @@ class BlogController extends Controller
             return redirect('/');
         }
 
-        // SEO Tools
-        SEOMeta::setTitle($article->seo_title);
-        SEOMeta::setDescription($article->seo_description);
-        SEOMeta::setKeywords($article->seo_keywords);
+        // SEO Trait
+        $this->dynamicPagesSeo($article);
 
         return view('article',compact('article','categories'));
     }

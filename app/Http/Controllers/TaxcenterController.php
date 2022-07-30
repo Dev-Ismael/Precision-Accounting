@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TaxCenter;
+use App\Traits\SEOTrait;
 
 class TaxcenterController extends Controller
 {
+    use SEOTrait;
 
     /**
      * Show the application dashboard.
@@ -22,6 +24,9 @@ class TaxcenterController extends Controller
         if( !$tax_center ){
             return redirect('/');
         }
+        // SEO Trait
+        $this->dynamicPagesSeo($tax_center);
+
         return view('tax_center',compact("tax_center"));
     }
 
