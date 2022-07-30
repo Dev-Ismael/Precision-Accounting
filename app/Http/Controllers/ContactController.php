@@ -5,9 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
+    CONST RECIVER_MAIL   = 'info@cpapai.com' ;
+    CONST MAIL_SUBJECT   = 'A new contact submition at cpapai.com' ;
 
     /**
      * Show the application dashboard.
@@ -21,11 +25,13 @@ class ContactController extends Controller
     }
 
 
-    public function send(ContactRequest $reaquest)
+    public function send(ContactRequest $request)
     {
-
-        dd($reaquest);
-
+        $contactData = $request->all();
+        $contactData += ['subject' => static::MAIL_SUBJECT ];
+        Mail::to(static::RECIVER_MAIL)->            // Our Email 'reciver'
+            send( new ContactMail( $contactData ) );
+        return "thanks for submition";
     }
 
 
