@@ -23,6 +23,15 @@ class BlogController extends Controller
         $categories      = Category::all();
         $lasted_articles = Article::orderBy('id','desc')->limit(5)->get();
         // return $categories;
+
+        // SEO Trait
+        $this->staticPagesSeo(
+            'Blog',
+            'For many years PRECISION ACCOUNTING has been helping individuals, families and small businesses in the community prepare their taxes',
+            'Digital switching over, How tax planning matters,Payroll management,Qbooks,How COVID-19 affected the IRS,CPA from A to Z part two,CPA from A to Z'
+        );
+
+
         return view('blog',compact('categories','lasted_articles','articles'));
     }
 

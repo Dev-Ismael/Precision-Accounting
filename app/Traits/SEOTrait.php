@@ -14,7 +14,7 @@ trait SEOTrait
 
     }
 
-    protected function StaticPagesSeo( $pageName , $description , $keywords  ){
+    protected function StaticPagesSeo( $pageName , $description , $keywords ){
 
         SEOMeta::setTitle($pageName);
         SEOMeta::setDescription($description);
