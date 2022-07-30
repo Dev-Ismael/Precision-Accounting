@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\Category;
+use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -31,6 +32,12 @@ class BlogController extends Controller
         if( !$article ){
             return redirect('/');
         }
+
+        // SEO Tools
+        SEOMeta::setTitle($article->seo_title);
+        SEOMeta::setDescription($article->seo_description);
+        SEOMeta::setKeywords($article->seo_keywords);
+
         return view('article',compact('article','categories'));
     }
 
