@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             'title' => 'title',
             'slug' => 'slug',
         ]);
-        
+
         \App\Models\Article::factory()->create([
             'category_id' => 1,
             'title' => 'title',
@@ -104,6 +104,11 @@ class DatabaseSeeder extends Seeder
             'facebook'        => 'facebook',
             'twitter'         => 'twitter',
             'youtube'         => 'youtube',
+        ]);
+
+
+        \App\Models\Subscriber::factory()->create([
+            'email'      => 'a.ismael@bluskyint.com',
         ]);
 
     }

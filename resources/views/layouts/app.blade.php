@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    {!! SEOMeta::generate() !!}
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('doob_template_assets/images/favicon-white.png') }}">
@@ -357,9 +357,13 @@
                                 <h4 class="title pt-3 pt-md-0">Newsletter</h4>
                                 <div class="inner">
                                     <h6 class="subtitle">Subscribe Our Newsletters To Get Updates & More</h6>
-                                    <form class="newsletter-form" action="#">
+                                    <form class="newsletter-form" method="POST" action="{{ route("subscriber.store") }}" >
+                                        @csrf
                                         <div class="form-group">
-                                            <input type="email" placeholder="Enter Your Email Here">
+                                            <input type="email" name="email" placeholder="Enter Your Email Here" required/>
+                                            @error('email')
+                                                <div class="invalid-feedback d-block">{{ $message }}.</div>
+                                            @enderror
                                         </div>
                                         <div class="form-group">
                                             <button class="btn-default" type="submit">Submit Now</button>

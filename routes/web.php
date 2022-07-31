@@ -27,6 +27,10 @@ Route::get('/service/{slug}', [App\Http\Controllers\ServiceController::class, 'i
 Route::get('tax-center/{slug}', [App\Http\Controllers\TaxcenterController::class, 'index'])->name('tax_center');
 Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'index'])->name('resources');
 
+// Contact
+Route::post('/subscribe', [App\Http\Controllers\SubscriberController::class, 'store'])->name('subscriber.store');
+
+
 // Consulting
 Route::get('/consulting', [App\Http\Controllers\ConsultingController::class, 'index'])->name('consulting');
 Route::post('/consulting/send', [App\Http\Controllers\ConsultingController::class, 'send'])->name('consulting.send');
