@@ -290,8 +290,6 @@ SOFTWARE.
             $('body').addClass('active-dark-mode');
         } else if(Cookies.get('styleCookieName') == 'light') {
             $('body').removeClass('active-light-mode');
-        } else {
-            $('body').removeClass('active-light-mode');
         }
 
         // Check Cookie

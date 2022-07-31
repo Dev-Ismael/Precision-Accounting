@@ -10434,7 +10434,7 @@ div.btn-default.rounded-player.sm-size {
   overflow: visible;
 }
 .progress .progress-bar.bar-color-2 {
-  background: rgb(251, 83, 67);
+  background: #fb5343;
 }
 .progress .progress-bar.bar-color-3 {
   background: #E33FA1;
@@ -11390,7 +11390,7 @@ Timeline Area
   left: 0;
   width: 4px;
   height: 100%;
-  background: hsla(0deg, 0%, 76.9%, 0.22);
+  background: rgba(196, 196, 196, 0.22);
 }
 .timeline-line::before, .timeline-line::after {
   content: "";
@@ -12891,7 +12891,7 @@ iframe {
 }
 
 /*--------------------------
-    Swicher Styles  
+    Swicher Styles
 ----------------------------*/
 .active-dark-mode .my_switcher ul li .setColor.dark {
   display: none;
@@ -12958,6 +12958,7 @@ iframe {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  filter: brightness(100);
 }
 .my_switcher ul li a.active {
   display: none;
@@ -14014,7 +14015,7 @@ div.pagination-container li.active .page-link {
   top: 0;
   left: 0;
   background-color: transparent;
-  background-image: linear-gradient(90deg, #060606 0%, rgba(6, 6, 6, 0) 90%);
+  background-image: linear-gradient(90deg, #060606 0%, #06060600 90%);
   content: "";
 }
 
@@ -15094,10 +15095,10 @@ body.active-light-mode .footer-style-default .newsletter-form .form-group input,
 body.active-light-mode .newsletter-area .border-top-bottom,
 body.active-light-mode .rn-comment-form .inner .rnform-group textarea,
 body.active-light-mode .rwt-portfolio-details .content-left .single-list-wrapper .single-list + .single-list {
-  border-color: rgba(0, 0, 0, 0.1411764706);
+  border-color: #00000024;
 }
 body.active-light-mode .service.service__style--1.with-working-process .line {
-  background-color: rgba(0, 0, 0, 0.1411764706);
+  background-color: #00000024;
   width: 83%;
 }
 body.active-light-mode .mainmenu-nav .mainmenu li.has-droupdown .submenu li a:hover {
@@ -15108,7 +15109,7 @@ body.active-light-mode .mainmenu-nav .mainmenu li.with-megamenu .rn-megamenu .wr
   color: var(--color-primary);
 }
 body.active-light-mode .btn-read-more span::after {
-  background: rgba(0, 0, 0, 0.1411764706);
+  background: #00000024;
 }
 body.active-light-mode .breadcrumb-inner ul.page-list li a:hover,
 body.active-light-mode .rn-address .inner p a:hover,
@@ -15160,7 +15161,7 @@ body.active-light-mode [class*=col]:nth-child(3) .counter-style-2.color-variatio
   background-color: #eef2f3;
 }
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(4) .service.service__style--1.icon-circle-style .icon {
-  background-color: rgba(235, 0, 139, 0.1411764706);
+  background-color: #eb008b24;
 }
 body.active-light-mode .logo a img.logo-light {
   display: none;
@@ -15169,22 +15170,22 @@ body.active-light-mode .rn-back-top i {
   color: #333;
 }
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(5) .service.service__style--1.icon-circle-style .icon {
-  background-color: rgba(0, 154, 255, 0.1607843137);
+  background-color: #009aff29;
 }
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(6) .service.service__style--1.icon-circle-style .icon {
-  background-color: rgba(48, 0, 255, 0.1607843137);
+  background-color: #3000ff29;
 }
 
 body.active-light-mode .service.service__style--1.icon-circle-style .icon {
-  background-color: rgba(5, 157, 255, 0.0588235294);
+  background-color: #059dff0f;
 }
 
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(2) .service.service__style--1.icon-circle-style .icon {
-  background-color: rgba(251, 83, 67, 0.1019607843);
+  background-color: #fb53431a;
 }
 
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(3) .service.service__style--1.icon-circle-style .icon {
-  background-color: rgba(101, 73, 213, 0.1215686275);
+  background-color: #6549d51f;
 }
 
 body.active-light-mode .timeline-dot::after {
@@ -15283,7 +15284,7 @@ body.active-light-mode .brand-style-1 li {
 }
 
 body.active-light-mode hr {
-  border-top: 1px solid rgba(0, 0, 0, 0.1411764706);
+  border-top: 1px solid #00000024;
 }
 
 body.active-light-mode .rn-card {
@@ -15292,7 +15293,7 @@ body.active-light-mode .rn-card {
 
 body.active-light-mode .rn-pricing.active .pricing-table-inner .pricing-header,
 body.active-light-mode .rn-pricing .pricing-table-inner .pricing-header {
-  border-color: rgba(0, 0, 0, 0.0392156863);
+  border-color: #0000000a;
 }
 
 body.active-light-mode .advance-tab-button-1 .tab-button-list .tab-button::after {
@@ -15303,7 +15304,7 @@ body.active-light-mode .advance-tab-button-1 .tab-button-list .tab-button::after
 
 body.active-light-mode a.btn-default.btn-border,
 body.active-light-mode button.btn-default.btn-border {
-  border-color: rgba(0, 0, 0, 0.1411764706);
+  border-color: #00000024;
   color: #181818;
 }
 
@@ -15414,7 +15415,7 @@ body.active-light-mode .logo-dark {
 
 body.active-light-mode .slider-area.bg-transparent .inner a.btn-default.btn-border,
 body.active-light-mode .slider-area.bg-transparent .inner button.btn-default.btn-border {
-  border-color: rgba(0, 0, 0, 0.1411764706);
+  border-color: #00000024;
   color: #181818;
 }
 

@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {!! SEOMeta::generate() !!}
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('doob_template_assets/images/favicon-white.png') }}">
@@ -153,7 +153,7 @@
                                 </nav>
                                 <!-- Start Header Btn  -->
                                 <div class="header-btn"><a class="btn-default text-uppercase rounded-0"
-                                         href="{{ route('consulting') }}">Free Consulting</a></div>
+                                        target="_blank" href="#">Free Consulting</a></div>
                                 <!-- End Header Btn  -->
 
                                 <!-- Start Mobile-Menu-Bar -->
@@ -171,16 +171,16 @@
                                     <ul>
                                         <li>
                                             <a href="javascript: void(0);" data-theme="light" class="setColor light">
-                                                <img class="sun-image"
-                                                    src="{{ asset('doob_template_assets/images/icons/sun-01.svg') }}"
-                                                    alt="Sun images">
+                                                    <img class="Victor Image"
+                                                    src="{{ asset('doob_template_assets/images/icons/vector.svg') }}"
+                                                    alt="Vector Images">
                                             </a>
                                         </li>
                                         <li>
                                             <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
-                                                <img class="Victor Image"
-                                                    src="{{ asset('doob_template_assets/images/icons/vector.svg') }}"
-                                                    alt="Vector Images">
+                                                <img class="sun-image"
+                                                    src="{{ asset('doob_template_assets/images/icons/sun-01.svg') }}"
+                                                    alt="Sun images">
                                             </a>
                                         </li>
                                     </ul>

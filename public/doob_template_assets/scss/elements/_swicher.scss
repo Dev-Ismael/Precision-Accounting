@@ -1,5 +1,5 @@
 /*--------------------------
-    Swicher Styles  
+    Swicher Styles
 ----------------------------*/
 
 .active-dark-mode .my_switcher ul li .setColor.dark {
@@ -58,6 +58,7 @@
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
+                    filter: brightness(100);
                 }
                 &.active {
                     display: none;
