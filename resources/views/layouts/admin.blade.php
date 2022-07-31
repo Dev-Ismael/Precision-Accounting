@@ -232,7 +232,7 @@
                                 </svg>
                             </span>
                         </span>
-                        <div class="multi-level collapse {{ Request::is('*/subscriber*') || Request::is('*/category*') ? 'show' : '' }}"
+                        <div class="multi-level collapse {{ Request::is('*/subscriber*') || Request::is('*/newsletter*') ? 'show' : '' }}"
                             role="list" id="newsletters" aria-expanded="false" style="">
                             <ul class="flex-column nav">
                                 <li class="nav-item">

@@ -6,10 +6,14 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Newsletter;
 use App\Http\Requests\StoreNewsletterRequest;
+use App\Mail\NewsletterMail;
+use App\Models\Subscriber;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Mail;
+
 
 class NewsletterController extends Controller
 {
@@ -59,12 +63,18 @@ class NewsletterController extends Controller
         // save all request in one variable
         $requestData = $request->all();
 
-        // return $requestData;
+        // Get All Subscribers
+        $subscribers = Subscriber::pluck('email')->toArray();
+
+
+        // Send Mail
+        Mail::to($subscribers)->            // Our Email 'reciver'
+        send( new NewsletterMail( $requestData ) );
 
         // Store in DB
         try {
             $newsletter = Newsletter::create( $requestData );
-                return Redirect::back()-> with( [ "success" => " Newsletter store successfully"] ) ;
+                return Redirect::back()-> with( [ "success" => " Newsletter sent successfully"] ) ;
             if(!$newsletter)
                 return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
         } catch (\Exception $e) {
