@@ -27,7 +27,7 @@ Route::get('/service/{slug}', [App\Http\Controllers\ServiceController::class, 'i
 Route::get('tax-center/{slug}', [App\Http\Controllers\TaxcenterController::class, 'index'])->name('tax_center');
 Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'index'])->name('resources');
 
-// Contact
+// subscribe
 Route::post('/subscribe', [App\Http\Controllers\SubscriberController::class, 'store'])->name('subscriber.store');
 
 
@@ -124,5 +124,17 @@ Route::group([ "prefix" => "admin" , 'middleware' => "admin" , "as" => "admin." 
     // setting
     Route::get('setting/edit' , [App\Http\Controllers\Admin\SettingController::class, 'edit'])->name("setting.edit");
     Route::put('setting/update' , [App\Http\Controllers\Admin\SettingController::class, 'update'])->name("setting.update");
+
+
+
+
+    // subscriber
+    Route::get('subscriber/perPage/{num}' , [App\Http\Controllers\Admin\SubscriberController::class, 'perPage'])->name("subscriber.perPage");
+    Route::post('subscriber/search' , [App\Http\Controllers\Admin\SubscriberController::class, 'search'])->name("subscriber.search");
+    Route::post('subscriber/multiAction' , [App\Http\Controllers\Admin\SubscriberController::class, 'multiAction'])->name("subscriber.multiAction");
+    Route::resource('subscriber', App\Http\Controllers\Admin\SubscriberController::class);
+    Route::get('subscriber/destroy/{id}' , [App\Http\Controllers\Admin\SubscriberController::class, 'destroy'] )->name("subscriber.destroy");
+
+
 
 });

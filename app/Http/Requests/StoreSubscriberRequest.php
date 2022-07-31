@@ -24,7 +24,7 @@ class StoreSubscriberRequest extends FormRequest
     public function rules()
     {
         return [
-            'email'      =>  ['required', 'string', 'email', 'max:55'],
+            'email'      =>  ['required', 'email', 'max:55', 'unique:subscribers'],
         ];
     }
 }

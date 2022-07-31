@@ -183,7 +183,7 @@
                         class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
                         {{-- Pagination --}}
                         <div class="d-flex justify-content-center">
-                            {{ $categories->withQueryString()->onEachSide(0)->links() }}
+                            {{ $categories->links('pagination::bootstrap-4') }}
                         </div>
                         <div class="fw-normal small mt-4 mt-lg-0">
                             Showing <b>{{ $categories->firstItem() }}</b> to <b>{{ $categories->lastItem() }}</b>
