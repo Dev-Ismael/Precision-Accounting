@@ -86,11 +86,11 @@ class ArticleController extends Controller
         // Store in DB
         try {
             $article = Article::create( $requestData );
-                return Redirect::back()-> with( [ "success" => " Article store successfully"] ) ;
+                return redirect() -> route("admin.article.index")-> with( [ "success" => " Article store successfully"] ) ;
             if(!$article)
-                return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+                return  redirect() -> route("admin.article.index")-> with( [ "failed" => "Error at store opration"] ) ;
         } catch (\Exception $e) {
-            return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+            return  redirect() -> route("admin.article.index")-> with( [ "failed" => "Error at store opration"] ) ;
         }
 
     }
@@ -159,11 +159,11 @@ class ArticleController extends Controller
         // Update Record in DB
         try {
             $update = $article-> update( $requestData );
-                return redirect() -> route("admin.article.index") -> with( [ "success" => " Article updated successfully"] ) ;
+                return redirect() -> route("admin.article.index")-> with( [ "success" => " Article updated successfully"] ) ;
             if(!$update)
-                return redirect() -> route("admin.article.index") -> with( [ "failed" => "Error at update opration"] ) ;
+                return redirect() -> route("admin.article.index")-> with( [ "failed" => "Error at update opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.article.index") -> with( [ "failed" => "Error at update opration"] ) ;
+            return redirect() -> route("admin.article.index")-> with( [ "failed" => "Error at update opration"] ) ;
         }
 
     }
@@ -182,11 +182,11 @@ class ArticleController extends Controller
         // Delete Record from DB
         try {
             $delete = $article->delete();
-                return redirect() -> route("admin.article.index") -> with( [ "success" => " Article deleted successfully"] ) ;
+                return redirect() -> route("admin.article.index")-> with( [ "success" => " Article deleted successfully"] ) ;
             if(!$delete)
-                return redirect() -> route("admin.article.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.article.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.article.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+            return redirect() -> route("admin.article.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         }
     }
 
@@ -234,11 +234,11 @@ class ArticleController extends Controller
         if( $request->action == "delete" ){
             try {
                 $delete = Article::destroy( $request->id );
-                    return redirect() -> route("admin.article.index") -> with( [ "success" => " Articles deleted successfully"] ) ;
+                    return redirect() -> route("admin.article.index")-> with( [ "success" => " Articles deleted successfully"] ) ;
                 if(!$delete)
-                    return redirect() -> route("admin.article.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                    return redirect() -> route("admin.article.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             } catch (\Exception $e) {
-                return redirect() -> route("admin.article.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.article.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             }
         }
 

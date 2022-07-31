@@ -7812,8 +7812,8 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 .list-icon li .icon i {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -13883,7 +13883,7 @@ div.pagination-container li.active .page-link {
             Template
 ***************************************/
 /*------------------------
-    Banner Styles  
+    Banner Styles
 -------------------------*/
 .slider-dot.rn-slick-dot .slick-dots {
   bottom: 60px;
@@ -14073,7 +14073,7 @@ div.pagination-container li.active .page-link {
 }
 
 /*-----------------------
-    Slider Style One  
+    Slider Style One
 -------------------------*/
 .slider-style-1 .inner .subtitle {
   font-family: var(--font-primary);
@@ -14153,7 +14153,7 @@ div.pagination-container li.active .page-link {
   color: var(--color-body);
 }
 .slider-style-1 .inner .list-icon li .icon {
-  background-color: var(--color-blackest) !important;
+  background-color: #113b61 !important;
 }
 .slider-style-1 .inner .header-caption span {
   color: var(--color-white);
@@ -15233,11 +15233,11 @@ body.active-light-mode .bg-overlay-solid::before {
   background: #f5f8fa;
 }
 
-body.active-light-mode .rn-header .logo a img.logo-light {
-  display: block;
-}
+/*==============================================
+========== Customize Light Theme ===============
+==============================================*/
 body.active-light-mode .rn-header .logo a img.logo-dark {
-  display: none;
+  display: block;
 }
 
 body.active-light-mode .rn-header.sticky {
@@ -15248,6 +15248,10 @@ body.active-light-mode .rn-header.sticky .logo a img.logo-light {
 }
 body.active-light-mode .rn-header.sticky .logo a img.logo-dark {
   display: block;
+}
+
+body.active-dark-mode .bg_image--5 {
+  background-image: url(../images/bg/bg-image-5-dark.jpg);
 }
 
 body.active-light-mode .bg-color-blackest {

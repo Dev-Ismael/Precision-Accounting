@@ -11,9 +11,9 @@
                 <div class="col-lg-12">
                     <div class="inner text-left">
                         <h4 class="subtitle">
-                            <span class="theme-gradient">PRECISION ACCOUNTING INTL LLC</span>
+                            <span >PRECISION ACCOUNTING INTL LLC</span>
                         </h4>
-                        <h1 class="title display-one">Your Success Is Our Proiority.</h1>
+                        <h2 class="title" style="font-size: 65px">Your Success Is Our Proiority.</h2>
                         <ul class="list-icon">
                             <li>
                                 <span class="icon background-transparent">
@@ -645,7 +645,7 @@
                                     <h2 class="title">Keep in touch with our expert CPAs</h2>
                                     {{-- <h6 class="subtitle">MEET WITH US</h6> --}}
                                     <div class="call-to-btn">
-                                        <a class="btn-default btn-icon" href="#">MEET WITH US
+                                        <a class="btn-default btn-icon" href="{{ route("consulting") }}">MEET WITH US
                                             <i class="feather-arrow-right"></i>
                                         </a>
                                     </div>

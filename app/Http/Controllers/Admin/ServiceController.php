@@ -91,11 +91,11 @@ class ServiceController extends Controller
         // Store in DB
         try {
             $service = Service::create( $requestData );
-                return Redirect::back()-> with( [ "success" => " Service store successfully"] ) ;
+                return redirect() -> route("admin.service.index")-> with( [ "success" => " Service store successfully"] ) ;
             if(!$service)
-                return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+                return redirect() -> route("admin.service.index")-> with( [ "failed" => "Error at store opration"] ) ;
         } catch (\Exception $e) {
-            return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+            return redirect() -> route("admin.service.index")-> with( [ "failed" => "Error at store opration"] ) ;
         }
 
     }
@@ -170,7 +170,7 @@ class ServiceController extends Controller
         $requestData['img']  = $img_name;
         $requestData['icon'] = $icon_name;
 
-        
+
         // add slug in $requestData Array
         $requestData += [ 'slug' => Str::slug( $request->title , '-') ];
 
@@ -180,11 +180,11 @@ class ServiceController extends Controller
         // Update Record in DB
         try {
             $update = $service-> update( $requestData );
-                return redirect() -> route("admin.service.index") -> with( [ "success" => " Service updated successfully"] ) ;
+                return redirect() -> route("admin.service.index")-> with( [ "success" => " Service updated successfully"] ) ;
             if(!$update)
-                return redirect() -> route("admin.service.index") -> with( [ "failed" => "Error at update opration"] ) ;
+                return redirect() -> route("admin.service.index")-> with( [ "failed" => "Error at update opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.service.index") -> with( [ "failed" => "Error at update opration"] ) ;
+            return redirect() -> route("admin.service.index")-> with( [ "failed" => "Error at update opration"] ) ;
         }
 
     }
@@ -203,11 +203,11 @@ class ServiceController extends Controller
         // Delete Record from DB
         try {
             $delete = $service->delete();
-                return redirect() -> route("admin.service.index") -> with( [ "success" => " Service deleted successfully"] ) ;
+                return redirect() -> route("admin.service.index")-> with( [ "success" => " Service deleted successfully"] ) ;
             if(!$delete)
-                return redirect() -> route("admin.service.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.service.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.service.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+            return redirect() -> route("admin.service.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         }
     }
 
@@ -255,11 +255,11 @@ class ServiceController extends Controller
         if( $request->action == "delete" ){
             try {
                 $delete = Service::destroy( $request->id );
-                    return redirect() -> route("admin.service.index") -> with( [ "success" => " Services deleted successfully"] ) ;
+                    return redirect() -> route("admin.service.index")-> with( [ "success" => " Services deleted successfully"] ) ;
                 if(!$delete)
-                    return redirect() -> route("admin.service.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                    return redirect() -> route("admin.service.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             } catch (\Exception $e) {
-                return redirect() -> route("admin.service.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.service.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             }
         }
 

@@ -153,7 +153,7 @@
                                 </nav>
                                 <!-- Start Header Btn  -->
                                 <div class="header-btn"><a class="btn-default text-uppercase rounded-0"
-                                        target="_blank" href="#">Free Consulting</a></div>
+                                        target="_blank" href="{{ route("consulting") }}">Free Consulting</a></div>
                                 <!-- End Header Btn  -->
 
                                 <!-- Start Mobile-Menu-Bar -->
@@ -398,13 +398,10 @@
                         <div class="copyright-left">
                             <ul class="ft-menu link-hover">
                                 <li>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                    <a href="{{ route("consulting") }}">Consulting</a>
                                 </li>
                                 <li>
-                                    <a href="#">Terms And Condition</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact Us</a>
+                                    <a href="{{ route("resources") }}">Resources</a>
                                 </li>
                             </ul>
                         </div>

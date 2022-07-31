@@ -352,12 +352,12 @@ body.active-light-mode .mainmenu-nav .mainmenu .sub-menu,
 body.active-light-mode .bg-overlay-solid::before {
     background: #f5f8fa;
 }
+/*==============================================
+========== Customize Light Theme ===============
+==============================================*/
 body.active-light-mode .rn-header{
-    .logo a img.logo-light {
-        display: block;
-    }
     .logo a img.logo-dark {
-        display: none;
+        display: block;
     }
 }
 body.active-light-mode .rn-header.sticky {
@@ -370,9 +370,10 @@ body.active-light-mode .rn-header.sticky {
     .logo a img.logo-dark {
         display: block;
     }
-
 }
-
+body.active-dark-mode .bg_image--5{
+    background-image: url(../images/bg/bg-image-5-dark.jpg);
+}
 
 body.active-light-mode .bg-color-blackest {
     background: #f5f8fa !important;

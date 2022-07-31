@@ -19,6 +19,6 @@ class checkAdminAuth
     {
         if( Auth::user() && Auth::user()->is_admin === "1" )
         return $next($request);
-        return redirect()->route('home');
+        return redirect()->route('login');
     }
 }

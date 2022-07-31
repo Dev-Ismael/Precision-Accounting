@@ -74,11 +74,11 @@ class NewsletterController extends Controller
         // Store in DB
         try {
             $newsletter = Newsletter::create( $requestData );
-                return Redirect::back()-> with( [ "success" => " Newsletter sent successfully"] ) ;
+                return redirect() -> route("admin.newsletter.index")-> with( [ "success" => "Newsletter sent successfully"] ) ;
             if(!$newsletter)
-                return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+            return redirect() -> route("admin.newsletter.index")-> with( [ "failed" => "Error at sent opration"] ) ;
         } catch (\Exception $e) {
-            return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+            return redirect() -> route("admin.newsletter.index")-> with( [ "failed" => "Error at sent opration"] ) ;
         }
 
     }
@@ -112,11 +112,11 @@ class NewsletterController extends Controller
         // Delete Record from DB
         try {
             $delete = $newsletter->delete();
-                return redirect() -> route("admin.newsletter.index") -> with( [ "success" => " Newsletter deleted successfully"] ) ;
+                return redirect() -> route("admin.newsletter.index")-> with( [ "success" => " Newsletter deleted successfully"] ) ;
             if(!$delete)
-                return redirect() -> route("admin.newsletter.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.newsletter.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.newsletter.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+            return redirect() -> route("admin.newsletter.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         }
     }
 
@@ -164,11 +164,11 @@ class NewsletterController extends Controller
         if( $request->action == "delete" ){
             try {
                 $delete = Newsletter::destroy( $request->id );
-                    return redirect() -> route("admin.newsletter.index") -> with( [ "success" => " Newsletters deleted successfully"] ) ;
+                    return redirect() -> route("admin.newsletter.index")-> with( [ "success" => " Newsletters deleted successfully"] ) ;
                 if(!$delete)
-                    return redirect() -> route("admin.newsletter.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                    return redirect() -> route("admin.newsletter.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             } catch (\Exception $e) {
-                return redirect() -> route("admin.newsletter.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.newsletter.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             }
         }
 

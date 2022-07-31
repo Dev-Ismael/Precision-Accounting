@@ -74,11 +74,11 @@ class TestimonialController extends Controller
         // Store in DB
         try {
             $testimonial = Testimonial::create( $requestData );
-                return Redirect::back()-> with( [ "success" => " Testimonial store successfully"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "success" => " Testimonial store successfully"] ) ;
             if(!$testimonial)
-                return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at store opration"] ) ;
         } catch (\Exception $e) {
-            return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+            return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at store opration"] ) ;
         }
 
     }
@@ -143,11 +143,11 @@ class TestimonialController extends Controller
         // Update Record in DB
         try {
             $update = $testimonial-> update( $requestData );
-                return redirect() -> route("admin.testimonial.index") -> with( [ "success" => " Testimonial updated successfully"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "success" => " Testimonial updated successfully"] ) ;
             if(!$update)
-                return redirect() -> route("admin.testimonial.index") -> with( [ "failed" => "Error at update opration"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at update opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.testimonial.index") -> with( [ "failed" => "Error at update opration"] ) ;
+            return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at update opration"] ) ;
         }
 
     }
@@ -166,11 +166,11 @@ class TestimonialController extends Controller
         // Delete Record from DB
         try {
             $delete = $testimonial->delete();
-                return redirect() -> route("admin.testimonial.index") -> with( [ "success" => " Testimonial deleted successfully"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "success" => " Testimonial deleted successfully"] ) ;
             if(!$delete)
-                return redirect() -> route("admin.testimonial.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.testimonial.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+            return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         }
     }
 
@@ -218,11 +218,11 @@ class TestimonialController extends Controller
         if( $request->action == "delete" ){
             try {
                 $delete = Testimonial::destroy( $request->id );
-                    return redirect() -> route("admin.testimonial.index") -> with( [ "success" => " Testimonials deleted successfully"] ) ;
+                    return redirect() -> route("admin.testimonial.index")-> with( [ "success" => " Testimonials deleted successfully"] ) ;
                 if(!$delete)
-                    return redirect() -> route("admin.testimonial.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                    return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             } catch (\Exception $e) {
-                return redirect() -> route("admin.testimonial.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             }
         }
 
@@ -230,11 +230,11 @@ class TestimonialController extends Controller
         if( $request->action == "visible" ){
             try {
                 $visible = Testimonial::whereIn('id', $request->id )->update([ 'visibility' => '1' ]);
-                return redirect() -> route("admin.testimonial.index") -> with( [ "success" => " Testimonials deleted successfully"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "success" => " Testimonials deleted successfully"] ) ;
                 if(!$visible)
-                return redirect() -> route("admin.testimonial.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             } catch (\Exception $e) {
-                return redirect() -> route("admin.testimonial.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             }
         }
 
@@ -242,11 +242,11 @@ class TestimonialController extends Controller
         if( $request->action == "invisible" ){
             try {
                 $invisible = Testimonial::whereIn('id', $request->id )->update([ 'visibility' => '0' ]);
-                return redirect() -> route("admin.testimonial.index") -> with( [ "success" => " Testimonials deleted successfully"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "success" => " Testimonials deleted successfully"] ) ;
                 if(!$invisible)
-                return redirect() -> route("admin.testimonial.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             } catch (\Exception $e) {
-                return redirect() -> route("admin.testimonial.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.testimonial.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             }
         }
 

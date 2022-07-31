@@ -47,11 +47,11 @@ class SubscriberController extends Controller
         // Delete Record from DB
         try {
             $delete = $subscriber->delete();
-                return redirect() -> route("admin.subscriber.index") -> with( [ "success" => " Subscriber deleted successfully"] ) ;
+                return redirect() -> route("admin.subscriber.index")-> with( [ "success" => " Subscriber deleted successfully"] ) ;
             if(!$delete)
-                return redirect() -> route("admin.subscriber.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.subscriber.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.subscriber.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+            return redirect() -> route("admin.subscriber.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         }
     }
 
@@ -99,11 +99,11 @@ class SubscriberController extends Controller
         if( $request->action == "delete" ){
             try {
                 $delete = Subscriber::destroy( $request->id );
-                    return redirect() -> route("admin.subscriber.index") -> with( [ "success" => " Subscribers deleted successfully"] ) ;
+                    return redirect() -> route("admin.subscriber.index")-> with( [ "success" => " Subscribers deleted successfully"] ) ;
                 if(!$delete)
-                    return redirect() -> route("admin.subscriber.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                    return redirect() -> route("admin.subscriber.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             } catch (\Exception $e) {
-                return redirect() -> route("admin.subscriber.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.subscriber.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             }
         }
 

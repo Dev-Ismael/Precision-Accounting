@@ -74,11 +74,11 @@ class ResourceController extends Controller
         // Store in DB
         try {
             $resource = Resource::create( $requestData );
-                return Redirect::back()-> with( [ "success" => " Resource store successfully"] ) ;
+                return redirect() -> route("admin.resource.index")-> with( [ "success" => " Resource store successfully"] ) ;
             if(!$resource)
-                return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+                return redirect() -> route("admin.resource.index")-> with( [ "failed" => "Error at store opration"] ) ;
         } catch (\Exception $e) {
-            return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+            return redirect() -> route("admin.resource.index")-> with( [ "failed" => "Error at store opration"] ) ;
         }
 
     }
@@ -143,11 +143,11 @@ class ResourceController extends Controller
         // Update Record in DB
         try {
             $update = $resource-> update( $requestData );
-                return redirect() -> route("admin.resource.index") -> with( [ "success" => " Resource updated successfully"] ) ;
+                return redirect() -> route("admin.resource.index")-> with( [ "success" => " Resource updated successfully"] ) ;
             if(!$update)
-                return redirect() -> route("admin.resource.index") -> with( [ "failed" => "Error at update opration"] ) ;
+                return redirect() -> route("admin.resource.index")-> with( [ "failed" => "Error at update opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.resource.index") -> with( [ "failed" => "Error at update opration"] ) ;
+            return redirect() -> route("admin.resource.index")-> with( [ "failed" => "Error at update opration"] ) ;
         }
 
     }
@@ -166,11 +166,11 @@ class ResourceController extends Controller
         // Delete Record from DB
         try {
             $delete = $resource->delete();
-                return redirect() -> route("admin.resource.index") -> with( [ "success" => " Resource deleted successfully"] ) ;
+                return redirect() -> route("admin.resource.index")-> with( [ "success" => " Resource deleted successfully"] ) ;
             if(!$delete)
-                return redirect() -> route("admin.resource.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.resource.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.resource.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+            return redirect() -> route("admin.resource.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         }
     }
 
@@ -218,11 +218,11 @@ class ResourceController extends Controller
         if( $request->action == "delete" ){
             try {
                 $delete = Resource::destroy( $request->id );
-                    return redirect() -> route("admin.resource.index") -> with( [ "success" => " Resources deleted successfully"] ) ;
+                    return redirect() -> route("admin.resource.index")-> with( [ "success" => " Resources deleted successfully"] ) ;
                 if(!$delete)
-                    return redirect() -> route("admin.resource.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                    return redirect() -> route("admin.resource.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             } catch (\Exception $e) {
-                return redirect() -> route("admin.resource.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.resource.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             }
         }
 

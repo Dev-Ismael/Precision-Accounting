@@ -68,11 +68,11 @@ class CategoryController extends Controller
         // Store in DB
         try {
             $category = Category::create( $requestData );
-                return Redirect::back()-> with( [ "success" => " Category store successfully"] ) ;
+                return  redirect() -> route("admin.category.index")-> with( [ "success" => " Category store successfully"] ) ;
             if(!$category)
-                return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+                return  redirect() -> route("admin.category.index")-> with( [ "failed" => "Error at store opration"] ) ;
         } catch (\Exception $e) {
-            return Redirect::back()-> with( [ "failed" => "Error at store opration"] ) ;
+            return  redirect() -> route("admin.category.index")-> with( [ "failed" => "Error at store opration"] ) ;
         }
 
     }
@@ -126,11 +126,11 @@ class CategoryController extends Controller
         // Update Record in DB
         try {
             $update = $category-> update( $requestData );
-                return redirect() -> route("admin.category.index") -> with( [ "success" => " Category updated successfully"] ) ;
+                return redirect() -> route("admin.category.index")-> with( [ "success" => " Category updated successfully"] ) ;
             if(!$update)
-                return redirect() -> route("admin.category.index") -> with( [ "failed" => "Error at update opration"] ) ;
+                return redirect() -> route("admin.category.index")-> with( [ "failed" => "Error at update opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.category.index") -> with( [ "failed" => "Error at update opration"] ) ;
+            return redirect() -> route("admin.category.index")-> with( [ "failed" => "Error at update opration"] ) ;
         }
 
     }
@@ -149,11 +149,11 @@ class CategoryController extends Controller
         // Delete Record from DB
         try {
             $delete = $category->delete();
-                return redirect() -> route("admin.category.index") -> with( [ "success" => " Category deleted successfully"] ) ;
+                return redirect() -> route("admin.category.index")-> with( [ "success" => " Category deleted successfully"] ) ;
             if(!$delete)
-                return redirect() -> route("admin.category.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.category.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         } catch (\Exception $e) {
-            return redirect() -> route("admin.category.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+            return redirect() -> route("admin.category.index")-> with( [ "failed" => "Error at delete opration"] ) ;
         }
     }
 
@@ -201,11 +201,11 @@ class CategoryController extends Controller
         if( $request->action == "delete" ){
             try {
                 $delete = Category::destroy( $request->id );
-                    return redirect() -> route("admin.category.index") -> with( [ "success" => " Categories deleted successfully"] ) ;
+                    return redirect() -> route("admin.category.index")-> with( [ "success" => " Categories deleted successfully"] ) ;
                 if(!$delete)
-                    return redirect() -> route("admin.category.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                    return redirect() -> route("admin.category.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             } catch (\Exception $e) {
-                return redirect() -> route("admin.category.index") -> with( [ "failed" => "Error at delete opration"] ) ;
+                return redirect() -> route("admin.category.index")-> with( [ "failed" => "Error at delete opration"] ) ;
             }
         }
 
