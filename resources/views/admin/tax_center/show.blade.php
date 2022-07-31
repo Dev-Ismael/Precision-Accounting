@@ -60,7 +60,7 @@
                                             <td> {{ $tax_center->title != "" ? $tax_center->title : '-'  }} </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-capitalize content"> <i class="fa-solid fa-cart-flatbed"></i> Content </td>
+                                            <td class="text-capitalize content"> <i class="fa-solid fa-align-left"></i> Content </td>
                                             <td> {!! $tax_center->content !!} </td>
                                         </tr>
                                     </tbody>

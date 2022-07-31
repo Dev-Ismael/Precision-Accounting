@@ -75,7 +75,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-capitalize content"> <i class="fa-solid fa-cart-flatbed"></i> Content </td>
+                                            <td class="text-capitalize content"> <i class="fa-solid fa-align-left"></i> Content </td>
                                             <td> {!! $testimonial->content !!} </td>
                                         </tr>
                                     </tbody>
