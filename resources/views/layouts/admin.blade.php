@@ -216,15 +216,6 @@
                             <span class="sidebar-text">Testimonials</span>
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a href="{{ route('admin.setting.edit') }}"
-                            class="nav-link {{ Request::is('*/setting*') ? 'active' : '' }}">
-                            <span class="sidebar-icon">
-                                <i class="fa-solid fa-gear"></i>
-                            </span>
-                            <span class="sidebar-text">Settings</span>
-                        </a>
-                    </li>
                     <li class="nav-item">
                         <span class="nav-link d-flex justify-content-between align-items-center collapsed"
                             data-bs-toggle="collapse" data-bs-target="#newsletters" aria-expanded="false">
@@ -257,19 +248,28 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('*/article*') ? 'active' : '' }}"
-                                        href="{{ route('admin.article.index') }}">
+                                    <a class="nav-link {{ Request::is('*/newsletter*') ? 'active' : '' }}"
+                                        href="{{ route('admin.newsletter.index') }}">
                                         <span class="sidebar-text-contracted">
                                             <i class="fa-solid fa-envelope"></i>
                                         </span>
                                         <span class="sidebar-text">
                                             <i class="fa-solid fa-envelope"></i>
-                                            Emails
+                                            Mails
                                         </span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="{{ route('admin.setting.edit') }}"
+                            class="nav-link {{ Request::is('*/setting*') ? 'active' : '' }}">
+                            <span class="sidebar-icon">
+                                <i class="fa-solid fa-gear"></i>
+                            </span>
+                            <span class="sidebar-text">Settings</span>
+                        </a>
                     </li>
                 </ul>
             </div>

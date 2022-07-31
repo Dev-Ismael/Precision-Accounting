@@ -137,4 +137,15 @@ Route::group([ "prefix" => "admin" , 'middleware' => "admin" , "as" => "admin." 
 
 
 
+    // newsletter
+    Route::get('newsletter/perPage/{num}' , [App\Http\Controllers\Admin\NewsletterController::class, 'perPage'])->name("newsletter.perPage");
+    Route::post('newsletter/search' , [App\Http\Controllers\Admin\NewsletterController::class, 'search'])->name("newsletter.search");
+    Route::post('newsletter/multiAction' , [App\Http\Controllers\Admin\NewsletterController::class, 'multiAction'])->name("newsletter.multiAction");
+    Route::resource('newsletter', App\Http\Controllers\Admin\NewsletterController::class);
+    Route::get('newsletter/destroy/{id}' , [App\Http\Controllers\Admin\NewsletterController::class, 'destroy'] )->name("newsletter.destroy");
+
+
+
+
+
 });

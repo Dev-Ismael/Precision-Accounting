@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('seo_title', 500);
             $table->string('seo_description', 500);
             $table->string('seo_keywords', 500);
-            $table->text('content', 5000);
+            $table->text('content');
             $table->string('img');
             $table->timestamps();
         });

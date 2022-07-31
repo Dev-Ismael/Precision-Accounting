@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('seo_keywords', 500);
             $table->string('summary', 255 );
             $table->integer('parent_id')->nullable();
-            $table->text('content', 5000);
+            $table->text('content');
             $table->string('icon');
             $table->string('img');
             $table->timestamps();

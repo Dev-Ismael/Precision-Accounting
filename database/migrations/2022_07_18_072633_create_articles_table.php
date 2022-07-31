@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('category_id');
             $table->string('title', 100 )->index();
             $table->string('slug')->index();
-            $table->text('content', 5000);
+            $table->text('content');
             $table->string('seo_title', 500);
             $table->string('seo_description', 500);
             $table->string('seo_keywords', 500);

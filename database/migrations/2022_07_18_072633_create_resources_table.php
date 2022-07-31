@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('resources', function (Blueprint $table) {
             $table->id();
             $table->string('title', 100 )->index();
-            $table->text('content', 5000);
+            $table->text('content');
             $table->string('img');
             $table->timestamps();
         });
