@@ -13247,7 +13247,7 @@ div.pagination-container li.active .page-link {
             Blog
 ***************************************/
 /*----------------------
-    Blog Styles  
+    Blog Styles
 -----------------------*/
 .rn-card {
   position: relative;
@@ -13401,6 +13401,27 @@ div.pagination-container li.active .page-link {
 }
 .rn-meta-list li.separator {
   margin: 0 0.8rem;
+}
+
+/*=============================================================
+============= Customize style at Blog
+=============================================================*/
+.rn-magazine-area .middle-post a.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.rn-magazine-area .middle-post:hover a {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 .blog-search {

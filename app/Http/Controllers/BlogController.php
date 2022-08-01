@@ -22,7 +22,8 @@ class BlogController extends Controller
         $articles        = Article::orderBy('id','desc')->paginate(10);
         $categories      = Category::all();
         $lasted_articles = Article::orderBy('id','desc')->limit(5)->get();
-        // return $categories;
+        $pinned_articles = Article::where('pinned','1')->orderBy('id','desc')->limit(5)->get();
+        // return $pinned_articles[0];
 
         // SEO Trait
         $this->staticPagesSeo(
@@ -32,7 +33,7 @@ class BlogController extends Controller
         );
 
 
-        return view('blog',compact('categories','lasted_articles','articles'));
+        return view('blog',compact('categories','lasted_articles','articles','pinned_articles'));
     }
 
     public function article($slug)
