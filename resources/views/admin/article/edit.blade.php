@@ -66,7 +66,7 @@
                                         <!----------------- Catrgory_id -------------------->
                                         <div class="mb-4 input-content">
                                             <label for="category_id" class="capitalize"> <i class="fa-solid fa-code-branch"></i> Parent Service (Optional) </label>
-                                            <select class="form-select form-control @error('category_id') is-invalid @enderror" name="category_id" id="service"  aria-label="Default select example" >
+                                            <select class="form-select form-control @error('category_id') is-invalid @enderror" name="category_id" id="category"  aria-label="Default select example" >
                                                 <option></option>
                                                 @foreach ( $categories as $category )
                                                     <option value="{{ $category->id }}"  {{ $category->id == $article->category->id ? "selected" : "" }} >{{ $category->title }}</option>
@@ -83,6 +83,22 @@
                                             <label for="content" class="capitalize"> <i class="fa-solid fa-align-left"></i> Article Content </label>
                                             <textarea type="text" name="content" id="CKEditor_Content" rows="5" class="form-control @error('content') is-invalid @enderror" aria-describedby="emailHelp" placeholder="Type Article Content..." autocomplete="nope" >{{ $article->content }}</textarea>
                                             @error('content')
+                                                <small class="form-text text-danger">{{ $message }}</small>
+                                            @enderror
+                                        </div>
+
+
+
+
+                                        <!----------------- pinned -------------------->
+                                        <div class="mb-4 input-content">
+                                            <label for="pinned" class="capitalize"> <i class="fa-solid fa-thumbtack"></i> Pinned Article In Top </label>
+                                            <select class="form-select form-control @error('pinned') is-invalid @enderror" name="pinned" id="pinned"  aria-label="Default select example" >
+                                                <option></option>
+                                                <option value="0" {{ $article->pinned == '0' ? "selected" : "" }}> No </option>
+                                                <option value="1" {{ $article->pinned == '1' ? "selected" : "" }}> Yes </option>
+                                            </select>
+                                            @error('pinned')
                                                 <small class="form-text text-danger">{{ $message }}</small>
                                             @enderror
                                         </div>

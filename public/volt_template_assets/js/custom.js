@@ -55,6 +55,14 @@ $(document).ready(function () {
     $("select#visibility").select2( {
 
     });
+    // Article , Category
+    $("select#category").select2( {
+        placeholder: "Choose Article Category...",
+    });
+    // Article , Pin
+    $("select#pinned").select2( {
+        placeholder: "Choose Article Status...",
+    });
 
 
 });

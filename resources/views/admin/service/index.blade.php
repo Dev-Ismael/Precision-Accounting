@@ -160,7 +160,13 @@
                                     </td>
                                     <td><a href="{{ route('admin.service.show', $service->id) }}" class="d-flex align-items-center">
                                             <div class="d-block">
-                                                <span class="fw-bold">{{ $service->title }}</span>
+                                                <span class="fw-bold">
+                                                    @if ( strlen($service->title) > 30 )
+                                                        {{ Str::ucfirst( substr( $service->title , 0, 30 )) }}...
+                                                    @else
+                                                        {{  Str::ucfirst( $service->title ) }}
+                                                    @endif
+                                                </span>
                                                 <div class="small text-gray">{{ $service->email }}</div>
                                             </div>
                                         </a></td>

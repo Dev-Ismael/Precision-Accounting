@@ -161,7 +161,13 @@
                                     </td>
                                     <td><a href="{{ route('admin.newsletter.show', $newsletter->id) }}" class="d-flex align-items-center">
                                             <div class="d-block">
-                                                <span class="fw-bold">{{ $newsletter->subject }}</span>
+                                                <span class="fw-bold">
+                                                    @if ( strlen($newsletter->title) > 30 )
+                                                        {{ Str::ucfirst( substr( $newsletter->title , 0, 30 )) }}...
+                                                    @else
+                                                        {{  Str::ucfirst( $newsletter->title ) }}
+                                                    @endif
+                                                </span>
                                                 <div class="small text-gray">{{ $newsletter->email }}</div>
                                             </div>
                                         </a></td>

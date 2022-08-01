@@ -149,6 +149,7 @@
                                     </div>
                                 </th>
                                 <th class="border-bottom">Title</th>
+                                <th class="border-bottom">Pinned</th>
                                 <th class="border-bottom">Date Created</th>
                                 <th class="border-bottom">Action</th>
                             </tr>
@@ -164,10 +165,23 @@
                                     </td>
                                     <td><a href="{{ route('admin.article.show', $article->id) }}" class="d-flex align-items-center">
                                             <div class="d-block">
-                                                <span class="fw-bold">{{ $article->title }}</span>
+                                                <span class="fw-bold">
+                                                    @if ( strlen($article->title) > 30 )
+                                                        {{ Str::ucfirst( substr( $article->title , 0, 30 )) }}...
+                                                    @else
+                                                        {{  Str::ucfirst( $article->title ) }}
+                                                    @endif
+                                                </span>
                                                 <div class="small text-gray">{{ $article->email }}</div>
                                             </div>
                                         </a></td>
+                                        <td>
+                                            @if ( $article->pinned === "0" )
+                                                <i class="fa-solid fa-minus fa-2x"></i>
+                                            @else
+                                                <span class="text-success"> <i class="fa-regular fa-circle-check fa-2x"></i> </span>
+                                            @endif
+                                        </td>
                                     <td><span class="fw-normal">{{ $article->created_at }}</span></td>
                                     <td class="actions">
                                         <a href="{{ route('admin.article.show', $article->id) }}" class="text-tertiary"> <i

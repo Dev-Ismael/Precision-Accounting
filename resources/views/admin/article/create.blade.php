@@ -15,7 +15,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Admin</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('admin.article.index') }}">Resources</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('admin.article.index') }}">Articles</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Create</li>
             </ol>
         </nav>
@@ -63,7 +63,7 @@
                                         <!----------------- Category_id -------------------->
                                         <div class="mb-4 input-content">
                                             <label for="category_id" class="capitalize"> <i class="fa-solid fa-code-branch"></i> Category </label>
-                                            <select class="form-select form-control @error('category_id') is-invalid @enderror" name="category_id" id="service"  aria-label="Default select example" >
+                                            <select class="form-select form-control @error('category_id') is-invalid @enderror" name="category_id" id="category"  aria-label="Default select example" >
                                                 <option></option>
                                                 @foreach ( $categories as $category )
                                                     <option value="{{ $category->id }}"  {{ old('category_id') == $category->id ? "selected" : "" }} >{{ $category->title }}</option>
@@ -74,17 +74,29 @@
                                             @enderror
                                         </div>
 
-                                        
+
                                         <!----------------- Content -------------------->
                                         <div class="mb-4 input-content">
                                             <label for="content" class="capitalize"> <i class="fa-solid fa-align-left"></i> Article Content </label>
-                                            <textarea type="text" name="content" id="CKEditor_Content" rows="5" class="form-control @error('    ') is-invalid @enderror" aria-describedby="emailHelp" placeholder="Type Article Content..." autocomplete="nope" >{{ old('content') }}</textarea>
+                                            <textarea type="text" name="content" id="CKEditor_Content" rows="5" class="form-control @error('content') is-invalid @enderror" aria-describedby="emailHelp" placeholder="Type Article Content..." autocomplete="nope" >{{ old('content') }}</textarea>
                                             @error('content')
                                                 <small class="form-text text-danger">{{ $message }}</small>
                                             @enderror
                                         </div>
 
 
+                                        <!----------------- pinned -------------------->
+                                        <div class="mb-4 input-content">
+                                            <label for="pinned" class="capitalize"> <i class="fa-solid fa-thumbtack"></i> Pinned Article In Top </label>
+                                            <select class="form-select form-control @error('pinned') is-invalid @enderror" name="pinned" id="pinned"  aria-label="Default select example" >
+                                                <option></option>
+                                                <option value="0" {{ old('pinned') == '0' ? "selected" : "" }}> No </option>
+                                                <option value="1" {{ old('pinned') == '1' ? "selected" : "" }}> Yes </option>
+                                            </select>
+                                            @error('pinned')
+                                                <small class="form-text text-danger">{{ $message }}</small>
+                                            @enderror
+                                        </div>
 
                                         <!----------------- Seo Title -------------------->
                                         <div class="mb-4 input-content">

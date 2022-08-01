@@ -29,7 +29,7 @@ class StoreTestimonialRequest extends FormRequest
             'job_title'      => ['required' , 'string' , 'max:100' ],
             'visibility'     => ['required' , 'integer' , 'max:1' ],
             'content'        => ['required' , 'string' , 'max:1000'],
-                'img'            => ['required' , 'mimes:jpeg,png,jpg' , 'max:2048'],
+            'img'            => ['required' , 'mimes:jpeg,png,jpg' , 'max:2048'],
         ];
     }
 }

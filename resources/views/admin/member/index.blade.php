@@ -173,7 +173,14 @@
                                     <td><a href="{{ route('admin.member.show', $member->id) }}" class="d-flex align-items-center"><img
                                                 src="{{ asset('images/members/' . $member->img) }}"
                                                 class="avatar rounded-circle me-3" alt="member-image">
-                                            <div class="d-block"><span class="fw-bold">{{ $member->name }}</span>
+                                            <div class="d-block">
+                                                <span class="fw-bold">
+                                                    @if ( strlen($member->title) > 30 )
+                                                        {{ Str::ucfirst( substr( $member->title , 0, 30 )) }}...
+                                                    @else
+                                                        {{  Str::ucfirst( $member->title ) }}
+                                                    @endif
+                                                </span>
                                                 <div class="small text-gray">{{ $member->job_title }}</div>
                                             </div>
                                         </a></td>

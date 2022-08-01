@@ -31,7 +31,7 @@ class UpdateServiceRequest extends FormRequest
             'seo_description' => ['required' , 'string' , 'max:500'],
             'seo_keywords'    => ['required' , 'string' , 'max:500'],
             'parent_id'       => ['nullable' , 'numeric' , 'digits_between:1,11' ],
-            'content'         => ['required' , 'string' , 'max:5000'],
+            'content'         => ['required' , 'string' , 'max:10000'],
             'icon'            => ['nullable' , 'mimes:jpeg,png,jpg' , 'max:2048'],
             'img'             => ['nullable' , 'mimes:jpeg,png,jpg' , 'max:2048'],
         ];

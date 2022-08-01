@@ -26,7 +26,7 @@ class StoreNewsletterRequest extends FormRequest
     {
         return [
             'subject'         => ['required' , 'string' , 'max:100' , Rule::unique('newsletters', 'subject')->ignore($this->newsletter)],
-            'content'         => ['required' , 'string' , 'max:5000'],
+            'content'         => ['required' , 'string' , 'max:10000'],
         ];
     }
 }

@@ -164,7 +164,14 @@
                                     <td><a href="{{ route('admin.testimonial.show', $testimonial->id) }}" class="d-flex align-items-center"><img
                                         src="{{ asset('images/testimonials/' . $testimonial->img) }}"
                                         class="avatar rounded-circle me-3" alt="testimonail-image">
-                                    <div class="d-block"><span class="fw-bold">{{ $testimonial->name }}</span>
+                                    <div class="d-block">
+                                        <span class="fw-bold">
+                                            @if ( strlen($testimonial->title) > 30 )
+                                                {{ Str::ucfirst( substr( $testimonial->title , 0, 30 )) }}...
+                                            @else
+                                                {{  Str::ucfirst( $testimonial->title ) }}
+                                            @endif
+                                        </span>
                                         <div class="small text-gray">{{ $testimonial->job_title }}</div>
                                     </div>
                                 </a></td>

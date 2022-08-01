@@ -160,7 +160,13 @@
                                     </td>
                                     <td><a href="{{ route('admin.resource.show', $resource->id) }}" class="d-flex align-items-center">
                                             <div class="d-block">
-                                                <span class="fw-bold">{{ $resource->title }}</span>
+                                                <span class="fw-bold">
+                                                    @if ( strlen($resource->title) > 30 )
+                                                        {{ Str::ucfirst( substr( $resource->title , 0, 30 )) }}...
+                                                    @else
+                                                        {{  Str::ucfirst( $resource->title ) }}
+                                                    @endif
+                                                </span>
                                                 <div class="small text-gray">{{ $resource->email }}</div>
                                             </div>
                                         </a></td>

@@ -160,7 +160,14 @@
                                     </td>
                                     <td><a href="{{ route('admin.category.show', $category->id) }}" class="d-flex align-items-center">
                                             <div class="d-block">
-                                                <span class="fw-bold">{{ $category->title }}</span>
+                                                <span class="fw-bold">
+                                                    @if ( strlen($category->title) > 30 )
+                                                        {{ Str::ucfirst( substr( $category->title , 0, 30 )) }}...
+                                                    @else
+                                                        {{  Str::ucfirst( $category->title ) }}
+                                                    @endif
+                                                </span>
+
                                                 <div class="small text-gray">{{ $category->email }}</div>
                                             </div>
                                         </a></td>

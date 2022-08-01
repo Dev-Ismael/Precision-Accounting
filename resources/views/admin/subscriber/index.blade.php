@@ -159,7 +159,13 @@
                                     </td>
                                     <td><a href="#" class="d-flex align-items-center">
                                             <div class="d-block">
-                                                <span class="fw-bold">{{ $subscriber->title }}</span>
+                                                <span class="fw-bold">
+                                                    @if ( strlen($subscriber->title) > 30 )
+                                                        {{ Str::ucfirst( substr( $subscriber->title , 0, 30 )) }}...
+                                                    @else
+                                                        {{  Str::ucfirst( $subscriber->title ) }}
+                                                    @endif
+                                                </span>
                                                 <div class="small text-gray">{{ $subscriber->email }}</div>
                                             </div>
                                         </a></td>

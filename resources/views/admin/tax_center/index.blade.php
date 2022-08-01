@@ -160,7 +160,13 @@
                                     </td>
                                     <td><a href="{{ route('admin.tax_center.show', $tax_center->id) }}" class="d-flex align-items-center">
                                             <div class="d-block">
-                                                <span class="fw-bold">{{ $tax_center->title }}</span>
+                                                <span class="fw-bold">
+                                                    @if ( strlen($tax_center->title) > 30 )
+                                                        {{ Str::ucfirst( substr( $tax_center->title , 0, 30 )) }}...
+                                                    @else
+                                                        {{  Str::ucfirst( $tax_center->title ) }}
+                                                    @endif
+                                                </span>
                                                 <div class="small text-gray">{{ $tax_center->email }}</div>
                                             </div>
                                         </a></td>
