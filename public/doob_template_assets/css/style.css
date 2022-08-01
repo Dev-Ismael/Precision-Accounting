@@ -12424,7 +12424,7 @@ Timeline Area
   color: var(--color-primary);
   border-radius: 100%;
   font-size: 40px;
-  display: inline-block;
+  text-align: center;
   margin-bottom: 17px;
   line-height: 6px;
 }

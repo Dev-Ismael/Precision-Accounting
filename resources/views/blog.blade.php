@@ -9,82 +9,90 @@
             <div class="wrapper plr--10">
                 <div class="row row--5">
                     <div class="col-lg-12 col-xl-6">
-                        <div class="rn-card box-card-style-default content-transparent post-large mt--10">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a class="image" href="blog-details.html">
-                                        <img class="w-100" src="{{ asset("images/articles/".$pinned_articles[0]->img) }}" alt="Blog Image">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="blog-details.html">{{ $pinned_articles[0]->title }}</a></h4>
-                                    <ul class="rn-meta-list">
-                                        <li><a href="#">{{ $pinned_articles[0]->author }}</a></li>
-                                        <li class="separator">/</li>
-                                        <li>{{date( 'm-d-Y', strtotime( $pinned_articles[0]->created_at) )}}</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-xl-6">
-                        <div class="row row--5">
-                            <div class="col-lg-6 middle-post">
-                                <div class="rn-card box-card-style-default content-transparent h-100">
-                                    <div class="inner h-100">
-                                        <div class="thumbnail h-100">
-                                            <a class="image h-100 w-100" href="blog-details.html"  style="background-image: url('{{asset("images/articles/".$pinned_articles[1]->img)}}')">
-                                                {{-- <img class="w-100" src="{{ asset("images/articles/".$pinned_articles[1]->img) }}" alt="Blog Image"> --}}
+                            @if ( isset($pinned_articles[0]) )
+                                <div class="rn-card box-card-style-default content-transparent post-large mt--10">
+                                    <div class="inner">
+                                        <div class="thumbnail">
+                                            <a class="image" href="blog-details.html">
+                                                <img class="w-100" src="{{ asset("images/articles/".$pinned_articles[0]->img) }}" alt="Blog Image">
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <h4 class="title"><a href="blog-details.html">{{ $pinned_articles[1]->title }}</a></h4>
+                                            <h4 class="title"><a href="blog-details.html">{{ $pinned_articles[0]->title }}</a></h4>
                                             <ul class="rn-meta-list">
-                                                <li><a href="#">{{ $pinned_articles[1]->author }}</a></li>
+                                                <li><a href="#">{{ $pinned_articles[0]->author }}</a></li>
                                                 <li class="separator">/</li>
-                                                <li>{{date( 'm-d-Y', strtotime( $pinned_articles[1]->created_at) )}}</li>
+                                                <li>{{date( 'm-d-Y', strtotime( $pinned_articles[0]->created_at) )}}</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
+                            @endif
+                        </div>
+                    <div class="col-lg-12 col-xl-6">
+                        <div class="row row--5">
+                            <div class="col-lg-6 middle-post">
+                                @if ( isset($pinned_articles[1]) )
+                                    <div class="rn-card box-card-style-default content-transparent h-100">
+                                        <div class="inner h-100">
+                                            <div class="thumbnail h-100">
+                                                <a class="image h-100 w-100" href="blog-details.html"  style="background-image: url('{{asset("images/articles/".$pinned_articles[1]->img)}}')">
+                                                    {{-- <img class="w-100" src="{{ asset("images/articles/".$pinned_articles[1]->img) }}" alt="Blog Image"> --}}
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title"><a href="blog-details.html">{{ $pinned_articles[1]->title }}</a></h4>
+                                                <ul class="rn-meta-list">
+                                                    <li><a href="#">{{ $pinned_articles[1]->author }}</a></li>
+                                                    <li class="separator">/</li>
+                                                    <li>{{date( 'm-d-Y', strtotime( $pinned_articles[1]->created_at) )}}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endif
                             </div>
                             <div class="col-lg-6">
                                 <!-- Start Single Post  -->
                                 <div class="rn-card box-card-style-default content-transparent mt--10">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a class="image" href="blog-details.html">
-                                                <img class="w-100" src="{{ asset("images/articles/".$pinned_articles[2]->img) }}" alt="Blog Image">
-                                            </a>
+                                    @if ( isset($pinned_articles[3]) )
+                                        <div class="inner">
+                                            <div class="thumbnail">
+                                                <a class="image" href="blog-details.html">
+                                                    <img class="w-100" src="{{ asset("images/articles/".$pinned_articles[2]->img) }}" alt="Blog Image">
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title"><a href="blog-details.html">{{ $pinned_articles[2]->title }}</a></h4>
+                                                <ul class="rn-meta-list">
+                                                    <li><a href="#">{{ $pinned_articles[2]->author }}</a></li>
+                                                    <li class="separator">/</li>
+                                                    <li>{{date( 'm-d-Y', strtotime( $pinned_articles[2]->created_at) )}}</li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div class="content">
-                                            <h4 class="title"><a href="blog-details.html">{{ $pinned_articles[2]->title }}</a></h4>
-                                            <ul class="rn-meta-list">
-                                                <li><a href="#">{{ $pinned_articles[2]->author }}</a></li>
-                                                <li class="separator">/</li>
-                                                <li>{{date( 'm-d-Y', strtotime( $pinned_articles[2]->created_at) )}}</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    @endif
                                 </div>
                                 <!-- End Single Post  -->
                                 <!-- Start Single Post  -->
                                 <div class="rn-card box-card-style-default content-transparent mt--10">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a class="image" href="blog-details.html">
-                                                <img class="w-100" src="{{ asset("images/articles/".$pinned_articles[3]->img) }}" alt="Blog Image">
-                                            </a>
+                                    @if ( isset($pinned_articles[4]) )
+                                        <div class="inner">
+                                            <div class="thumbnail">
+                                                <a class="image" href="blog-details.html">
+                                                    <img class="w-100" src="{{ asset("images/articles/".$pinned_articles[3]->img) }}" alt="Blog Image">
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title"><a href="blog-details.html">{{ $pinned_articles[3]->title }}</a></h4>
+                                                <ul class="rn-meta-list">
+                                                    <li><a href="#">{{ $pinned_articles[3]->author }}</a></li>
+                                                    <li class="separator">/</li>
+                                                    <li>{{date( 'm-d-Y', strtotime( $pinned_articles[3]->created_at) )}}</li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div class="content">
-                                            <h4 class="title"><a href="blog-details.html">{{ $pinned_articles[3]->title }}</a></h4>
-                                            <ul class="rn-meta-list">
-                                                <li><a href="#">{{ $pinned_articles[3]->author }}</a></li>
-                                                <li class="separator">/</li>
-                                                <li>{{date( 'm-d-Y', strtotime( $pinned_articles[3]->created_at) )}}</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    @endif
                                 </div>
                                 <!-- End Single Post  -->
                             </div>

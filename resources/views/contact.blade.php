@@ -19,40 +19,48 @@
                 <div class="col-lg-12">
                     <div class="rn-contact-address mt_dec--30">
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 col-12 mt-3">
+                            <div class="col-lg-3 col-md-6 col-12 mt-3">
                                 <div class="rn-address">
                                     <div class="icon">
                                         <i class="feather-headphones"></i>
                                     </div>
                                     <div class="inner">
                                         <h4 class="title">Contact Phone Number</h4>
-                                        <p><a href="tel:{{$setting->phone}}">{{$setting->phone}}</a></p>
-                                        <p><a href="sms:{{$setting->sms}}">{{$setting->sms}}</a></p>
+                                        <p> <i class="feather-phone"></i> <a href="tel:{{$setting->phone}}">{{$setting->phone}}</a></p>
+                                        <p> <i class="feather-message-circle"></i> <a href="sms:{{$setting->sms}}">{{$setting->sms}}</a></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12  mt-3">
-                                <div class="rn-address">
-                                    <div class="icon">
-                                        <i class="feather-mail"></i>
-                                    </div>
-                                    <div class="inner">
-                                        <h4 class="title">Our Email Address</h4>
-                                        <p><a href="mailto:{{$setting->email}}">{{$setting->email}}</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-12  mt-3">
+                            <div class="col-lg-6 col-md-6 col-12 mt-3">
                                 <div class="rn-address">
                                     <div class="icon">
                                         <i class="feather-map-pin"></i>
                                     </div>
                                     <div class="inner">
-                                        <h4 class="title">Our Location</h4>
-                                        <p>{{ $setting->address }}</p>
+                                        <h4 class="title text-center">Our Location</h4>
+                                        <p>
+                                            <strong> <img src="{{ asset('doob_template_assets/images/icons/usa.png') }}" alt="usa-flag" width="25"> USA Office:</strong>
+                                            <a href="{{$setting->location}}" target="_blank"> {{$setting->address}} </a>
+                                        </p>
+                                        <p>
+                                            <strong> <img src="{{ asset('doob_template_assets/images/icons/egypt.png') }}" alt="usa-flag" width="25"> EGY Office:</strong>
+                                            <a href="{{$setting->location}}" target="_blank"> {{$setting->address}} </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                                <div class="rn-address">
+                                    <div class="icon">
+                                        <i class="feather-mail"></i>
+                                    </div>
+                                    <div class="inner">
+                                        <h4 class="title text-center">Our Email Address</h4>
+                                        <p> <i class="feather-mail"></i> <a href="mailto:{{$setting->email}}">{{$setting->email}}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
