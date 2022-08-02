@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('slug')->index();
             $table->text('content');
             $table->string('seo_title', 500);
-            $table->string('seo_description', 500);
-            $table->string('seo_keywords', 500);
+            $table->string('seo_description', 1000);
+            $table->string('seo_keywords', 1000);
             $table->string('pinned' , 1)->default('0');
             $table->string('author');
             $table->string('img');

@@ -44,7 +44,7 @@
                                         </p>
                                         <p>
                                             <strong> <img src="{{ asset('doob_template_assets/images/icons/egypt.png') }}" alt="usa-flag" width="25"> EGY Office:</strong>
-                                            <a href="{{$setting->location}}" target="_blank"> {{$setting->address}} </a>
+                                            <a href="https://www.google.com/maps?q=31.2119026,29.9415277&z=17&hl=en" target="_blank"> 36 Kamal Eldeen Salah street - Smouha</a>
                                         </p>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="col-lg-5 mt_md--30 mt_sm--30">
                     <div class="google-map-style-1">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14554259.179133086!2d-105.54385245388013!3d37.49334218664659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1630777307491!5m2!1sen!2sbd" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1268.5097799282705!2d-74.17878609806533!3d40.870958812432235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fe854565461d%3A0xdfd91d80dc47b508!2sPrecision%20Accounting%20Intl%20LLC!5e0!3m2!1sen!2seg!4v1610010205990!5m2!1sen!2seg" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>

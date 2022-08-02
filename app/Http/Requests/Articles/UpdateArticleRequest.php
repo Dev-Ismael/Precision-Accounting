@@ -26,9 +26,10 @@ class UpdateArticleRequest extends FormRequest
     {
         return [
             'title'           => ['required' , 'string' , 'max:100' , Rule::unique('articles', 'title')->ignore($this->article)],
-            'content'         => ['required' , 'string' , 'max:10000'],
-            'seo_description' => ['required' , 'string' , 'max:500'],
-            'seo_keywords'    => ['required' , 'string' , 'max:500'],
+            'content'         => ['required' , 'string' ],
+            'seo_title'       => ['required' , 'string' , 'max:500'],
+            'seo_description' => ['required' , 'string' , 'max:1000'],
+            'seo_keywords'    => ['required' , 'string' , 'max:1000'],
             'author'          => ['required' , 'string' , 'max:55'],
             'pinned'          => ['required' , 'string' , 'max:1'],
             'category_id'     => ['required' , 'numeric'],

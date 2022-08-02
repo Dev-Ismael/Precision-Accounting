@@ -13702,7 +13702,7 @@ div.pagination-container li.active .page-link {
     Footer Styles
 ***************************************/
 /*-----------------------
-    Footer Style Here  
+    Footer Style Here
 ------------------------*/
 .logo a img {
   max-height: 55px;
@@ -13777,9 +13777,9 @@ div.pagination-container li.active .page-link {
   padding-bottom: 70px;
 }
 .footer-style-default .footer-top .rn-footer-widget .text-big {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 30px;
-  padding-right: 13%;
+  padding-right: 10%;
   line-height: 1.7;
   font-weight: 500;
   color: var(--color-body);

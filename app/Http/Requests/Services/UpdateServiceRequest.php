@@ -28,10 +28,10 @@ class UpdateServiceRequest extends FormRequest
             'title'           => ['required' , 'string' , 'max:100' , Rule::unique('services', 'title')->ignore($this->service)],
             'summary'         => ['required' , 'string' , 'max:255'],
             'seo_title'       => ['required' , 'string' , 'max:500'],
-            'seo_description' => ['required' , 'string' , 'max:500'],
-            'seo_keywords'    => ['required' , 'string' , 'max:500'],
+            'seo_description' => ['required' , 'string' , 'max:1000'],
+            'seo_keywords'    => ['required' , 'string' , 'max:1000'],
             'parent_id'       => ['nullable' , 'numeric' , 'digits_between:1,11' ],
-            'content'         => ['required' , 'string' , 'max:10000'],
+            'content'         => ['required' , 'string' ],
             'icon'            => ['nullable' , 'mimes:jpeg,png,jpg' , 'max:2048'],
             'img'             => ['nullable' , 'mimes:jpeg,png,jpg' , 'max:2048'],
         ];

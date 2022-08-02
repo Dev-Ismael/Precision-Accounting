@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('title', 100 )->index();
             $table->string('slug')->index();
             $table->string('seo_title', 500);
-            $table->string('seo_description', 500);
-            $table->string('seo_keywords', 500);
+            $table->string('seo_description', 1000);
+            $table->string('seo_keywords', 1000);
             $table->string('summary', 255 );
             $table->integer('parent_id')->nullable();
             $table->text('content');

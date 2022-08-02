@@ -166,10 +166,10 @@
                                         class="avatar rounded-circle me-3" alt="testimonail-image">
                                     <div class="d-block">
                                         <span class="fw-bold">
-                                            @if ( strlen($testimonial->title) > 30 )
-                                                {{ Str::ucfirst( substr( $testimonial->title , 0, 30 )) }}...
+                                            @if ( strlen($testimonial->name) > 30 )
+                                                {{ Str::ucfirst( substr( $testimonial->name , 0, 30 )) }}...
                                             @else
-                                                {{  Str::ucfirst( $testimonial->title ) }}
+                                                {{  Str::ucfirst( $testimonial->name ) }}
                                             @endif
                                         </span>
                                         <div class="small text-gray">{{ $testimonial->job_title }}</div>

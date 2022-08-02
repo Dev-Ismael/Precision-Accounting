@@ -175,10 +175,10 @@
                                                 class="avatar rounded-circle me-3" alt="member-image">
                                             <div class="d-block">
                                                 <span class="fw-bold">
-                                                    @if ( strlen($member->title) > 30 )
-                                                        {{ Str::ucfirst( substr( $member->title , 0, 30 )) }}...
+                                                    @if ( strlen($member->name) > 30 )
+                                                        {{ Str::ucfirst( substr( $member->name , 0, 30 )) }}...
                                                     @else
-                                                        {{  Str::ucfirst( $member->title ) }}
+                                                        {{  Str::ucfirst( $member->name ) }}
                                                     @endif
                                                 </span>
                                                 <div class="small text-gray">{{ $member->job_title }}</div>

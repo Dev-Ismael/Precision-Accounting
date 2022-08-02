@@ -26,7 +26,7 @@ class UpdateResourceRequest extends FormRequest
     {
         return [
             'title'           => ['required' , 'string' , 'max:100' , Rule::unique('resources', 'title')->ignore($this->resource)],
-            'content'         => ['required' , 'string' , 'max:10000'],
+            'content'         => ['required' , 'string' ],
             'img'             => ['nullable' , 'mimes:jpeg,png,jpg' , 'max:2048'],
         ];
     }
