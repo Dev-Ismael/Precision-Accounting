@@ -42,8 +42,8 @@
 
 
     <!--------- CkEditor 5 -------->
-    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
-
+    {{-- <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script> --}}
+    <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
 
 </head>
 

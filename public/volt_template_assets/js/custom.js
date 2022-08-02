@@ -47,23 +47,8 @@ scrollBtn.addEventListener('click', event => {
 ================ Select 2 Libaray
 =====================================================*/
 $(document).ready(function () {
-    // Select Option Service
-    $("select#service").select2( {
-        placeholder: "Choose Parent Service...",
-    });
-    // visibility
-    $("select#visibility").select2( {
 
-    });
-    // Article , Category
-    $("select#category").select2( {
-        placeholder: "Choose Article Category...",
-    });
-    // Article , Pin
-    $("select#pinned").select2( {
-        placeholder: "Choose Article Status...",
-    });
-
+    CKEDITOR.replace( 'content' );
 
 });
 /*==================================================

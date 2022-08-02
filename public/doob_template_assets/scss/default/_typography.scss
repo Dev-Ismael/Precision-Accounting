@@ -414,9 +414,26 @@ kbd {
 
 
 
+/*=======================================================================
+======= dynamic-content
+=======================================================================*/
+.dynamic-content{
+    a{
+        text-decoration: underline !important;
+        font-weight: bolder ;
+        color: var(--color-primary);
+    }
+    li{
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        p{
+            padding: 5px !important;
+            margin: 5px !important;
+        }
+    }
 
-
-
+}
 
 
 

@@ -26,11 +26,11 @@
                                     </div>
                                     <div class="content">
                                         <h4 class="title">
-                                            <a href="#">{{ $resource->title }}</a>
+                                            {{ $resource->title }}
                                         </h4>
-                                        <p class="description b1 color-gray mb--0">
+                                        <div class="description b1 color-gray mb--0 dynamic-content">
                                             {!! $resource->content !!}
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
