@@ -41,8 +41,7 @@
     <link type="text/css" href="{{ asset('volt_template_assets/css/custom.css') }}" rel="stylesheet">
 
 
-    <!--------- CkEditor 5 -------->
-    {{-- <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script> --}}
+    <!--------- CkEditor 4 -------->
     <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
 
 </head>

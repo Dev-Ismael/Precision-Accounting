@@ -101,7 +101,7 @@
   --color-light-green-darker: #001f27;
   --color-pink-darker: #2f011d;
   --color-heading: #ffffff;
-  --color-body: #acacac;
+  --color-body: #707070;
   --color-dark: #060606;
   --color-darker: rgba(6, 6, 6, 0.7);
   --color-darkest: rgba(0, 0, 0, 0.3);
@@ -911,8 +911,15 @@ kbd {
 }
 
 /*=======================================================================
-======= dynamic-content
+======= dynamic-content Form DB
 =======================================================================*/
+.dynamic-content td {
+  border: 1px solid var(--color-body);
+  color: var(--color-body);
+}
+.dynamic-content strong {
+  color: var(--color-primary);
+}
 .dynamic-content a {
   text-decoration: underline !important;
   font-weight: bolder;

@@ -24,7 +24,7 @@
                                     <div class="icon">
                                         <i class="feather-headphones"></i>
                                     </div>
-                                    <div class="inner">
+                                    <div class="inner text-center">
                                         <h4 class="title">Contact Phone Number</h4>
                                         <p> <i class="feather-phone"></i> <a href="tel:{{$setting->phone}}">{{$setting->phone}}</a></p>
                                         <p> <i class="feather-message-circle"></i> <a href="sms:{{$setting->sms}}">{{$setting->sms}}</a></p>
@@ -54,8 +54,8 @@
                                     <div class="icon">
                                         <i class="feather-mail"></i>
                                     </div>
-                                    <div class="inner">
-                                        <h4 class="title text-center">Our Email Address</h4>
+                                    <div class="inner text-center">
+                                        <h4 class="title">Our Email Address</h4>
                                         <p> <i class="feather-mail"></i> <a href="mailto:{{$setting->email}}">{{$setting->email}}</a></p>
                                     </div>
                                 </div>
@@ -71,25 +71,25 @@
                     <form class="contact-form-1 rwt-dynamic-form" id="contact-form" action="{{ route("contact.send") }}" method="POST" >
                         @csrf
                         <div class="form-group">
-                            <input type="text" name="name" id="name" placeholder="Your Name..." value="{{ old("name") }}" />
+                            <input type="text" name="name" id="name" placeholder="Your Name..." value="{{ old("name") }}" required/>
                             @error('name')
                                 <div class="invalid-feedback d-block">{{ $message }}.</div>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <input type="text" name="phone" id="phone" placeholder="Your Phone Number..." value="{{ old("phone") }}"/>
+                            <input type="text" name="phone" id="phone" placeholder="Your Phone Number..." value="{{ old("phone") }}" required/>
                             @error('phone')
                                 <div class="invalid-feedback d-block">{{ $message }}.</div>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <input type="text" name="email" id="email" placeholder="Your Email Address..." value="{{ old("email") }}"/>
+                            <input type="email" name="email" id="email" placeholder="Your Email Address..." value="{{ old("email") }}" required/>
                             @error('email')
                                 <div class="invalid-feedback d-block">{{ $message }}.</div>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <textarea name="messege" id="messege" placeholder="Your Message...">{{ old("messege") }}</textarea>
+                            <textarea name="messege" id="messege" placeholder="Your Message..." required>{{ old("messege") }}</textarea>
                             @error('messege')
                                 <div class="invalid-feedback d-block">{{ $message }}.</div>
                             @enderror

@@ -48,7 +48,23 @@ scrollBtn.addEventListener('click', event => {
 =====================================================*/
 $(document).ready(function () {
 
-    CKEDITOR.replace( 'content' );
+    // Select Option Service
+    $("select#service").select2( {
+        placeholder: "Choose Parent Service...",
+    });
+    // visibility
+    $("select#visibility").select2( {
+
+    });
+    // Article , Category
+    $("select#category").select2( {
+        placeholder: "Choose Article Category...",
+    });
+    // Article , Pin
+    $("select#pinned").select2( {
+        placeholder: "Choose Article Status...",
+    });
+
 
 });
 /*==================================================
@@ -154,10 +170,9 @@ if (selectAction) {
 ===================  CKEditor 5   ========================================
 =========================================================================*/
 
-ClassicEditor.create( document.querySelector( '#CKEditor_Content' ) )
-.then( editor => {
-        console.log( editor );
-} )
-.catch( error => {
-        console.error( error );
-} );
+
+$(document).ready(function () {
+
+    CKEDITOR.replaceClass = 'ckeditor';  // select by class Name
+
+});

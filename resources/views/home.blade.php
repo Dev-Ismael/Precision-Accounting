@@ -333,7 +333,7 @@
                                      </p>
                                     <div class="client-info">
                                         <h4 class="title">{{ $testimonial->name }}</h4>
-                                        {{-- <h6 class="subtitle">{{ $testimonial->job_title }}</h6> --}}
+                                        <h6 class="subtitle">{{ $testimonial->job_title }}</h6>
                                     </div>
                                 </div>
                             </div>

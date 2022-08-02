@@ -30,7 +30,7 @@ class ConsultingMail extends Mailable
     {
         return $this->markdown('emails.consulting')                               // Mail blade
         ->Subject($this->consultingData['subject'])                               //  Subject mail
-        ->from( $this->consultingData['email'] , $this->consultingData['first_name'] )     // From 2 prame ( mail sender , name sender )
+        // ->from( $this->consultingData['email'] , $this->consultingData['first_name'] )     // From 2 prame ( mail sender , name sender )
         ->with('consultingData' , $this->consultingData);                            // Send Data to mail blade
     }
 }

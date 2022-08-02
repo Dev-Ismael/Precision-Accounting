@@ -54,7 +54,7 @@
                                         <!----------------- Content -------------------->
                                         <div class="mb-4 input-content">
                                             <label for="content" class="capitalize"> <i class="fa-solid fa-align-left"></i> Tax Center Content </label>
-                                            <textarea type="text" name="content" id="CKEditor_Content" rows="5" class="form-control @error('content') is-invalid @enderror" aria-describedby="emailHelp" placeholder="Type Tax Center Content..." autocomplete="nope" >{{ $tax_center->content }}</textarea>
+                                            <textarea type="text" name="content" rows="5" class="ckeditor form-control @error('content') is-invalid @enderror" aria-describedby="emailHelp" placeholder="Type Tax Center Content..." autocomplete="nope" >{{ $tax_center->content }}</textarea>
                                             @error('content')
                                                 <small class="form-text text-danger">{{ $message }}</small>
                                             @enderror

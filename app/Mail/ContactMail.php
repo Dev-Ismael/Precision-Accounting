@@ -30,7 +30,7 @@ class ContactMail extends Mailable
     {
         return $this->markdown('emails.contact')                               // Mail blade
         ->Subject($this->contactData['subject'])                               //  Subject mail
-        ->from( $this->contactData['email'] , $this->contactData['name'] )     // From 2 prame ( mail sender , name sender )
+        // ->from( $this->contactData['email'] , $this->contactData['name'] )     // From 2 prame ( mail sender , name sender )
         ->with('contactData' , $this->contactData);                            // Send Data to mail blade
     }
 }
