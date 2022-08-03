@@ -46,7 +46,10 @@
                                 <div class="address-content">
                                     <p>
                                         <i class="feather-map-pin"></i>
-                                        <span>{{ $setting->address }}</span>
+                                        <span><a href="{{ $setting->location }}"
+                                            target="_blank">
+                                            {{ $setting->address }}
+                                        </a></span>
                                     </p>
                                     <p>
                                         <i class="feather-phone"></i>
@@ -153,7 +156,7 @@
                                 </nav>
                                 <!-- Start Header Btn  -->
                                 <div class="header-btn"><a class="btn-default text-uppercase rounded-0"
-                                        target="_blank" href="{{ route("consulting") }}">Free Consulting</a></div>
+                                        href="{{ route("consulting") }}">Free Consulting</a></div>
                                 <!-- End Header Btn  -->
 
                                 <!-- Start Mobile-Menu-Bar -->
@@ -166,7 +169,7 @@
                                 </div>
                                 <!-- Start Mobile-Menu-Bar -->
 
-
+                                {{-- <!--------------- Sitvher btn ------------------>
                                 <div id="my_switcher" class="my_switcher">
                                     <ul>
                                         <li>
@@ -184,7 +187,8 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> --}}
+
                             </div>
                         </div>
                     </div>

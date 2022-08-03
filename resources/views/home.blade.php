@@ -83,7 +83,7 @@
                                 <img  src="{{ asset('images/services/'.$service->icon ) }}" width="100" alt="service-icon">
                             </div>
                             <div class="content">
-                                <h4 class="title w-600"><a href="#"> {{ $service->title }} </a></h4>
+                                <h4 class="title w-600"><a href="{{ route("service", $service->slug ) }}"> {{ $service->title }} </a></h4>
                                 <p class="description b1 color-gray mb--0">
                                     {{ $service->summary }}
                                 </p>

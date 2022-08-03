@@ -19,11 +19,11 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $articles        = Article::orderBy('id','desc')->paginate(10);
+        $articles        = Article::orderBy('id','desc')->paginate(8);
         $categories      = Category::all();
         $lasted_articles = Article::orderBy('id','desc')->limit(5)->get();
-        $pinned_articles = Article::where('pinned','1')->orderBy('id','desc')->limit(5)->get();
-        // return $pinned_articles[0];
+        $pinned_articles = Article::where('pinned','1')->orderBy('id','desc')->limit(4)->get();
+        // return $articles;
 
         // SEO Trait
         $this->staticPagesSeo(

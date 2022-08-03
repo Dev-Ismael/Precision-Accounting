@@ -143,7 +143,7 @@ class ServiceController extends Controller
 
         // save all request in one variable
         $requestData = $request->all();
-
+        // return $requestData;
 
         // Check If There Images Uploaded
         $path = "images/services" ;

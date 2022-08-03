@@ -55,7 +55,7 @@
                             <div class="col-lg-6">
                                 <!-- Start Single Post  -->
                                 <div class="rn-card box-card-style-default content-transparent mt--10">
-                                    @if ( isset($pinned_articles[3]) )
+                                    @if ( isset($pinned_articles[2]) )
                                         <div class="inner">
                                             <div class="thumbnail">
                                                 <a class="image" href="blog-details.html">
@@ -76,7 +76,7 @@
                                 <!-- End Single Post  -->
                                 <!-- Start Single Post  -->
                                 <div class="rn-card box-card-style-default content-transparent mt--10">
-                                    @if ( isset($pinned_articles[4]) )
+                                    @if ( isset($pinned_articles[3]) )
                                         <div class="inner">
                                             <div class="thumbnail">
                                                 <a class="image" href="blog-details.html">
