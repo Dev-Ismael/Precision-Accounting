@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\testimonial;
+use App\Models\Testimonial;
 use App\Http\Requests\Testimonials\StoreTestimonialRequest;
 use App\Http\Requests\Testimonials\UpdateTestimonialRequest;
 use App\Http\Controllers\Controller;

@@ -372,11 +372,11 @@
                             <div class="rn-footer-widget">
                                 <h4 class="title pt-3 pt-md-0">Newsletter</h4>
                                 <div class="inner">
-                                    <h6 class="subtitle">Subscribe Our Newsletters To Get Updates & More</h6>
+                                    <h6 class="subtitle p-0 mb-3">Subscribe Our Newsletters To Get Updates & More</h6>
                                     <form class="newsletter-form w-100" method="POST" action="{{ route("subscriber.store") }}" >
                                         @csrf
-                                        <div class="form-group">
-                                            <input type="email" name="email" placeholder="Enter Your Email Here" required/>
+                                        <div class="form-group w-100">
+                                            <input type="email" name="email" placeholder="Enter Your Email Here" class="w-100" required/>
                                             @error('email')
                                                 <div class="invalid-feedback d-block">{{ $message }}.</div>
                                             @enderror
@@ -412,26 +412,18 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-8 col-sm-12 col-12">
                         <div class="copyright-left">
-                            <ul class="ft-menu link-hover">
-                                <li>
-                                    <a href="{{ route("consulting") }}">Consulting</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route("resources") }}">Resources</a>
-                                </li>
-                            </ul>
+                            Copyright
+                            <i class="far fa-copyright"></i>
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            <a class="active" href="{{ route('home') }}">Precision Accounting International.</a>
+                            All Rights Reserved
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-12 col-12">
                         <div class="copyright-right text-center text-lg-end">
-                            <p class="copyright-text">
-                                © PRECISION ACCOUNTING
-                                <script>
-                                    const d = new Date();
-                                    let year = d.getFullYear();
-                                    document.write(year);
-                                </script>
-                            </p>
+                            <p>Powered by <a href="http://bluskyint.com">BlueSkyInt.Com</a></p>
                         </div>
                     </div>
                 </div>
