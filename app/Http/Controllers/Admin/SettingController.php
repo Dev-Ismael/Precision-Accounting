@@ -23,7 +23,7 @@ class SettingController extends Controller
      * @param  \App\Models\Setting  $setting
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateSettingRequest $request, Setting $setting)
+    public function update(UpdateSettingRequest $request)
     {
         // find id in Db With Error 404
         $setting = Setting::findOrFail(1);
@@ -43,7 +43,7 @@ class SettingController extends Controller
             return redirect() -> route("admin.setting.edit") -> with( [ "failed" => "Error at update opration"] ) ;
         }
 
-        
+
     }
 
 }

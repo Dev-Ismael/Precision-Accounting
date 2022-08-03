@@ -24,18 +24,18 @@ class UpdateSettingRequest extends FormRequest
     public function rules()
     {
         return [
-            'seo_description'   => ['required' , 'string' , 'max:255' ],
-            'seo_keywords'      => ['required' , 'string' , 'max:255' ],
-            'address'           => ['required' , 'string' , 'max:255' ],
-            'location'          => ['required' , 'string' , 'max:255' ],
-            'email'             => ['required' , 'email' , 'max:255' ],
-            'phone'             => ['required' , 'string' , 'max:255' ],
-            'sms'               => ['required' , 'string' , 'max:255' ],
-            'whatsapp'          => ['required' , 'string' , 'max:255' ],
-            'linkedin'          => ['required' , 'string' , 'max:255' ],
-            'facebook'          => ['required' , 'string' , 'max:255' ],
-            'twitter'           => ['required' , 'string' , 'max:255' ],
-            'youtube'           => ['required' , 'string' , 'max:255' ],
+            'seo_description'   => ['nullable' , 'string' , 'max:255' ],
+            'seo_keywords'      => ['nullable' , 'string' , 'max:255' ],
+            'address'           => ['nullable' , 'string' , 'max:255' ],
+            'location'          => ['nullable' , 'string' , 'max:255' ],
+            'email'             => ['nullable' , 'email' , 'max:255' ],
+            'phone'             => ['nullable' , 'string' , 'max:255' ],
+            'sms'               => ['nullable' , 'string' , 'max:255' ],
+            'whatsapp'          => ['nullable' , 'string' , 'max:255' ],
+            'linkedin'          => ['nullable' , 'string' , 'max:255' ],
+            'facebook'          => ['nullable' , 'string' , 'max:255' ],
+            'twitter'           => ['nullable' , 'string' , 'max:255' ],
+            'youtube'           => ['nullable' , 'string' , 'max:255' ],
         ];
     }
 }

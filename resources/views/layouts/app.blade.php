@@ -169,7 +169,7 @@
                                 </div>
                                 <!-- Start Mobile-Menu-Bar -->
 
-                                {{-- <!--------------- Sitvher btn ------------------>
+                                <!--------------- Sitvher btn ------------------>
                                 <div id="my_switcher" class="my_switcher">
                                     <ul>
                                         <li>
@@ -187,7 +187,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div> --}}
+                                </div>
 
                             </div>
                         </div>
@@ -284,7 +284,7 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-4 col-md-4 col-sm-12 col-12">
                             <div class="rn-footer-widget">
                                 <div class="logo">
                                     <a href="{{ route("home") }}">
@@ -294,74 +294,86 @@
                                             alt="Corporate Logo">
                                     </a>
                                 </div>
-                                <h5 class="text-big">For many years <span class="fw-bold">PRECISION ACCOUNTING</span>
-                                    INTL LLC has been helping individuals, families and small businesses in the
-                                    community prepare their taxes.</h5>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12">
-                            <div class="rn-footer-widget">
-                                <h4 class="title">Quick Links</h4>
-                                <div class="inner">
-                                    <ul class="footer-link link-hover">
-                                        <li><a href="{{ route("home") }}">Home</a></li>
-                                        <li><a href="{{ route("about") }}">About</a></li>
-                                        <li><a href="{{ route("blog") }}">Blog</a></li>
-                                        <li><a href="{{ route("contact") }}">Contact</a></li>
+                                <div class="social-icon-wrapper text-center">
+                                    <ul class="social-icon social-default icon-naked">
+                                        <li>
+                                            <a href="{{ $setting->facebook }}"
+                                                target="_blank">
+                                                <i class="feather-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ $setting->twitter }}" target="_blank">
+                                                <i class="feather-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ $setting->youtube }}"
+                                                target="_blank">
+                                                <i class="feather-youtube"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ $setting->linkedin }}"
+                                                target="_blank">
+                                                <i class="feather-linkedin"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:{{$setting->email}}" target="_blank">
+                                                <i class="feather-mail"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="rn-footer-widget">
-                                <h4 class="title">Contact Us</h4>
+                        <div class="col-xl-5 col-md-4 col-sm-12 col-12">
+                            <div class="rn-footer-widget us-box">
+                                <h4 class="title fw-bolder">
+                                    <img src="{{ asset('doob_template_assets/images/icons/usa.png') }}" alt="usa-flag" width="30">
+                                    US Office
+                                </h4>
                                 <div class="inner">
                                     <div class="footer-contact">
-                                        <div class="d-flex footer-contact-email">
-                                            <div class="pe-3 footer-contact-icon ">
-                                                <i class="feather-mail"></i>
-                                            </div>
-                                            <div class="footer-contact-text">
-                                                <span><a href="mailto:{{$setting->email}}">{{$setting->email}}</a></span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex footer-contact-address">
-                                            <div class="pe-3 footer-contact-icon">
-                                                <i class="feather-map"></i>
-                                            </div>
-                                            <div class="footer-contact-text">
-                                                <span><a href="{{ $setting->location }}"
-                                                        target="_blank">
-                                                        {{ $setting->address }}
-                                                    </a></span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex footer-contact-phone">
-                                            <div class="pe-3 footer-contact-icon">
-                                                <i class="feather-phone"></i>
-                                            </div>
-                                            <div class="footer-contact-text">
-                                                <span><a href="tel:{{$setting->phone}}">{{$setting->phone}}</a></span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex footer-contact-sms">
-                                            <div class="pe-3 footer-contact-icon">
-                                                <i class="feather-message-circle"></i>
-                                            </div>
-                                            <div class="footer-contact-text">
-                                                <span><a href="sms:{{$setting->sms}}">{{ $setting->sms }}</a></span>
-                                            </div>
-                                        </div>
+                                        <p class="p-0 m-0">
+                                            <strong> <i class="feather-map-pin"></i> </strong>
+                                            <a href="https://g.page/PrecisionAccountingIntl?share" target="_blank"> 1035 US Highway 46 East STE B-101, Clifton, NJ 07013 </a>
+                                        </p>
+                                        <p>
+                                            <span> <i class="feather-phone"></i> <a href="tel:+19733045553"> (973) 304-5553 </a></span>
+                                            <span> &nbsp; , &nbsp; </span>
+                                            <span> <i class="feather-message-circle"></i> <a href="sms:+19739561040"> (973) 956-1040 </a></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rn-footer-widget us-box">
+                                <h4 class="title fw-bolder">
+                                    <img src="{{ asset('doob_template_assets/images/icons/egypt.png') }}" alt="usa-flag" width="30">
+                                    EG Office
+                                </h4>
+                                <div class="inner">
+                                    <div class="footer-contact">
+                                        <p class="p-0 m-0">
+                                            <strong> <i class="feather-map-pin"></i> </strong>
+                                            <a href="https://www.google.com/maps?q=31.2119026,29.9415277&z=17&hl=en" target="_blank"> 36 Kamal el-Din Salah st, Admon Fremon, Smouha ,Alex </a>
+                                        </p>
+                                        <p>
+                                            <span> <i class="feather-phone"></i> <a href="tel:+2034249018">(03) 4249018 </a></span>
+                                            <span> &nbsp; , &nbsp; </span>
+                                            <span> <i class="feather-phone"></i> <a href="tel:+2034249015">(03) 4249015 </a></span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-3 col-md-4 col-sm-12 col-12">
                             <div class="rn-footer-widget">
                                 <h4 class="title pt-3 pt-md-0">Newsletter</h4>
                                 <div class="inner">
                                     <h6 class="subtitle">Subscribe Our Newsletters To Get Updates & More</h6>
-                                    <form class="newsletter-form" method="POST" action="{{ route("subscriber.store") }}" >
+                                    <form class="newsletter-form w-100" method="POST" action="{{ route("subscriber.store") }}" >
                                         @csrf
                                         <div class="form-group">
                                             <input type="email" name="email" placeholder="Enter Your Email Here" required/>

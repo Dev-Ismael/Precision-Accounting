@@ -5,13 +5,21 @@
 .logo {
     a {
         img {
-            max-height: 55px;
+            max-height: 110px;
         }
     }
 }
 
 
 .footer-style-1 {
+    .social-icon-wrapper{
+        li{
+            margin: 10px;
+            i{
+                font-size: 20px;
+            }
+        }
+    }
     background-color: var(--color-darkest);
     border-top: 1px solid var(--color-border);
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--color-black)), to(var(--color-blacker)));

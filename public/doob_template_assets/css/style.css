@@ -108,7 +108,7 @@
   --color-black: #000000;
   --color-blacker: rgba(15, 15, 17, 0);
   --color-blackest: #0f0f11;
-  --color-border: hsla(0,0%,100%,0.1);
+  --color-border: rgba(255, 255, 255, 0.295);
   --color-lessdark: #1e1e1e;
   --color-gray: #65676B;
   --color-midgray: #878787;
@@ -10459,7 +10459,7 @@ div.btn-default.rounded-player.sm-size {
   overflow: visible;
 }
 .progress .progress-bar.bar-color-2 {
-  background: #fb5343;
+  background: rgb(251, 83, 67);
 }
 .progress .progress-bar.bar-color-3 {
   background: #E33FA1;
@@ -11415,7 +11415,7 @@ Timeline Area
   left: 0;
   width: 4px;
   height: 100%;
-  background: rgba(196, 196, 196, 0.22);
+  background: hsla(0deg, 0%, 76.9%, 0.22);
 }
 .timeline-line::before, .timeline-line::after {
   content: "";
@@ -13731,7 +13731,7 @@ div.pagination-container li.active .page-link {
     Footer Style Here
 ------------------------*/
 .logo a img {
-  max-height: 55px;
+  max-height: 110px;
 }
 
 .footer-style-1 {
@@ -13739,6 +13739,12 @@ div.pagination-container li.active .page-link {
   border-top: 1px solid var(--color-border);
   background-image: -webkit-gradient(linear, left bottom, left top, from(var(--color-black)), to(var(--color-blacker)));
   background-image: linear-gradient(0deg, var(--color-black), var(--color-blacker));
+}
+.footer-style-1 .social-icon-wrapper li {
+  margin: 10px;
+}
+.footer-style-1 .social-icon-wrapper li i {
+  font-size: 20px;
 }
 .footer-style-1 .footer-top {
   padding: 120px 0;
@@ -14062,7 +14068,7 @@ div.pagination-container li.active .page-link {
   top: 0;
   left: 0;
   background-color: transparent;
-  background-image: linear-gradient(90deg, #060606 0%, #06060600 90%);
+  background-image: linear-gradient(90deg, #060606 0%, rgba(6, 6, 6, 0) 90%);
   content: "";
 }
 
@@ -14980,7 +14986,7 @@ div.pagination-container li.active .page-link {
 }
 
 body.active-light-mode {
-  background-color: var(--color-white);
+  background-color: var(--color-light);
   color: #65676b;
 }
 body.active-light-mode h1,
@@ -15142,10 +15148,10 @@ body.active-light-mode .footer-style-default .newsletter-form .form-group input,
 body.active-light-mode .newsletter-area .border-top-bottom,
 body.active-light-mode .rn-comment-form .inner .rnform-group textarea,
 body.active-light-mode .rwt-portfolio-details .content-left .single-list-wrapper .single-list + .single-list {
-  border-color: #00000024;
+  border-color: rgba(0, 0, 0, 0.1411764706);
 }
 body.active-light-mode .service.service__style--1.with-working-process .line {
-  background-color: #00000024;
+  background-color: rgba(0, 0, 0, 0.1411764706);
   width: 83%;
 }
 body.active-light-mode .mainmenu-nav .mainmenu li.has-droupdown .submenu li a:hover {
@@ -15156,7 +15162,7 @@ body.active-light-mode .mainmenu-nav .mainmenu li.with-megamenu .rn-megamenu .wr
   color: var(--color-primary);
 }
 body.active-light-mode .btn-read-more span::after {
-  background: #00000024;
+  background: rgba(0, 0, 0, 0.1411764706);
 }
 body.active-light-mode .breadcrumb-inner ul.page-list li a:hover,
 body.active-light-mode .rn-address .inner p a:hover,
@@ -15208,7 +15214,7 @@ body.active-light-mode [class*=col]:nth-child(3) .counter-style-2.color-variatio
   background-color: #eef2f3;
 }
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(4) .service.service__style--1.icon-circle-style .icon {
-  background-color: #eb008b24;
+  background-color: rgba(235, 0, 139, 0.1411764706);
 }
 body.active-light-mode .logo a img.logo-light {
   display: none;
@@ -15217,22 +15223,22 @@ body.active-light-mode .rn-back-top i {
   color: #333;
 }
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(5) .service.service__style--1.icon-circle-style .icon {
-  background-color: #009aff29;
+  background-color: rgba(0, 154, 255, 0.1607843137);
 }
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(6) .service.service__style--1.icon-circle-style .icon {
-  background-color: #3000ff29;
+  background-color: rgba(48, 0, 255, 0.1607843137);
 }
 
 body.active-light-mode .service.service__style--1.icon-circle-style .icon {
-  background-color: #059dff0f;
+  background-color: rgba(5, 157, 255, 0.0588235294);
 }
 
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(2) .service.service__style--1.icon-circle-style .icon {
-  background-color: #fb53431a;
+  background-color: rgba(251, 83, 67, 0.1019607843);
 }
 
 body.active-light-mode .service-wrapper > [class*=col]:nth-child(3) .service.service__style--1.icon-circle-style .icon {
-  background-color: #6549d51f;
+  background-color: rgba(101, 73, 213, 0.1215686275);
 }
 
 body.active-light-mode .timeline-dot::after {
@@ -15335,7 +15341,7 @@ body.active-light-mode .brand-style-1 li {
 }
 
 body.active-light-mode hr {
-  border-top: 1px solid #00000024;
+  border-top: 1px solid rgba(0, 0, 0, 0.4039215686);
 }
 
 body.active-light-mode .rn-card {
@@ -15344,7 +15350,7 @@ body.active-light-mode .rn-card {
 
 body.active-light-mode .rn-pricing.active .pricing-table-inner .pricing-header,
 body.active-light-mode .rn-pricing .pricing-table-inner .pricing-header {
-  border-color: #0000000a;
+  border-color: rgba(0, 0, 0, 0.0392156863);
 }
 
 body.active-light-mode .advance-tab-button-1 .tab-button-list .tab-button::after {
@@ -15355,7 +15361,7 @@ body.active-light-mode .advance-tab-button-1 .tab-button-list .tab-button::after
 
 body.active-light-mode a.btn-default.btn-border,
 body.active-light-mode button.btn-default.btn-border {
-  border-color: #00000024;
+  border-color: rgba(0, 0, 0, 0.1411764706);
   color: #181818;
 }
 
@@ -15432,7 +15438,7 @@ body.active-light-mode .slider-style-1 .inner .title {
 }
 
 body.active-light-mode .testimonial-style-two .content::after {
-  color: #f5f8fa;
+  color: #a3a3a3;
 }
 
 body.active-light-mode .header-transparent .mainmenu-nav .mainmenu > li > a {
@@ -15466,7 +15472,7 @@ body.active-light-mode .logo-dark {
 
 body.active-light-mode .slider-area.bg-transparent .inner a.btn-default.btn-border,
 body.active-light-mode .slider-area.bg-transparent .inner button.btn-default.btn-border {
-  border-color: #00000024;
+  border-color: rgba(0, 0, 0, 0.1411764706);
   color: #181818;
 }
 
