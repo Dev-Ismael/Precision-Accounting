@@ -25,7 +25,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
 Route::get('/service/{slug}', [App\Http\Controllers\ServiceController::class, 'index'])->name('service');
 Route::get('tax-center/{slug}', [App\Http\Controllers\TaxcenterController::class, 'index'])->name('tax_center');
-Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'index'])->name('resources');
+Route::get('/resource', [App\Http\Controllers\ResourceController::class, 'index'])->name('resources');
 
 // subscribe
 Route::post('/subscribe', [App\Http\Controllers\SubscriberController::class, 'store'])->name('subscriber.store');

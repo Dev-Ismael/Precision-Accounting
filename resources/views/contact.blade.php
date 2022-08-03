@@ -19,48 +19,54 @@
                 <div class="col-lg-12">
                     <div class="rn-contact-address mt_dec--30">
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-12 mt-3">
-                                <div class="rn-address">
-                                    <div class="icon">
-                                        <i class="feather-headphones"></i>
+                            <div class="col-lg-12 col-md-12 col-12 mt-3">
+                                <div class="rn-address row">
+                                    <div class="col-lg-6 col-md-6 col-12 mt-3 us-box text-center">
+                                        <div class="icon">
+                                            <img src="{{ asset('doob_template_assets/images/icons/usa.png') }}" alt="usa-flag" width="50">
+                                        </div>
+                                        <div class="inner">
+                                            <h4 class="title text-center">US Office</h4>
+                                            <p>
+                                                <strong> <i class="feather-map-pin"></i> </strong>
+                                                <a href="https://g.page/PrecisionAccountingIntl?share" target="_blank"> 1035 US Highway 46 East STE B-101, Clifton, NJ 07013 </a>
+                                            </p>
+                                            <p>
+                                                <span> <i class="feather-phone"></i> <a href="tel:+19733045553"> (973) 304-5553 </a></span>
+                                                <span> &nbsp; , &nbsp; </span>
+                                                <span> <i class="feather-message-circle"></i> <a href="sms:+19739561040"> (973) 956-1040 </a></span>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="inner text-center">
-                                        <h4 class="title">Contact Phone Number</h4>
-                                        <p> <i class="feather-phone"></i> <a href="tel:{{$setting->phone}}">{{$setting->phone}}</a></p>
-                                        <p> <i class="feather-message-circle"></i> <a href="sms:{{$setting->sms}}">{{$setting->sms}}</a></p>
+                                    <div class="col-lg-6 col-md-6 col-12 mt-3 us-box text-center">
+                                        <div class="icon">
+                                            <img src="{{ asset('doob_template_assets/images/icons/egypt.png') }}" alt="eg-flag" width="50">
+                                        </div>
+                                        <div class="inner">
+                                            <h4 class="title text-center">EG Office</h4>
+                                            <p>
+                                                <strong> <i class="feather-map-pin"></i> </strong>
+                                                <a href="https://www.google.com/maps?q=31.2119026,29.9415277&z=17&hl=en" target="_blank"> 36 Kamal el-Din Salah st, Admon Fremon, Smouha ,Alex </a>
+                                            </p>
+                                            <p>
+                                                <span> <i class="feather-phone"></i> <a href="tel:+2034249018">(03) 4249018 </a></span>
+                                                <span> &nbsp; , &nbsp; </span>
+                                                <span> <i class="feather-phone"></i> <a href="tel:+2034249015">(03) 4249015 </a></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    &nbsp;
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-12 text-center">
+                                            <p style="font-size: 22px; margin: 0 0 15px;">
+                                                <strong> <i class="feather-mail"></i> </strong>
+                                                <a href="mailto:{{$setting->email}}">{{$setting->email}}</a>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-12 mt-3">
-                                <div class="rn-address">
-                                    <div class="icon">
-                                        <i class="feather-map-pin"></i>
-                                    </div>
-                                    <div class="inner">
-                                        <h4 class="title text-center">Our Location</h4>
-                                        <p>
-                                            <strong> <img src="{{ asset('doob_template_assets/images/icons/usa.png') }}" alt="usa-flag" width="25"> USA Office:</strong>
-                                            <a href="{{$setting->location}}" target="_blank"> {{$setting->address}} </a>
-                                        </p>
-                                        <p>
-                                            <strong> <img src="{{ asset('doob_template_assets/images/icons/egypt.png') }}" alt="usa-flag" width="25"> EGY Office:</strong>
-                                            <a href="https://www.google.com/maps?q=31.2119026,29.9415277&z=17&hl=en" target="_blank"> 36 Kamal Eldeen Salah street - Smouha</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12 mt-3">
-                                <div class="rn-address">
-                                    <div class="icon">
-                                        <i class="feather-mail"></i>
-                                    </div>
-                                    <div class="inner text-center">
-                                        <h4 class="title">Our Email Address</h4>
-                                        <p> <i class="feather-mail"></i> <a href="mailto:{{$setting->email}}">{{$setting->email}}</a></p>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>

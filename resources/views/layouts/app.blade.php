@@ -33,7 +33,7 @@
         @php
             $setting  = App\Models\Setting::find(1);
         @endphp
-
+{{--
         <div class="header-transparent-with-topbar">
             <div class="header-top-bar">
                 <div class="container">
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
 
             @php

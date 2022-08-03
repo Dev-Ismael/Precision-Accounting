@@ -35,6 +35,7 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.05);
     transition: 0.3s;
     min-height: 100%;
+    padding-bottom: 0px;
     @media #{$lg-layout} {
         padding: 30px 20px;
     }
