@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('name', 100 )->index();
             $table->string('job_title', 100 );
-            $table->string('address', 100 );
             $table->string('img');
             $table->timestamps();
         });

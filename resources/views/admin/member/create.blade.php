@@ -58,15 +58,6 @@
                                             @enderror
                                         </div>
 
-                                        <!----------------- address -------------------->
-                                        <div class="mb-4 input-content">
-                                            <label for="address" class="capitalize"> <i class="fa-solid fa-address-card"></i> Address </label>
-                                            <input type="text" name="address" id="address" class="form-control @error('address') is-invalid @enderror" value="{{ old('address') }}" aria-describedby="emailHelp" placeholder="Type Member Address..." autocomplete="nope" />
-                                            @error('address')
-                                                <small class="form-text text-danger">{{ $message }}</small>
-                                            @enderror
-                                        </div>
-
 
                                         <!----------------- Img -------------------->
                                         <div class="mb-3 input-content">

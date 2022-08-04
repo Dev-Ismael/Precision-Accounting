@@ -64,10 +64,6 @@
                                             <td class="text-capitalize"> <i class="fa-solid fa-user-tie"></i> Job Title </td>
                                             <td> {{ $member->job_title != "" ? $member->job_title : '-'  }} </td>
                                         </tr>
-                                        <tr>
-                                            <td class="text-capitalize content"> <i class="fa-solid fa-address-card"></i> Address </td>
-                                            <td> {!! $member->address !!} </td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>

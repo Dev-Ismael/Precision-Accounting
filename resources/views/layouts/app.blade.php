@@ -11,7 +11,7 @@
     {!! SEOMeta::generate() !!}
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('doob_template_assets/images/favicon-white.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('doob_template_assets/images/favicon.png') }}">
     <!------- FontAwesome  ------->
     <script src="https://kit.fontawesome.com/bc98e6aa51.js" crossorigin="anonymous"></script>
 
@@ -169,7 +169,7 @@
                                 </div>
                                 <!-- Start Mobile-Menu-Bar -->
 
-                                <!--------------- Sitvher btn ------------------>
+                                {{-- <!--------------- Sitvher btn ------------------>
                                 <div id="my_switcher" class="my_switcher">
                                     <ul>
                                         <li>
@@ -187,7 +187,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> --}}
 
                             </div>
                         </div>
@@ -290,7 +290,7 @@
                                     <a href="{{ route("home") }}">
                                         <img class="logo-light" src="{{ asset('doob_template_assets/images/logo/logo.png') }}"
                                             alt="Corporate Logo">
-                                        <img class="logo-dark" src="{{ asset('doob_template_assets/images/logo/logo-dark.png') }}"
+                                        <img class="logo-dark" src="{{ asset('doob_template_assets/images/logo/logo-dark-2x.png') }}"
                                             alt="Corporate Logo">
                                     </a>
                                 </div>

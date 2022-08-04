@@ -94,6 +94,15 @@ div {
             &:hover {
                 background-color: var(--color-heavy-blue);
             }
+
+
+            &.btn-in-transparent{
+                border-color: var(--color-heavy-blue) !important;
+                color: var(--color-heavy-blue) !important;
+                &:hover {
+                    color: #fff !important;
+                }
+            }
         }
 
         &.text-underline {

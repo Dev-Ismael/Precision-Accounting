@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#2a8e82">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('volt_template_assets/images/favicon-white.png') }}">
+    <link rel="shortcut icon" href="{{ asset('volt_template_assets/images/favicon.png') }}">
 
     <!------- FontAwesome  ------->
     <script src="https://kit.fontawesome.com/bc98e6aa51.js" crossorigin="anonymous"></script>

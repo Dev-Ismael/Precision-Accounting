@@ -51,7 +51,6 @@ class DatabaseSeeder extends Seeder
         \App\Models\Member::factory()->create([
             'name' => 'ismael',
             'job_title' => 'job_title',
-            'address' => 'address',
             'img' => 'img',
         ]);
 

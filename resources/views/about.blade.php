@@ -1,18 +1,36 @@
 @extends('layouts.app')
 
 @section('content')
+
+
     <!-- Start Slider Area  -->
-    <div class="slider-area slider-style-1 variation-default height-850 bg_image bg_image--12" data-black-overlay="7">
+    <div class="slider-area slider-style-1 height-850">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="inner pt--80 text-center sal-animate" data-sal="slide-up" data-sal-duration="400"
-                        data-sal-delay="150">
-                        <div>
-                            <h3 class="rn-sub-badge"><span class="theme-gradient">Our Company's About
-                                    Details.</span></h3>
+                    <div class="inner text-center">
+                        <span class="subtitle">DIGITAL CONSULTING AGENCY</span>
+                        <h1 class="title display-two"><span class="theme-gradient">Unique Business</span> <br>
+                            <span class="header-caption">
+                                <span class="cd-headline clip is-full-width">
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible theme-gradient">Finance.</b>
+                                        <b class="is-hidden theme-gradient">Consulting.</b>
+                                        <b class="is-hidden theme-gradient">Agency.</b>
+                                    </span>
+                            </span>
+                            </span>
+                        </h1>
+                        <p class="description">We help our clients succeed by creating brand identities, digital
+                            experiences, and print materials.</p>
+                        <div class="button-group"><a class="btn-default btn-medium round btn-icon" target="_blank" href="#">Purchase
+                                Now <i class="icon feather-arrow-right">
+                                </i>
+                            </a>
+                            <a class="btn-default btn-medium btn-border btn-in-transparent round btn-icon" href="business-consulting-2.html">Contact Us <i
+                                    class="icon feather-arrow-right"></i>
+                            </a>
                         </div>
-                        <h1 class="title display-one">We are a Corporate <br> Business Agency.</h1>
                     </div>
                 </div>
             </div>

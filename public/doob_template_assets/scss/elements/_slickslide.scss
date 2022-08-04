@@ -1,16 +1,26 @@
 /*----------------------
-    Slick Slides to have the same height  
+    Customize Slick right , left icons
 ------------------------*/
+.rwt-testimonial-area.home-slider{
+    .rn-slick-arrow button.slick-arrow.prev-arrow::before{
+        display: none;
+    }
+}
+/*----------------------
+    Slick Slides to have the same height
+------------------------*/
+#customized-testimonial.rwt-testimonial-area{
+    .slick-track
+    {
+        display: flex !important;
+    }
 
-.slick-track
-{
-    display: flex !important;
+    .slick-slide
+    {
+        height: inherit !important;
+    }
 }
 
-.slick-slide
-{
-    height: inherit !important;
-}
 
 
 .slick-initialized .slick-slide {
@@ -26,20 +36,20 @@
 
 
 /*----------------------
-    Slick Dots  
+    Slick Dots
 ------------------------*/
 .rn-slick-dot {
     .slick-dots {
         bottom: -60px;
         @media #{$large-mobile} {
-            bottom: -50px; 
+            bottom: -50px;
         }
         li{
             width: 30px;
             margin: 0;
             opacity: 1;
             position: relative;
-            
+
             button{
                 &::before{
                     display: none;
@@ -74,7 +84,7 @@
             }
         }
     }
-    // Dot Light  
+    // Dot Light
     &.dot-light {
         .slick-dots {
             li{
@@ -103,7 +113,7 @@
 
 
 /*----------------------
-    Slick Arrow  
+    Slick Arrow
 ------------------------*/
 .rn-slick-arrow {
     position: relative;

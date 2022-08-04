@@ -27,7 +27,6 @@ class UpdateMemberRequest extends FormRequest
         return [
             'name'            => ['required' , 'string' , 'max:100' , Rule::unique('members', 'name')->ignore($this->member)],
             'job_title'       => ['required' , 'string' , 'max:100'],
-            'address'         => ['required' , 'string' , 'max:100'],
             'img'             => ['nullable' , 'mimes:jpeg,png,jpg' , 'max:2048'],
         ];
     }

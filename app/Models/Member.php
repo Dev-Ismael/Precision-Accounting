@@ -17,7 +17,7 @@ class Member extends Model
      */
 
      protected $fillable = [
-        'name', 'job_title', 'address', 'img'
+        'name', 'job_title',  'img'
     ];
 
 

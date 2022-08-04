@@ -18,7 +18,7 @@
 
                     @foreach ( $resources as $resource )
 
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12  mt-3sal-animate" data-sal="slide-up" data-sal-duration="700">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12  mt-3sal-animate mt--30" data-sal="slide-up" data-sal-duration="700">
                             <div class="service service__style--2 text-center pt-5">
                                 <div class="inner">
                                     <div class="image">
