@@ -81,6 +81,8 @@
 ***************************************/
 /*-- Variables --*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
 :root {
   --color-primary: #059DFF;
   --color-primary-rgba: rgb(5, 157, 255);
@@ -152,6 +154,7 @@
   --transition-transform: transform .65s cubic-bezier(.23,1,.32,1);
   --font-primary: "Montserrat", sans-serif;
   --secondary-font: "Montserrat", sans-serif;
+  --font-bold: "Montserrat", sans-serif;
   --font-awesome: "Font Awesome 5 Pro";
   --font-size-b1: 18px;
   --font-size-b2: 16px;
@@ -10809,7 +10812,7 @@ div.btn-default.rounded-player.sm-size {
 }
 .rn-box-card .inner .content .title,
 .team-style-default .inner .content .title {
-  font-size: 34px;
+  font-size: 32px;
   line-height: 1.4;
   font-weight: 700;
   margin-bottom: 6px;
@@ -11373,7 +11376,12 @@ div.btn-default.rounded-player.sm-size {
   background: var(--color-light-blue);
   border-color: var(--color-light-blue);
 }
+.rn-slick-arrow button.slick-arrow:hover i {
+  transition: 0.5s;
+  color: #ffff;
+}
 .rn-slick-arrow button.slick-arrow::before {
+  display: none;
   line-height: 1;
   opacity: 0.4;
   position: relative;
@@ -11419,7 +11427,8 @@ div.btn-default.rounded-player.sm-size {
   opacity: 1;
 }
 .rn-slick-arrow button.slick-arrow i {
-  display: none;
+  transition: 0.5s;
+  font-size: 24px;
 }
 .rn-slick-arrow:hover button.slick-arrow {
   opacity: 1;
@@ -13530,9 +13539,11 @@ div.pagination-container li.active .page-link {
   font-weight: 500;
   color: var(--color-white);
   background-color: var(--color-blackest);
-  margin: -1px -22px 0;
+  margin: -1px -21px 0;
   padding: 14px 24px;
-  border-radius: 4px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .rbt-single-widget .title a {
   color: var(--color-primary);
@@ -14497,22 +14508,22 @@ div.pagination-container li.active .page-link {
   animation-duration: 1s;
 }
 .slider-style-4 .inner .title {
-  font-family: var(--font-primary);
+  font-family: var(--font-bold);
   margin-bottom: 25px;
   display: block;
-  font-size: 130px;
+  font-size: 60px;
   line-height: 1.1;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   color: var(--color-heavy-blue);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-style-4 .inner .title {
-    font-size: 100px;
+    font-size: 60px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-style-4 .inner .title {
-    font-size: 100px;
+    font-size: 60px;
   }
 }
 @media only screen and (max-width: 767px) {

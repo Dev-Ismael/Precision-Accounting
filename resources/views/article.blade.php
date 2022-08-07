@@ -5,7 +5,7 @@
 
 
         <div class="rn-blog-details-area">
-            <div class="post-page-banner rn-section-gapTop">
+            <div class="post-page-banner" style="padding-top: 60px">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
@@ -33,19 +33,19 @@
             <div class="blog-details-content pt--60 rn-section-gapBottom">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
+                        <div class="col-lg-10 offset-lg-1">
                             <div class="content">
 
                                 {!! $article->content !!}
 
-                                <div class="category-meta">
+                                {{-- <div class="category-meta">
                                     <span class="text">Tags: &nbsp; </span>
                                     <div class="tagcloud">
                                         @foreach ( $categories as $category )
                                             <a href="#">{{ $article->title }}</a>
                                         @endforeach
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 {{-- <!-- Start Contact Form Area  -->
                                 <div class="rn-comment-form pt--60">

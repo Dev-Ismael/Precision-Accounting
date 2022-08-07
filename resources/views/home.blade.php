@@ -11,11 +11,9 @@
                     <div class="row row--30 align-items-center">
                         <div class="order-2 order-lg-1 col-lg-7">
                             <div class="inner text-left">
-                                <h1 class="title">Digital Agency.</h1>
+                                <h1 class="title">Making  <br> Accounting Marvels.</h1>
                                 <p class="description">We help our clients succeed by creating brand identities, digital
                                     experiences, and print materials.</p>
-                                <div class="button-group mt--30"><a class="btn-default" target="_blank" href="#">PURCHASE
-                                        NOW</a></div>
                             </div>
                         </div>
                     </div>
@@ -27,11 +25,9 @@
                     <div class="row row--30 align-items-center">
                         <div class="order-2 order-lg-1 col-lg-7">
                             <div class="inner text-left">
-                                <h1 class="title">Creative Agency.</h1>
+                                <h1 class="title">Helping  <br> Your Business Grow.</h1>
                                 <p class="description">We help our clients succeed by creating brand identities, digital
                                     experiences, and print materials.</p>
-                                <div class="button-group mt--30"><a class="btn-default" target="_blank" href="#">PURCHASE
-                                        NOW</a></div>
                             </div>
                         </div>
                     </div>
@@ -43,11 +39,11 @@
                     <div class="row row--30 align-items-center">
                         <div class="order-2 order-lg-1 col-lg-7">
                             <div class="inner text-left">
-                                <h1 class="title">Startup Agency.</h1>
+                                <h1 class="title">Free <br> Consulting.</h1>
                                 <p class="description">We help our clients succeed by creating brand identities, digital
                                     experiences, and print materials.</p>
-                                <div class="button-group mt--30"><a class="btn-default" target="_blank" href="#">PURCHASE
-                                        NOW</a></div>
+                                <div class="button-group mt--30"><a class="btn-default" target="_blank" href="#">Consulting
+                                        Now</a></div>
                             </div>
                         </div>
                     </div>
@@ -350,12 +346,11 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="count-box counter-style-2 text-center">
                         <div>
-                            <div class="count-number"><span class="counter">199</span>+</div>
+                            <div class="count-number"><span class="counter">301</span>+</div>
                         </div>
                         <h5 class="title">Bookkeeping service</h5>
                         <p class="description">
-                            More than satisfied clients
-                            with our Bookkeeping service
+                            More than satisfied clients with our Bookkeeping service
                         </p>
                     </div>
                 </div>
@@ -485,7 +480,7 @@
                                     <h2 class="title">Keep in touch with our expert CPAs</h2>
                                     {{-- <h6 class="subtitle">MEET WITH US</h6> --}}
                                     <div class="call-to-btn">
-                                        <a class="btn-default btn-icon" href="{{ route('consulting') }}">MEET WITH US
+                                        <a class="btn-default btn-icon" href="{{ route('contact') }}">MEET WITH US
                                             <i class="feather-arrow-right"></i>
                                         </a>
                                     </div>

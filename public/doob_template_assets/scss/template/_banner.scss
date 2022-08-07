@@ -559,20 +559,19 @@
         }
 
         .title {
-            font-family: var(--font-primary);
+            font-family: var(--font-bold);
             margin-bottom: 25px;
             display: block;
-            font-size: 130px;
+            font-size: 60px;
             line-height: 1.1;
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             color: var(--color-heavy-blue);
-
             @media #{$lg-layout} {
-                font-size: 100px;
+                font-size: 60px;
             }
 
             @media #{$md-layout} {
-                font-size: 100px;
+                font-size: 60px;
             }
 
             @media #{$sm-layout} {

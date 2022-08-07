@@ -52,7 +52,7 @@
                         </div>
                         <div class="stat-card__icon stat-card__icon--success">
                             <div class="stat-card__icon-circle">
-                                <i class="fa-solid fa-users"></i>
+                                <i class="fa-solid fa-user-tie"></i>
                             </div>
                         </div>
                     </div>
@@ -129,20 +129,20 @@
                         </div>
                     </div>
                 </div>
-{{--
+
                 <div class="col-sm-4">
                     <div class="stat-card">
                         <div class="stat-card__content">
-                            <p class="text-uppercase mb-1 text-muted">Prescription Orders</p>
-                            <h2>{{ $prescription_orders }}</h2>
+                            <p class="text-uppercase mb-1 text-muted">Subscribers</p>
+                            <h2>{{ $subscribers }}</h2>
                             <div>
-                                <span class="text-muted"> <a href="{{ route('admin.prescription_orders.index') }}"
+                                <span class="text-muted"> <a href="{{ route('admin.subscriber.index') }}"
                                         class="text-underline view-more"> View More </a></span>
                             </div>
                         </div>
                         <div class="stat-card__icon stat-card__icon--orange">
                             <div class="stat-card__icon-circle">
-                                <i class="fa-solid fa-capsules"></i>
+                                <i class="fa-solid fa-users"></i>
                             </div>
                         </div>
                     </div>
@@ -151,10 +151,10 @@
                 <div class="col-sm-4">
                     <div class="stat-card">
                         <div class="stat-card__content">
-                            <p class="text-uppercase mb-1 text-muted">Messeges</p>
-                            <h2>{{ $messeges }}</h2>
+                            <p class="text-uppercase mb-1 text-muted">Newsletter</p>
+                            <h2>{{ $newsletter }}</h2>
                             <div>
-                                <span class="text-muted"> <a href="{{ route('admin.messeges.index') }}"
+                                <span class="text-muted"> <a href="{{ route('admin.newsletter.index') }}"
                                         class="text-underline view-more"> View More </a></span>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                             </div>
                         </div>
                     </div>
-                </div> --}}
+                </div>
 
             </div>
         </div>

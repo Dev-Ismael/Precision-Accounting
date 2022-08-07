@@ -10,6 +10,8 @@ use App\Models\Service;
 use App\Models\Resource;
 use App\Models\TaxCenter;
 use App\Models\Testimonial;
+use App\Models\Subscriber;
+use App\Models\Newsletter;
 
 class DashboardController extends Controller
 {
@@ -23,10 +25,12 @@ class DashboardController extends Controller
         $resources = Resource::count();
         $tax_centers = TaxCenter::count();
         $testimonials = Testimonial::count();
+        $subscribers = Subscriber::count();
+        $newsletter = Newsletter::count();
 
         return view('admin.dashboard',
             compact('articles', 'members', 'services',
-            'resources', 'tax_centers', 'testimonials'));
+            'resources', 'tax_centers', 'testimonials', 'subscribers', 'newsletter'));
 
     }
 

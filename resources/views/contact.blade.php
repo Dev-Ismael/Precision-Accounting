@@ -60,7 +60,7 @@
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-12 text-center">
                                             <p style="font-size: 22px; margin: 0 0 15px;">
-                                                <strong> <i class="feather-mail"></i> </strong>
+                                                <i class="feather-mail"></i>
                                                 <a href="mailto:{{$setting->email}}">{{$setting->email}}</a>
                                             </p>
                                         </div>

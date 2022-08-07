@@ -240,7 +240,7 @@
                 </div>
                 <div class="col-lg-5 mt_md--30 mt_sm--30">
                     <div class="google-map-style-1">
-                        <img src="{{ asset("doob_template_assets/images/free-consulting.jpeg") }}" class="free-consulting rounded" alt="free-consulting">
+                        <img src="{{ asset("doob_template_assets/images/free-consulting.jpg") }}" class="free-consulting rounded" alt="free-consulting">
                     </div>
                 </div>
             </div>

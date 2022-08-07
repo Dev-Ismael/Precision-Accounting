@@ -423,7 +423,9 @@
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-12 col-12">
                         <div class="copyright-right text-center text-lg-end">
-                            <p>Powered by <a href="http://bluskyint.com">BlueSkyInt.Com</a></p>
+                            <p>Powered by
+                                <img src="{{ asset("doob_template_assets/images/BluSky-logo.png") }}" alt="BluSky-logo" width="35">
+                                <a href="http://bluskyint.com">BlueSkyInt.Com</a></p>
                         </div>
                     </div>
                 </div>
