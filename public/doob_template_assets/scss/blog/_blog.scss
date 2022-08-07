@@ -213,5 +213,10 @@
                 -o-transform: scale(1.2);
             }
         }
+        @media (max-width: 767.98px) {
+            height: 290px;
+            margin: 10px 0px;
+        }
+
     }
 }

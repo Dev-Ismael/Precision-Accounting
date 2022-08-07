@@ -9250,6 +9250,12 @@ xclip
   line-height: inherit !important;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header-default .header-btn {
+    display: none;
+  }
+}
+
 /*--------------------------
     Header Top Styles  
 -----------------------------*/
@@ -13477,6 +13483,12 @@ div.pagination-container li.active .page-link {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
+}
+@media (max-width: 767.98px) {
+  .rn-magazine-area .middle-post {
+    height: 290px;
+    margin: 10px 0px;
+  }
 }
 
 .blog-search {

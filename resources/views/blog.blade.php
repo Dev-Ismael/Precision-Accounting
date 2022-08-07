@@ -9,9 +9,9 @@
                 <div class="wrapper plr--10">
                     <div class="row row--5">
                         <h4 class="title"> <i class="fa-solid fa-thumbtack" style="color:#0d3050"></i> Pinned Articles </h4>
-                        <div class="col-lg-12 col-xl-6">
+                        <div class="col-lg-12 col-xl-6 mt-3">
                                 @if ( isset($pinned_articles[0]) )
-                                    <div class="rn-card box-card-style-default content-transparent post-large mt--10">
+                                    <div class="rn-card box-card-style-default content-transparent post-large h-100">
                                         <div class="inner">
                                             <div class="thumbnail">
                                                 <a class="image" href="{{ route('article', $pinned_articles[0]->slug) }}">
@@ -30,7 +30,7 @@
                                     </div>
                                 @endif
                             </div>
-                        <div class="col-lg-12 col-xl-6">
+                        <div class="col-lg-12 col-xl-6 mt-3">
                             <div class="row row--5">
                                 <div class="col-lg-6 middle-post">
                                     @if ( isset($pinned_articles[1]) )
@@ -55,7 +55,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <!-- Start Single Post  -->
-                                    <div class="rn-card box-card-style-default content-transparent mt--10">
+                                    <div class="rn-card box-card-style-default content-transparent ">
                                         @if ( isset($pinned_articles[2]) )
                                             <div class="inner">
                                                 <div class="thumbnail">

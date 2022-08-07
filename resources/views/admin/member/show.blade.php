@@ -28,7 +28,7 @@
                             <div class="card-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h2 class="fs-5 fw-bold mb-0"> <i class="fa-solid fa-eye text-primary"></i> Members Details</h2>
+                                        <h2 class="fs-5 fw-bold mb-0"> <i class="fa-solid fa-eye text-primary"></i> Member Details</h2>
                                     </div>
                                     <div class="col text-end">
                                         <a href="{{ route("admin.member.edit" , $member->id) }}" class="btn btn-sm btn-primary">

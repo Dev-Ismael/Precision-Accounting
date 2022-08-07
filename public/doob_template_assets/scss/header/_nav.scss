@@ -183,14 +183,15 @@
             line-height: inherit !important;
         }
 
-
-
-
-
-
-
-
-
-
     }
 }
+
+.header-default{
+    .header-btn {
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            display: none;
+        }
+    }
+}
+
+
