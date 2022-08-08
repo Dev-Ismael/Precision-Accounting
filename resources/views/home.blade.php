@@ -4,51 +4,54 @@
 
 
 
-        <!-- Start Slider Area  -->
-        <div class="rwt-testimonial-area home-slider slider-style-4  slider-activation slider-dot rn-slick-dot rn-slick-arrow">
-            <div class="single-rn-slider slider-bg-image bg-overlay bg_image bg_image--7 height-100vh d-flex align-items-center">
-                <div class="container">
-                    <div class="row row--30 align-items-center">
-                        <div class="order-2 order-lg-1 col-lg-7">
-                            <div class="inner text-left">
-                                <h1 class="title">Making  <br> Accounting Marvels.</h1>
-                                <p class="description">We aim to establish a long-lasting partnership with you from the beginning to the end.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="single-rn-slider height-100vh slider-bg-image bg-overlay bg_image bg_image--8  d-flex align-items-center">
-                <div class="container">
-                    <div class="row row--30 align-items-center">
-                        <div class="order-2 order-lg-1 col-lg-7">
-                            <div class="inner text-left">
-                                <h1 class="title">Helping  <br> Your Business Grow.</h1>
-                                <p class="description">Our main goal is to optimize your business processes, and minimize your taxes payable and liabilities. Your books and payroll process are taken good care of.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="single-rn-slider height-100vh slider-bg-image bg-overlay bg_image bg_image--9  d-flex align-items-center">
-                <div class="container">
-                    <div class="row row--30 align-items-center">
-                        <div class="order-2 order-lg-1 col-lg-7">
-                            <div class="inner text-left">
-                                <h1 class="title">Free <br> Consulting.</h1>
-                                <p class="description">
-                                You’ll find us providing you with reasonable advice to meet your best interests and supporting you with all of your concerns.</p>
-                                <div class="button-group mt--30"><a class="btn-default" target="_blank" href="#">Consulting
-                                        Now</a></div>
-                            </div>
+    <!-- Start Slider Area  -->
+    <div class="rwt-testimonial-area home-slider slider-style-4  slider-activation slider-dot rn-slick-dot rn-slick-arrow">
+        <div class="single-rn-slider slider-bg-image bg-overlay bg_image bg_image--7 height-100vh d-flex align-items-center">
+            <div class="container">
+                <div class="row row--30 align-items-center">
+                    <div class="order-2 order-lg-1 col-lg-7">
+                        <div class="inner text-left">
+                            <h1 class="title">Making  <br> Accounting Marvels.</h1>
+                            <p class="description">We aim to establish a long-lasting partnership with you from the beginning to the end.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Slider Area  -->
+
+        <div class="single-rn-slider height-100vh slider-bg-image bg-overlay bg_image bg_image--8  d-flex align-items-center">
+            <div class="container">
+                <div class="row row--30 align-items-center">
+                    <div class="order-2 order-lg-1 col-lg-7">
+                        <div class="inner text-left">
+                            <h1 class="title">Helping  <br> Your Business Grow.</h1>
+                            <p class="description">Our main goal is to optimize your business processes, and minimize your taxes payable and liabilities. Your books and payroll process are taken good care of.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-rn-slider height-100vh slider-bg-image bg-overlay bg_image bg_image--9  d-flex align-items-center">
+            <div class="container">
+                <div class="row row--30 align-items-center">
+                    <div class="order-2 order-lg-1 col-lg-7">
+                        <div class="inner text-left">
+                            <h1 class="title">Free <br> Consulting.</h1>
+                            <p class="description">
+                            You’ll find us providing you with reasonable advice to meet your best interests and supporting you with all of your concerns.</p>
+                            <div class="button-group mt--30"><a class="btn-default" target="_blank" href="#">Consulting
+                                    Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider Area  -->
+
+
+
 
 
 
@@ -108,102 +111,7 @@
 
 
 
-
-
-
-
-
-    <!-- Start Seperator Area  -->
-    <div class="rbt-separator-mid">
-        <div class="container">
-            <hr class="rbt-separator m-0">
-        </div>
-    </div>
-    <!-- End Seperator Area  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Start Blog Area  -->
-    <div class="blog-area rn-section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="400"
-                        data-sal-delay="100">
-                        <h4 class="subtitle "><span class="theme-gradient">Latests News</span></h4>
-                        <h2 class="title w-600 mb--20">Our Latest News.</h2>
-                        <p class="description b1">We provide company and finance service for <br> startups and
-                            company business.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt_dec--30">
-                <div class="col-lg-12">
-                    <div class="row row--15">
-
-
-
-                        @foreach ($articles as $article)
-                            <div class="col-lg-4 col-md-6 col-12 mt--30 sal-animate" data-sal="slide-up"
-                                data-sal-duration="700" data-sal-delay="100">
-                                <div class="rn-card box-card-style-default">
-                                    <div class="inner">
-                                        <div class="thumbnail"><a class="image"
-                                                href="{{ route('article', $article->slug) }}"><img class="w-100"
-                                                    src="{{ asset('images/articles/' . $article->img) }}"
-                                                    alt="Blog Image"></a>
-                                        </div>
-                                        <div class="content">
-                                            <ul class="rn-meta-list">
-                                                <li><a href="#"> {{ $article->author }} </a></li>
-                                                <li class="separator">/</li>
-                                                <li> {{ date('m-d-Y', strtotime($article->created_at)) }} </li>
-                                            </ul>
-                                            <h4 class="title"><a href="{{ route('article', 'post-slug') }}">
-                                                    {{ $article->title }}
-                                                </a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-
-
-
-                    </div>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <div class="rwt-load-more text-center mt--60">
-                        <a class="btn-default" href="{{ route('blog') }}">View More Post
-                            <i class="feather-loader"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Blog Area  -->
-
-
-
-
-
-
-
-
-
-
+    <!----------- YouTube Video  ------------->
     <div class="rwt-video-area rn-section-gap rn-section-gapBottom ">
         <div class="container">
             <div class="row">
@@ -227,6 +135,68 @@
 
 
 
+
+
+
+
+
+
+    <!-- Start Team-Style-Default Area  -->
+    <div class="rwt-team-area rn-section-gap">
+        <div class="wrapper plr--65">
+            <div class="container">
+                <div class="row mb--20">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700"
+                            data-sal-delay="100">
+                            <h4 class="subtitle "><span class="theme-gradient">Our Experts.</span></h4>
+                            <h2 class="title w-600 mb--20">Our Experts Team.</h2>
+                            {{-- <p class="description b1">There are many variations of passages of Lorem Ipsum
+                                available, <br>but the majority have suffered alteration.</p> --}}
+                        </div>
+                    </div>
+                </div>
+                <div class="rn-slick-dot rn-slick-arrow team-slider mb--60">
+                    @foreach ($members as $member)
+                        <div class="mt--30 sal-animate me-3 ms-3" data-sal="slide-up" data-sal-duration="700"
+                            data-sal-delay="200">
+                            <div class="rn-team team-style-default">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img src="{{ asset('images/members/' . $member->img) }}" alt="member-image">
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="title">{{ $member->name }}</h2>
+                                        <h6 class="subtitle theme-gradient">{{ $member->job_title }}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team-Style-Default Area  -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start Seperator Area  -->
+    <div class="rbt-separator-mid">
+        <div class="container">
+            <hr class="rbt-separator m-0">
+        </div>
+    </div>
+    <!-- End Seperator Area  -->
 
 
 
@@ -288,6 +258,99 @@
         </div>
     </div>
     <!-- End testimonial Four  -->
+
+
+
+
+
+
+
+    <!-- Start Seperator Area  -->
+    <div class="rbt-separator-mid">
+        <div class="container">
+            <hr class="rbt-separator m-0">
+        </div>
+    </div>
+    <!-- End Seperator Area  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start Blog Area  -->
+    <div class="blog-area rn-section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="400"
+                        data-sal-delay="100">
+                        <h4 class="subtitle "><span class="theme-gradient">Latests News</span></h4>
+                        <h2 class="title w-600 mb--20">Our Latest News.</h2>
+                        <p class="description b1">We provide company and finance service for <br> startups and
+                            company business.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt_dec--30">
+                <div class="col-lg-12">
+                    <div class="row row--15">
+                        @foreach ($articles as $article)
+                            <div class="col-lg-4 col-md-6 col-12 mt--30 sal-animate" data-sal="slide-up"
+                                data-sal-duration="700" data-sal-delay="100">
+                                <div class="rn-card box-card-style-default">
+                                    <div class="inner">
+                                        <div class="thumbnail"><a class="image"
+                                                href="{{ route('article', $article->slug) }}"><img class="w-100"
+                                                    src="{{ asset('images/articles/' . $article->img) }}"
+                                                    alt="Blog Image"></a>
+                                        </div>
+                                        <div class="content">
+                                            <ul class="rn-meta-list">
+                                                <li><a href="#"> {{ $article->author }} </a></li>
+                                                <li class="separator">/</li>
+                                                <li> {{ date('m-d-Y', strtotime($article->created_at)) }} </li>
+                                            </ul>
+                                            <h4 class="title"><a href="{{ route('article', 'post-slug') }}">
+                                                    {{ $article->title }}
+                                                </a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <div class="rwt-load-more text-center mt--60">
+                        <a class="btn-default" href="{{ route('blog') }}">View More Post
+                            <i class="feather-loader"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog Area  -->
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -392,78 +455,6 @@
 
 
 
-    <!-- Start Seperator Area  -->
-    <div class="rbt-separator-mid">
-        <div class="container">
-            <hr class="rbt-separator m-0">
-        </div>
-    </div>
-    <!-- End Seperator Area  -->
-
-
-
-
-
-
-
-
-
-    <!-- Start Team-Style-Default Area  -->
-    <div class="rwt-team-area rn-section-gap">
-        <div class="wrapper plr--65">
-            <div class="container">
-                <div class="row mb--20">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700"
-                            data-sal-delay="100">
-                            <h4 class="subtitle "><span class="theme-gradient">Our Experts.</span></h4>
-                            <h2 class="title w-600 mb--20">Our Experts Team.</h2>
-                            {{-- <p class="description b1">There are many variations of passages of Lorem Ipsum
-                                available, <br>but the majority have suffered alteration.</p> --}}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rn-slick-dot rn-slick-arrow team-slider mb--60">
-
-                    @foreach ($members as $member)
-                        <div class="mt--30 sal-animate me-3 ms-3" data-sal="slide-up" data-sal-duration="700"
-                            data-sal-delay="200">
-                            <div class="rn-team team-style-default">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <img src="{{ asset('images/members/' . $member->img) }}" alt="member-image">
-                                    </div>
-                                    <div class="content">
-                                        <h2 class="title">{{ $member->name }}</h2>
-                                        <h6 class="subtitle theme-gradient">{{ $member->job_title }}</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- End Team-Style-Default Area  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- Start Call To Action Area  -->
@@ -491,4 +482,18 @@
         </div>
     </div>
     <!-- End Call To Action Area  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @endsection

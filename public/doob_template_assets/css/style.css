@@ -9257,7 +9257,7 @@ xclip
 }
 
 /*--------------------------
-    Header Top Styles  
+    Header Top Styles
 -----------------------------*/
 .header-top-news {
   position: relative;
@@ -9346,7 +9346,7 @@ xclip
 }
 
 /*----------------------------
-    Header Top Bar  
+    Header Top Bar
 ----------------------------*/
 .header-top-bar {
   padding: 10px 0;
@@ -9428,10 +9428,11 @@ xclip
 }
 .header-top-bar .social-default.icon-naked li {
   margin: 1px;
+  margin: 0px 10px;
 }
 .header-top-bar .social-default.icon-naked li a {
   color: var(--color-body);
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
 }
 .header-top-bar .social-icon-wrapper {
@@ -9455,6 +9456,7 @@ xclip
   top: 50%;
   transform: translateY(-50%);
   left: -1px;
+  display: none;
 }
 @media only screen and (max-width: 575px) {
   .header-top-bar .social-icon-wrapper::before {

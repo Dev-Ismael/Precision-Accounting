@@ -1,5 +1,5 @@
 /*--------------------------
-    Header Top Styles  
+    Header Top Styles
 -----------------------------*/
 .header-top-news {
     position: relative;
@@ -17,7 +17,7 @@
         background-size: cover;
         background-position: center center;
     }
-    
+
     .inner {
         display: flex;
         justify-content: center;
@@ -86,7 +86,7 @@
 
 
 /*----------------------------
-    Header Top Bar  
+    Header Top Bar
 ----------------------------*/
 .header-top-bar {
     padding: 10px 0;
@@ -163,9 +163,10 @@
         &.icon-naked {
             li {
                 margin: 1px;
+                margin: 0px 10px;
                 a {
                     color: var(--color-body);
-                    font-size: 15px;
+                    font-size: 18px;
                     line-height: 26px;
                 }
             }
@@ -189,6 +190,7 @@
             top: 50%;
             transform: translateY(-50%);
             left: -1px;
+            display: none;
             @media #{$large-mobile} {
                 display: none;
             }

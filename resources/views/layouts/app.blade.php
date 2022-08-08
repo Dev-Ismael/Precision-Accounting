@@ -33,14 +33,12 @@
         @php
             $setting  = App\Models\Setting::find(1);
         @endphp
-{{--
+
         <div class="header-transparent-with-topbar">
-            <div class="header-top-bar">
+            {{-- <div class="header-top-bar">
                 <div class="container">
                     <div class="row align-items-center">
-                        <!-- <div class="col-lg-4 col-md-12 col-12">
-
-                        </div> -->
+                        <!-- <div class="col-lg-4 col-md-12 col-12">  </div> -->
                         <div class="col-lg-12 col-md-12 col-12">
                             <div class="header-right">
                                 <div class="address-content">

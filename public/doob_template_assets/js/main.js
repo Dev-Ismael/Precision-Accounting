@@ -140,6 +140,8 @@
 
         slickSliderActivation: function () {
             $('.testimonial-activation').not('.slick-initialized').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -152,6 +154,8 @@
             });
             // custom team slider
             $('.team-slider').not('.slick-initialized').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -181,6 +185,8 @@
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>'
             });
             $('.slider-activation').not('.slick-initialized').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
