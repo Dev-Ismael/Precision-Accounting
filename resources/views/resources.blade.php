@@ -9,8 +9,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
-                            <h4 class="subtitle "><span class="theme-gradient">Our Resources</span></h4>
+                            <h4 class="subtitle "><span class="theme-gradient">Links</span></h4>
                             <h2 class="title w-600 mb--20">Resources.</h2>
+                            <p class="description b1">Access the most recent analyses and insights. </p>
                         </div>
                     </div>
                 </div>

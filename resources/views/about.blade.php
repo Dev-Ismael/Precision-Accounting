@@ -9,25 +9,31 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="inner text-center">
-                        <span class="subtitle">DIGITAL CONSULTING AGENCY</span>
-                        <h1 class="title display-two"><span class="theme-gradient">Unique Business</span> <br>
+                        {{-- <span class="subtitle">Certified Public Accountants</span> --}}
+                        <h4 class="subtitle d-inline p-1" style="background-color: #fff "><span class="theme-gradient"> Certified Public Accountants </span></h4>
+                        <h1 class="title display-two"><span class="theme-gradient">We can help you with</span> <br>
                             <span class="header-caption">
                                 <span class="cd-headline clip is-full-width">
                                     <span class="cd-words-wrapper">
-                                        <b class="is-visible theme-gradient">Finance.</b>
+                                        <b class="is-visible theme-gradient">Bookkeeping.</b>
+                                        <b class="is-hidden theme-gradient">Payroll.</b>
+                                        <b class="is-hidden theme-gradient">Individual Tax.</b>
+                                        <b class="is-hidden theme-gradient">Payroll.</b>
+                                        <b class="is-hidden theme-gradient">Part-Time CFO.</b>
+                                        <b class="is-hidden theme-gradient">Non-profit Organization.</b>
                                         <b class="is-hidden theme-gradient">Consulting.</b>
-                                        <b class="is-hidden theme-gradient">Agency.</b>
                                     </span>
                             </span>
                             </span>
                         </h1>
-                        <p class="description">We help our clients succeed by creating brand identities, digital
-                            experiences, and print materials.</p>
-                        <div class="button-group"><a class="btn-default btn-medium round btn-icon" target="_blank" href="#">Purchase
-                                Now <i class="icon feather-arrow-right">
+                        <p class="description">
+                            Set a vision, take a decision, and do both with <strong>Precision</strong>.
+                        </p>
+                        <div class="button-group"><a class="btn-default btn-medium round btn-icon" target="_blank"  href="{{ route("consulting") }}">Consulting
+                                 <i class="icon feather-arrow-right">
                                 </i>
                             </a>
-                            <a class="btn-default btn-medium btn-border btn-in-transparent round btn-icon" href="business-consulting-2.html">Contact Us <i
+                            <a class="btn-default btn-medium btn-border btn-in-transparent round btn-icon" href="{{ route("contact") }}">Contact Us <i
                                     class="icon feather-arrow-right"></i>
                             </a>
                         </div>
@@ -44,7 +50,7 @@
     <div class="rwt-advance-tab-area rn-section-gap">
         <div class="container">
             <div class="row mb--40">
-                <div class="col-lg-6 offset-lg-3">
+                <div class="col-lg-8 offset-lg-2">
                     <div class="section-title text-center">
                         <h4 class="subtitle "><span class="theme-gradient">WHAT WE DO</span></h4>
                         <h2 class="title w-600 mb--20">Most trustworthy consulting with the best CPAs.</h2>
@@ -136,7 +142,7 @@
                     <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="400"
                         data-sal-delay="150">
                         <h4 class="subtitle "><span class="theme-gradient"> More About Us </span></h4>
-                        <h2 class="title w-600 mb--20">Need expert CPAs to run and grow your business so talk to us</h2>
+                        <h2 class="title w-600 mb--20">Need expert CPAs to run and grow your business so talk to us.</h2>
                     </div>
                 </div>
             </div>

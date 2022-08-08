@@ -12,7 +12,7 @@ class ConsultingController extends Controller
 {
     use SEOTrait;
 
-    CONST RECIVER_MAIL   = 'info@cpapai.com' ;
+    CONST RECIVER_MAIL   = 'a.ismael@bluskyint.com' ;
     CONST MAIL_SUBJECT   = 'A new consulting submition at cpapai.com' ;
 
     /**

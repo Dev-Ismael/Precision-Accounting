@@ -13,7 +13,7 @@ class ContactController extends Controller
 {
     use SEOTrait;
 
-    CONST RECIVER_MAIL   = 'info@cpapai.com' ;
+    CONST RECIVER_MAIL   = 'a.ismael@bluskyint.com' ;
     CONST MAIL_SUBJECT   = 'A new contact submition at cpapai.com' ;
 
     /**

@@ -12,8 +12,7 @@
                         <div class="order-2 order-lg-1 col-lg-7">
                             <div class="inner text-left">
                                 <h1 class="title">Making  <br> Accounting Marvels.</h1>
-                                <p class="description">We help our clients succeed by creating brand identities, digital
-                                    experiences, and print materials.</p>
+                                <p class="description">We aim to establish a long-lasting partnership with you from the beginning to the end.</p>
                             </div>
                         </div>
                     </div>
@@ -26,8 +25,7 @@
                         <div class="order-2 order-lg-1 col-lg-7">
                             <div class="inner text-left">
                                 <h1 class="title">Helping  <br> Your Business Grow.</h1>
-                                <p class="description">We help our clients succeed by creating brand identities, digital
-                                    experiences, and print materials.</p>
+                                <p class="description">Our main goal is to optimize your business processes, and minimize your taxes payable and liabilities. Your books and payroll process are taken good care of.</p>
                             </div>
                         </div>
                     </div>
@@ -40,8 +38,8 @@
                         <div class="order-2 order-lg-1 col-lg-7">
                             <div class="inner text-left">
                                 <h1 class="title">Free <br> Consulting.</h1>
-                                <p class="description">We help our clients succeed by creating brand identities, digital
-                                    experiences, and print materials.</p>
+                                <p class="description">
+                                You’ll find us providing you with reasonable advice to meet your best interests and supporting you with all of your concerns.</p>
                                 <div class="button-group mt--30"><a class="btn-default" target="_blank" href="#">Consulting
                                         Now</a></div>
                             </div>
@@ -66,7 +64,7 @@
                         <h4 class="subtitle ">
                             <span class="theme-gradient">What we can do for you</span>
                         </h4>
-                        <h2 class="title w-600 mb--20">Services provide for you.</h2>
+                        <h2 class="title w-600 mb--20">Services provided for you.</h2>
                     </div>
                 </div>
             </div>
@@ -420,8 +418,8 @@
                             data-sal-delay="100">
                             <h4 class="subtitle "><span class="theme-gradient">Our Experts.</span></h4>
                             <h2 class="title w-600 mb--20">Our Experts Team.</h2>
-                            <p class="description b1">There are many variations of passages of Lorem Ipsum
-                                available, <br>but the majority have suffered alteration.</p>
+                            {{-- <p class="description b1">There are many variations of passages of Lorem Ipsum
+                                available, <br>but the majority have suffered alteration.</p> --}}
                         </div>
                     </div>
                 </div>
