@@ -3,7 +3,6 @@
 @section('content')
     <div class="main-content pt--125">
 
-
         <div class="rn-blog-details-area">
             <div class="post-page-banner" style="padding-top: 60px">
                 <div class="container">
@@ -34,59 +33,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1">
-                            <div class="content">
-
+                            <div class="content dynamic-content">
                                 {!! $article->content !!}
-
-                                {{-- <div class="category-meta">
-                                    <span class="text">Tags: &nbsp; </span>
-                                    <div class="tagcloud">
-                                        @foreach ( $categories as $category )
-                                            <a href="#">{{ $article->title }}</a>
-                                        @endforeach
-                                    </div>
-                                </div> --}}
-
-                                {{-- <!-- Start Contact Form Area  -->
-                                <div class="rn-comment-form pt--60">
-                                    <div class="inner">
-                                        <div class="section-title">
-                                            <span class="subtitle">Have a Comment?</span>
-                                            <h2 class="title">Leave a Reply</h2>
-                                        </div>
-                                        <form class="mt--40" action="#">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-12 col-12">
-                                                    <div class="rnform-group"><input type="text" placeholder="Name">
-                                                    </div>
-                                                    <div class="rnform-group"><input type="email" placeholder="Email">
-                                                    </div>
-                                                    <div class="rnform-group"><input type="text" placeholder="Website">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-12 col-12">
-                                                    <div class="rnform-group">
-                                                        <textarea placeholder="Comment"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="blog-btn"><a class="btn-default"
-                                                            href="blog-details.html"><span>SEND
-                                                                MESSAGE</span></a></div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <!-- End Contact Form Area  --> --}}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
 
     </div>
 @endsection
