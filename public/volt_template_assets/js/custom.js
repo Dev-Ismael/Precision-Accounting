@@ -64,6 +64,10 @@ $(document).ready(function () {
     $("select#pinned").select2( {
         placeholder: "Choose Article Status...",
     });
+    // member , slider_show
+    $("select#slider_show").select2( {
+        placeholder: "Choose Slider Status...",
+    });
 
 
 });

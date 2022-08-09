@@ -42,7 +42,7 @@
 
                                         <!----------------- Name -------------------->
                                         <div class="mb-4 input-content">
-                                            <label for="name" class="capitalize"> <i class="fa-solid fa-file-signature"></i> Title </label>
+                                            <label for="name" class="capitalize"> <i class="fa-solid fa-file-signature"></i> Name </label>
                                             <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" aria-describedby="emailHelp" placeholder="Type Member Name..." autocomplete="nope" />
                                             @error('name')
                                                 <small class="form-text text-danger">{{ $message }}</small>
@@ -54,6 +54,20 @@
                                             <label for="job_title" class="capitalize"> <i class="fa-solid fa-user-tie"></i> Job Title </label>
                                             <input type="text" name="job_title" id="job_title" class="form-control @error('job_title') is-invalid @enderror" value="{{ old('job_title') }}" aria-describedby="emailHelp" placeholder="Type Member Job Title..." autocomplete="nope" />
                                             @error('job_title')
+                                                <small class="form-text text-danger">{{ $message }}</small>
+                                            @enderror
+                                        </div>
+
+
+                                        <!----------------- slider_show -------------------->
+                                        <div class="mb-4 input-content">
+                                            <label for="slider_show" class="capitalize"> <i class="fa-solid fa-sliders"></i> Visibile in Home Slider Show </label>
+                                            <select class="form-select form-control @error('slider_show') is-invalid @enderror" name="slider_show" id="slider_show"  aria-label="Default select example" >
+                                                <option></option>
+                                                <option value="0" {{ old('slider_show') == '0' ? "selected" : "" }}> No </option>
+                                                <option value="1" {{ old('slider_show') == '1' ? "selected" : "" }}> Yes </option>
+                                            </select>
+                                            @error('slider_show')
                                                 <small class="form-text text-danger">{{ $message }}</small>
                                             @enderror
                                         </div>

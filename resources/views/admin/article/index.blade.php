@@ -175,9 +175,9 @@
                                                 <div class="small text-gray">{{ $article->email }}</div>
                                             </div>
                                         </a></td>
-                                        <td>
+                                        <td class="check-icons">
                                             @if ( $article->pinned === "0" )
-                                                <i class="fa-solid fa-minus fa-2x"></i>
+                                                <span class="text-gray"> <i class="fa-solid fa-minus fa-2x"></i> </span>
                                             @else
                                                 <span class="text-success"> <i class="fa-regular fa-circle-check fa-2x"></i> </span>
                                             @endif

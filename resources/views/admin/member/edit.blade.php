@@ -60,6 +60,19 @@
                                         </div>
 
 
+                                        <!----------------- slider_show -------------------->
+                                        <div class="mb-4 input-content">
+                                            <label for="slider_show" class="capitalize"> <i class="fa-solid fa-sliders"></i> Visibile in Home Slider Show </label>
+                                            <select class="form-select form-control @error('slider_show') is-invalid @enderror" name="slider_show" id="slider_show"  aria-label="Default select example" >
+                                                <option></option>
+                                                <option value="0" {{ $member->slider_show == '0' ? "selected" : "" }}> No </option>
+                                                <option value="1" {{ $member->slider_show == '1' ? "selected" : "" }}> Yes </option>
+                                            </select>
+                                            @error('slider_show')
+                                                <small class="form-text text-danger">{{ $message }}</small>
+                                            @enderror
+                                        </div>
+
                                         <!----------------- Img -------------------->
                                         <div class="mb-3 input-content">
                                             <label for="img" class="form-label d-flex align-items-center">

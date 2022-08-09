@@ -27,6 +27,7 @@ use Illuminate\Foundation\Http\FormRequest;
         return [
             'name'            => ['required' , 'string' , 'max:100' , Rule::unique('members', 'name')->ignore($this->member)],
             'job_title'       => ['required' , 'string' , 'max:100'],
+            'slider_show'     => ['required' , 'string' , 'max:1'],
             'img'             => ['required' , 'mimes:jpeg,png,jpg' , 'max:2048'],
         ];
     }

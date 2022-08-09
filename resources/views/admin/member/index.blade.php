@@ -156,6 +156,7 @@
                                     </div>
                                 </th>
                                 <th class="border-bottom">Name</th>
+                                <th class="border-bottom">Slider Show</th>
                                 <th class="border-bottom">Date Created</th>
                                 <th class="border-bottom">Action</th>
                             </tr>
@@ -184,6 +185,13 @@
                                                 <div class="small text-gray">{{ $member->job_title }}</div>
                                             </div>
                                         </a></td>
+                                    <td class="check-icons">
+                                        @if ( $member->slider_show === "0" )
+                                            <span class="text-gray"> <i class="fa-solid fa-minus fa-2x"></i> </span>
+                                        @else
+                                            <span class="text-success"> <i class="fa-regular fa-circle-check fa-2x"></i> </span>
+                                        @endif
+                                    </td>
                                     <td><span class="fw-normal">{{ $member->created_at }}</span></td>
                                     <td class="actions">
                                         <a href="{{ route('admin.member.show', $member->id) }}" class="text-tertiary">
@@ -194,7 +202,6 @@
                                             class="text-info delete-record">
                                             <i class="fa-solid fa-trash-can text-danger fa-lg"></i>
                                         </a>
-
                                     </td>
                                 </tr>
                             @endforeach

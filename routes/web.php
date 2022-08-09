@@ -30,6 +30,9 @@ Route::get('/resource', [App\Http\Controllers\ResourceController::class, 'index'
 // subscribe
 Route::post('/subscribe', [App\Http\Controllers\SubscriberController::class, 'store'])->name('subscriber.store');
 
+// Team
+Route::get('/team', [App\Http\Controllers\MemberController::class, 'index'])->name('team');
+
 
 // Consulting
 Route::get('/consulting', [App\Http\Controllers\ConsultingController::class, 'index'])->name('consulting');
