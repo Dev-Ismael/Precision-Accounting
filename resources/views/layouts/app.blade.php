@@ -35,13 +35,13 @@
         @endphp
 
         <div class="header-transparent-with-topbar">
-            {{-- <div class="header-top-bar">
+            <div class="header-top-bar">
                 <div class="container">
                     <div class="row align-items-center">
                         <!-- <div class="col-lg-4 col-md-12 col-12">  </div> -->
                         <div class="col-lg-12 col-md-12 col-12">
                             <div class="header-right">
-                                <div class="address-content">
+                                {{-- <div class="address-content">
                                     <p>
                                         <i class="feather-map-pin"></i>
                                         <span><a href="{{ $setting->location }}"
@@ -53,7 +53,7 @@
                                         <i class="feather-phone"></i>
                                         <span><a href="tel:{{$setting->phone}}">{{ $setting->phone }}</a></span>
                                     </p>
-                                </div>
+                                </div> --}}
                                 <div class="social-icon-wrapper">
                                     <ul class="social-icon social-default icon-naked">
                                         <li>
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
 
 
             @php
@@ -153,8 +153,9 @@
                                     </ul>
                                 </nav>
                                 <!-- Start Header Btn  -->
-                                <div class="header-btn"><a class="btn-default text-uppercase rounded-0"
-                                        href="{{ route("consulting") }}">Free Consulting</a></div>
+                                <div class="header-btn">
+                                    <a class="btn-default text-uppercase rounded-0" href="{{ route("consulting") }}">Free Consulting</a>
+                                </div>
                                 <!-- End Header Btn  -->
 
                                 <!-- Start Mobile-Menu-Bar -->

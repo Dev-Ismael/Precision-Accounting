@@ -8947,7 +8947,6 @@ xclip
   font-size: 12px;
   z-index: 99;
   position: relative;
-  padding: 10px 0px;
 }
 .header-default .logo a {
   display: flex;
@@ -9462,6 +9461,9 @@ xclip
   .header-top-bar .social-icon-wrapper::before {
     display: none;
   }
+}
+.header-top-bar .social-icon-wrapper i {
+  color: #000 !important;
 }
 
 .header-transparent-with-topbar {
@@ -11282,6 +11284,10 @@ div.btn-default.rounded-player.sm-size {
 @media (max-width: 767.98px) {
   .rwt-team-area .slick-list {
     min-height: 340px !important;
+  }
+
+  .rn-slick-dot .slick-dots li {
+    width: 20px !important;
   }
 }
 .slick-initialized .slick-slide {
@@ -14320,7 +14326,7 @@ div.pagination-container li.active .page-link {
 }
 @media only screen and (max-width: 575px) {
   .slider-style-1 .inner .header-caption span {
-    font-size: 46px;
+    font-size: 25px;
   }
 }
 .slider-style-1.variation-default .inner {
