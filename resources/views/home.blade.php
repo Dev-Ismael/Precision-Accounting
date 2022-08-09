@@ -174,6 +174,13 @@
                         </div>
                     @endforeach
                 </div>
+                <div class="col-lg-12 text-center">
+                    <div class="rwt-load-more text-center">
+                        <a class="btn-default mt--30" href="{{ route("team") }}">View Full Team
+                            <i class="feather-loader"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

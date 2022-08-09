@@ -4,7 +4,7 @@
 
 
     <!-- Start Slider Area  -->
-    <div class="slider-area slider-style-1 height-850">
+    <div class="slider-area bg_image bg_image--12 slider-style-1 height-100vh">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

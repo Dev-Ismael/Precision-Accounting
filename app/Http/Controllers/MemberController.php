@@ -20,18 +20,18 @@ class MemberController extends Controller
     */
     public function index()
     {
-        // $members   = Member::get();
+        $members   = Member::get();
 
-        // // SEO Trait
-        // $this->staticPagesSeo(
-        //     'Blog',
-        //     'For many years PRECISION ACCOUNTING has been helping individuals, families and small businesses in the community prepare their taxes',
-        //     'Digital switching over, How tax planning matters,Payroll management,Qbooks,How COVID-19 affected the IRS,CPA from A to Z part two,CPA from A to Z'
-        // );
+        // SEO Trait
+        $this->staticPagesSeo(
+            'Precision Accounting Team',
+            'For many years PRECISION ACCOUNTING has been helping individuals, families and small businesses in the community prepare their taxes',
+            'Digital switching over, How tax planning matters,Payroll management,Qbooks,How COVID-19 affected the IRS,CPA from A to Z part two,CPA from A to Z'
+        );
 
 
-        // return view('member',compact('members'));
-        return "team";
+        return view('member',compact('members'));
+
     }
 
 
