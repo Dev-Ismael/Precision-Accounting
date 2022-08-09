@@ -143,7 +143,7 @@
 
     <!-- Start Team-Style-Default Area  -->
     <div class="rwt-team-area rn-section-gap">
-        <div class="wrapper plr--65">
+        <div class="wrapper">
             <div class="container">
                 <div class="row mb--20">
                     <div class="col-lg-12">

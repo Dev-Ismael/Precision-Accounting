@@ -282,17 +282,17 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xl-4 col-md-4 col-sm-12 col-12 footer-box">
                             <div class="rn-footer-widget">
                                 <div class="logo">
-                                    <a href="{{ route("home") }}">
+                                    <a class="d-flex align-content-center justify-md-content-center" href="{{ route("home") }}">
                                         <img class="logo-light" src="{{ asset('doob_template_assets/images/logo/logo.png') }}"
                                             alt="Corporate Logo">
                                         <img class="logo-dark" src="{{ asset('doob_template_assets/images/logo/logo-dark-2x.png') }}"
                                             alt="Corporate Logo">
                                     </a>
                                 </div>
-                                <div class="social-icon-wrapper text-center">
+                                <div class="social-icon-wrapper">
                                     <ul class="social-icon social-default icon-naked">
                                         <li>
                                             <a href="{{ $setting->facebook }}"
@@ -326,7 +326,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-md-4 col-sm-12 col-12">
+                        <div class="col-xl-5 col-md-5 col-sm-12 col-12 footer-box">
                             <div class="rn-footer-widget us-box">
                                 <h4 class="title fw-bolder">
                                     <img src="{{ asset('doob_template_assets/images/icons/usa.png') }}" alt="usa-flag" width="30">
@@ -366,9 +366,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-4 col-sm-12 col-12">
+                        <div class="col-xl-3 col-md-3 col-sm-12 col-12 footer-box">
                             <div class="rn-footer-widget">
-                                <h4 class="title pt-3 pt-md-0">Newsletter</h4>
+                                <h4 class="title pt-3 pt-md-0 fw-bold">Newsletter</h4>
                                 <div class="inner">
                                     <h6 class="subtitle p-0 mb-3">Subscribe Our Newsletters To Get Updates & More</h6>
                                     <form class="newsletter-form w-100" method="POST" action="{{ route("subscriber.store") }}" >

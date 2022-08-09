@@ -9,7 +9,7 @@
 /*----------------------
     Slick Slides to have the same height
 ------------------------*/
-#customized-testimonial.rwt-testimonial-area{
+#customized-testimonial.rwt-testimonial-area, .rwt-team-area{
     .slick-track
     {
         display: flex !important;
@@ -18,6 +18,14 @@
     .slick-slide
     {
         height: inherit !important;
+    }
+}
+.rwt-team-area .slick-list{
+    min-height: 360px !important;
+}
+@media (max-width: 767.98px) {
+    .rwt-team-area .slick-list{
+        min-height: 340px !important;
     }
 }
 

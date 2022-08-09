@@ -10683,7 +10683,7 @@ div.btn-default.rounded-player.sm-size {
 }
 
 /*-----------------------
-    Social Icons 
+    Social Icons
 -------------------------*/
 .social-default {
   display: flex;
@@ -11268,13 +11268,22 @@ div.btn-default.rounded-player.sm-size {
 /*----------------------
     Slick Slides to have the same height
 ------------------------*/
-#customized-testimonial.rwt-testimonial-area .slick-track {
+#customized-testimonial.rwt-testimonial-area .slick-track, .rwt-team-area .slick-track {
   display: flex !important;
 }
-#customized-testimonial.rwt-testimonial-area .slick-slide {
+#customized-testimonial.rwt-testimonial-area .slick-slide, .rwt-team-area .slick-slide {
   height: inherit !important;
 }
 
+.rwt-team-area .slick-list {
+  min-height: 360px !important;
+}
+
+@media (max-width: 767.98px) {
+  .rwt-team-area .slick-list {
+    min-height: 340px !important;
+  }
+}
 .slick-initialized .slick-slide {
   margin-bottom: 0;
 }
@@ -13778,6 +13787,12 @@ div.pagination-container li.active .page-link {
 .logo a img {
   max-height: 110px;
 }
+@media (max-width: 767.98px) {
+  .logo a {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .footer-style-1 {
   background-color: var(--color-darkest);
@@ -13786,13 +13801,18 @@ div.pagination-container li.active .page-link {
   background-image: linear-gradient(0deg, var(--color-black), var(--color-blacker));
 }
 .footer-style-1 .social-icon-wrapper li {
-  margin: 10px;
+  margin: 7px;
 }
 .footer-style-1 .social-icon-wrapper li i {
   font-size: 20px;
 }
 .footer-style-1 .footer-top {
   padding: 120px 0;
+}
+@media (max-width: 767.98px) {
+  .footer-style-1 .footer-top .footer-box {
+    padding: 20px 10px;
+  }
 }
 .footer-style-1 .footer-top .rn-footer-widget .text-big {
   font-size: 18px;
@@ -14056,14 +14076,15 @@ div.pagination-container li.active .page-link {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .height-100vh {
-    height: auto;
+    height: 80vh;
     padding: 150px 0;
   }
 }
 @media only screen and (max-width: 767px) {
   .height-100vh {
-    height: auto;
+    height: 80vh;
     padding: 150px 0;
+    background-position: 30% 100% !important;
   }
 }
 
