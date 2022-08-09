@@ -13948,7 +13948,7 @@ div.pagination-container li.active .page-link {
 }
 
 /*--------------------------
-    Copyright Area  
+    Copyright Area
 ---------------------------*/
 .copyright-style-one {
   background: var(--color-darkest);
@@ -13958,6 +13958,14 @@ div.pagination-container li.active .page-link {
 .copyright-style-one .copyright-text {
   margin-bottom: 0;
   font-size: 14px;
+}
+.copyright-style-one .copyright-left {
+  text-align: left;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .copyright-style-one .copyright-left {
+    text-align: center;
+  }
 }
 .copyright-style-one .ft-menu {
   padding: 0;

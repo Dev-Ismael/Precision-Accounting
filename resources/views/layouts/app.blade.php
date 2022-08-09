@@ -408,7 +408,7 @@
         <div class="copyright-area copyright-style-one">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-8 col-sm-12 col-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div class="copyright-left">
                             Copyright
                             <i class="far fa-copyright"></i>
@@ -419,7 +419,7 @@
                             All Rights Reserved
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-4 col-sm-12 col-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div class="copyright-right text-center text-lg-end">
                             <p>Powered by
                                 <img src="{{ asset("doob_template_assets/images/BluSky-logo.png") }}" alt="BluSky-logo" width="35">

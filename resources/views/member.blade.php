@@ -18,9 +18,8 @@
                     </div>
                 </div>
                 @foreach ($members as $member)
-                    <div class="col-xl-4 col-lg-6  col-md-6  pt-4 pb-4">
-                        <div class="mt--30 sal-animate me-3 ms-3" data-sal="slide-up" data-sal-duration="700"
-                            data-sal-delay="200">
+                    <div class="col-xl-4 col-lg-6 col-md-6  pt-4 pb-4">
+                        <div class="mt--30 me-3 ms-3 sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
                             <div class="rn-team team-style-default">
                                 <div class="inner">
                                     <div class="thumbnail">

@@ -26,7 +26,7 @@ class UpdateTestimonialRequest extends FormRequest
     {
         return [
             'name'           => ['required' , 'string' , 'max:100' , Rule::unique('testimonials', 'name')->ignore($this->testimonial)],
-            'job_title'      => ['required' , 'string' , 'max:100' ],
+            'job_title'      => ['nullable' , 'string' , 'max:100' ],
             'visibility'     => ['required' , 'integer' , 'max:1' ],
             'content'        => ['required' , 'string' , 'max:1000'],
             'img'            => ['nullable' , 'mimes:jpeg,png,jpg' , 'max:2048'],

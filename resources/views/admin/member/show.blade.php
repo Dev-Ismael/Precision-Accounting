@@ -57,7 +57,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-capitalize"> <i class="fa-solid fa-file-signature"></i> Title </td>
+                                            <td class="text-capitalize"> <i class="fa-solid fa-file-signature"></i> Name </td>
                                             <td> {{ $member->name != "" ? $member->name : '-'  }} </td>
                                         </tr>
                                         <tr>

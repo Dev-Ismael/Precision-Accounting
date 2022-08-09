@@ -1,8 +1,8 @@
 /*--------------------------
-    Copyright Area  
+    Copyright Area
 ---------------------------*/
 
-// Copyright Style One 
+// Copyright Style One
 .copyright-style-one {
     background: var(--color-darkest);
     padding: 20px 0;
@@ -10,6 +10,12 @@
     .copyright-text {
         margin-bottom: 0;
         font-size: 14px;
+    }
+    .copyright-left{
+        text-align: left;
+        @media #{$md-layout} {
+            text-align: center;
+        }
     }
     .ft-menu {
         padding: 0;

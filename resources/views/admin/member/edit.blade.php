@@ -43,7 +43,7 @@
 
                                         <!----------------- Name -------------------->
                                         <div class="mb-4 input-content">
-                                            <label for="name" class="capitalize"> <i class="fa-solid fa-file-signature"></i> Title </label>
+                                            <label for="name" class="capitalize"> <i class="fa-solid fa-file-signature"></i> Name </label>
                                             <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" value="{{ $member->name }}" aria-describedby="emailHelp" placeholder="Type Member Name..." autocomplete="nope" />
                                             @error('name')
                                                 <small class="form-text text-danger">{{ $message }}</small>

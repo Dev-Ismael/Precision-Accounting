@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <input type="text" name="phone" id="phone" placeholder="Your Phone Number..." value="{{ old("phone") }}" required/>
                                     @error('phone')
@@ -50,7 +50,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <input type="email" name="email" id="email" placeholder="Your Email Address..." value="{{ old("email") }}" required/>
                                     @error('email')
@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <input type="text" name="address" id="address" placeholder="Your Address..." value="{{ old("address") }}" required/>
                                     @error('address')
@@ -69,7 +69,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <input type="text" name="business_service" id="business_service" placeholder="Your Business Service..." value="{{ old("business_service") }}" required/>
                                     @error('business_service')
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <input type="text" name="business_type" id="business_type" placeholder="Your Business Type..." value="{{ old("business_type") }}" required/>
                                     @error('business_type')
@@ -87,6 +87,8 @@
                                     @enderror
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
                                     <select name="state" id="state" required>
@@ -199,26 +201,26 @@
                                     @error('state')
                                         <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
                                     @enderror
-
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <select name="meeting" id="meeting" required>
 
-                        <div class="form-group">
-                            <select name="meeting" id="meeting" required>
+                                        <option selected="selected" value="" disabled="" style="color:#000;">Meeting Type </option>
 
-                                <option selected="selected" value="" disabled="" style="color:#000;">Meeting Type </option>
+                                        <option value="Zoom Meeting">Zoom Meeting </option>
 
-                                <option value="Zoom Meeting">Zoom Meeting </option>
+                                        <option value="Phone Call Meeting">Phone Call Meeting </option>
 
-                                <option value="Phone Call Meeting">Phone Call Meeting </option>
+                                        <option value="Office Meeting">Office Meeting </option>
 
-                                <option value="Office Meeting">Office Meeting </option>
-
-                            </select>
-                            @error('meeting')
-                                <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
-                            @enderror
+                                    </select>
+                                    @error('meeting')
+                                        <div class="invalid-feedback d-block" style="margin-left:10px">{{ $message }}.</div>
+                                    @enderror
+                                </div>
+                            </div>
                         </div>
 
 
@@ -239,7 +241,7 @@
                     </form>
                 </div>
                 <div class="col-lg-5 mt_md--30 mt_sm--30">
-                    <div class="google-map-style-1">
+                    <div>
                         <img src="{{ asset("doob_template_assets/images/free-consulting.jpg") }}" class="free-consulting rounded" alt="free-consulting">
                     </div>
                 </div>
