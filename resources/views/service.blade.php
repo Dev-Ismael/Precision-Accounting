@@ -7,18 +7,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
+                            <div class="col-lg-12" data-sal="slide-left" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
+                                <div class="section-title text-center">
                                     <h4 class="subtitle "><span class="theme-gradient">Services . {{ $service->title }}                            </span></h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-8 offset-lg-2">
                             <div class="content text-center">
-                                <div class="page-title">
+                                <div class="page-title"  data-sal="slide-right" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                                     <h1 class="theme-gradient"> {{ $service->title }} </h1>
                                 </div>
-                                <div class="thumbnail alignwide mt--60"><img class="w-100 radius"
+                                <div class="thumbnail alignwide mt--60"  data-sal="slide-down" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
+                                    <img class="w-100 radius"
                                         src="{{ asset("images/services/".$service->img) }}" alt="Blog Images"></div>
                             </div>
                         </div>

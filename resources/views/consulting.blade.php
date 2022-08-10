@@ -9,10 +9,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mb--40">
-                    <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
-                        <h4 class="subtitle "><span class="theme-gradient">FILL THE BELOW FORM TO GET YOUR
+                    <div class="section-title text-center">
+                        <h4 class="subtitle"  data-sal="slide-right" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back"> <span class="theme-gradient">FILL THE BELOW FORM TO GET YOUR
                         </span></h4>
-                        <h2 class="title w-600 mb--20">Free Consulting Now
+                        <h2 class="title w-600 mb--20"  data-sal="slide-left" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">Free Consulting Now
                             </h2>
                     </div>
                 </div>
@@ -20,7 +20,7 @@
 
 
             <div class="row mt--40 row--15 pt--15">
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-sal="slide-right" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                     <form class="contact-form-1 rwt-dynamic-form" id="contact-form" method="POST" action="{{ route('consulting.send') }}">
                         @csrf
                         <div class="row">
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="phone" id="phone" placeholder="Your Phone Number..." value="{{ old("phone") }}" required/>
                                     @error('phone')
@@ -50,7 +50,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="email" name="email" id="email" placeholder="Your Email Address..." value="{{ old("email") }}" required/>
                                     @error('email')
@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="address" id="address" placeholder="Your Address..." value="{{ old("address") }}" required/>
                                     @error('address')
@@ -69,7 +69,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="business_service" id="business_service" placeholder="Your Business Service..." value="{{ old("business_service") }}" required/>
                                     @error('business_service')
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="business_type" id="business_type" placeholder="Your Business Type..." value="{{ old("business_type") }}" required/>
                                     @error('business_type')
@@ -87,9 +87,7 @@
                                     @enderror
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <select name="state" id="state" required>
 
@@ -203,7 +201,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <select name="meeting" id="meeting" required>
 
@@ -240,7 +238,7 @@
 
                     </form>
                 </div>
-                <div class="col-lg-5 mt_md--30 mt_sm--30">
+                <div class="col-lg-5 mt_md--30 mt_sm--30"  data-sal="slide-left" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                     <div>
                         <img src="{{ asset("doob_template_assets/images/free-consulting.jpg") }}" class="free-consulting rounded" alt="free-consulting">
                     </div>

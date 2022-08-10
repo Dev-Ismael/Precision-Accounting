@@ -2,24 +2,20 @@
 
 @section('content')
     <div class="main-content pt--125">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="400"
-                        data-sal-delay="150">
-                        <h4 class="subtitle "><span class="theme-gradient">Our Experts. </span></h4>
-                    </div>
-                </div>
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="content text-center">
-                        <div class="page-title">
-                            <h1 class="theme-gradient"> Our Experts Team </h1>
+        <div class="rn-service-area rn-section-gap ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                            <h4 class="subtitle "><span class="theme-gradient">Partners</span></h4>
+                            <h2 class="title w-600 mb--20"> Meet Our Experts</h2>
+                            {{-- <p class="description b1">Access the most recent analyses and insights. </p> --}}
                         </div>
                     </div>
                 </div>
-                @foreach ($members as $member)
-                    <div class="col-xl-4 col-lg-6 col-md-6  pt-4 pb-4">
-                        <div class="mt--30 me-3 ms-3 sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                <div class="row row--15 service-wrapper">
+                    @foreach ( $members as $member )
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12  mt-3sal-animate mt--30" data-sal="slide-up" data-sal-duration="700">
                             <div class="rn-team team-style-default">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -32,8 +28,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+
+                </div>
             </div>
         </div>
     </div>

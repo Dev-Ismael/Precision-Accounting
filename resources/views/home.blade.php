@@ -11,7 +11,7 @@
                 <div class="row row--30 align-items-center">
                     <div class="order-2 order-lg-1 col-lg-7">
                         <div class="inner text-left">
-                            <h1 class="title">Making  <br> Accounting Marvels.</h1>
+                            <h1 class="title">Making  <br> Accounting Marvels</h1>
                             <p class="description">We aim to establish a long-lasting partnership with you from the beginning to the end.</p>
                         </div>
                     </div>
@@ -24,8 +24,8 @@
                 <div class="row row--30 align-items-center">
                     <div class="order-2 order-lg-1 col-lg-7">
                         <div class="inner text-left">
-                            <h1 class="title">Helping  <br> Your Business Grow.</h1>
-                            <p class="description">Our main goal is to optimize your business processes, and minimize your taxes payable and liabilities. Your books and payroll process are taken good care of.</p>
+                            <h1 class="title">Helping  <br> Your Business Grow</h1>
+                            <p class="description">Our main goal is to optimize your business processes, and minimize your taxes payable and liabilities. Your books and payroll processes are taken good care of.</p>
                         </div>
                     </div>
                 </div>
@@ -37,9 +37,9 @@
                 <div class="row row--30 align-items-center">
                     <div class="order-2 order-lg-1 col-lg-7">
                         <div class="inner text-left">
-                            <h1 class="title">Free <br> Consulting.</h1>
+                            <h1 class="title">Free <br> Consulting</h1>
                             <p class="description">
-                            You’ll find us providing you with reasonable advice to meet your best interests and supporting you with all of your concerns.</p>
+                            You’ll find us providing you with reasonable advice to meet your best interests and supporting you with all your concerns.</p>
                             <div class="button-group mt--30"><a class="btn-default" target="_blank" href="#">Consulting
                                     Now</a></div>
                         </div>
@@ -67,18 +67,15 @@
                         <h4 class="subtitle ">
                             <span class="theme-gradient">What we can do for you</span>
                         </h4>
-                        <h2 class="title w-600 mb--20">Services provided for you.</h2>
+                        <h2 class="title w-600 mb--20">Services provided for you</h2>
                     </div>
                 </div>
             </div>
 
             <div class="row row--15 service-wrapper">
 
-
-
                 @foreach ($services as $service)
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700"
-                        data-sal-delay="100">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                         <div class="service service__style--1 icon-circle-style text-center">
                             <div class="service-icon pb-3">
                                 <img src="{{ asset('images/services/' . $service->icon) }}" width="100"
@@ -94,7 +91,6 @@
                         </div>
                     </div>
                 @endforeach
-
 
             </div>
 
@@ -112,7 +108,7 @@
 
 
     <!----------- YouTube Video  ------------->
-    <div class="rwt-video-area rn-section-gap rn-section-gapBottom ">
+    <div class="rwt-video-area rn-section-gap rn-section-gapBottom" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -121,7 +117,7 @@
                                 href="https://www.youtube.com/watch?v=8tgU-kdAw_k"><span>
                                     <i class="feather-play"></i>
                                 </span></a>
-                            <h3 class="title">WATCH VIDEOS <br> Financial Package for Your Company Success.</h3>
+                            <h3 class="title">WATCH VIDEO <br> Precision Accounting International Presentation</h3>
                         </div>
                         <div class="video-lightbox-wrapper"></div>
                     </div>
@@ -129,13 +125,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
 
 
 
@@ -149,17 +138,17 @@
                     <div class="col-lg-12">
                         <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700"
                             data-sal-delay="100">
-                            <h4 class="subtitle "><span class="theme-gradient">Our Experts.</span></h4>
-                            <h2 class="title w-600 mb--20">Our Experts Team.</h2>
-                            {{-- <p class="description b1">There are many variations of passages of Lorem Ipsum
-                                available, <br>but the majority have suffered alteration.</p> --}}
+                            <h4 class="subtitle "><span class="theme-gradient">Partners</span></h4>
+                            <h2 class="title w-600 mb--20">Our Experts Team</h2>
+                            <p class="description b1">
+                                Our Experts team is at your service at all times.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="rn-slick-dot rn-slick-arrow team-slider mb--60">
+                <div class="rn-slick-dot rn-slick-arrow team-slider mb--60" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back" >
                     @foreach ($members as $member)
-                        <div class="mt--30 sal-animate me-3 ms-3" data-sal="slide-up" data-sal-duration="700"
-                            data-sal-delay="200">
+                        <div class="mt--30 sal-animate me-3 ms-3">
                             <div class="rn-team team-style-default">
                                 <div class="inner">
                                     <div class="thumbnail">
@@ -225,14 +214,17 @@
                     <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700"
                         data-sal-delay="100">
                         <h4 class="subtitle "><span class="theme-gradient">Client Feedback</span></h4>
-                        <h2 class="title w-600 mb--20">Our Clients Feedback.</h2>
-                        <p class="description b1">We provide company and finance service for <br> startups and
-                            company business.</p>
+                        <h2 class="title w-600 mb--20">Our Clients Feedback</h2>
+                        <p class="description b1">
+                            We're constantly building features from clients feedback and want
+                            <br>
+                            the client experience to be second to none.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="rn-slick-dot rn-slick-arrow testimonial-activation mb--60">
+            <div class="rn-slick-dot rn-slick-arrow testimonial-activation mb--60"  data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
 
 
 
@@ -298,12 +290,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="400"
-                        data-sal-delay="100">
+                    <div class="section-title text-center"  data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                         <h4 class="subtitle "><span class="theme-gradient">Latests News</span></h4>
-                        <h2 class="title w-600 mb--20">Our Latest News.</h2>
-                        <p class="description b1">We provide company and finance service for <br> startups and
-                            company business.</p>
+                        <h2 class="title w-600 mb--20">Our Latest News</h2>
+                        <p class="description b1">
+                            We provide all what you need to know whether you <br> are a large firm or a startup.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -311,8 +303,7 @@
                 <div class="col-lg-12">
                     <div class="row row--15">
                         @foreach ($articles as $article)
-                            <div class="col-lg-4 col-md-6 col-12 mt--30 sal-animate" data-sal="slide-up"
-                                data-sal-duration="700" data-sal-delay="100">
+                            <div class="col-lg-4 col-md-6 col-12 mt--30 "  data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                                 <div class="rn-card box-card-style-default">
                                     <div class="inner">
                                         <div class="thumbnail"><a class="image"
@@ -403,9 +394,9 @@
                 <div class="col-lg-12">
                     <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700"
                         data-sal-delay="100">
-                        <h4 class="subtitle "><span class="theme-gradient">Clients Feedback.</span></h4>
-                        <h2 class="title w-600 mb--20">Global Clients Around the World.</h2>
-                        <p class="description b1">Let’s See Our Valuable Clients Feedback about our services </p>
+                        <h4 class="subtitle "><span class="theme-gradient">Clients </span></h4>
+                        <h2 class="title w-600 mb--20">Global Clients Around the World</h2>
+                        <p class="description b1">Let’s See Our Valuable Clients Feedback about our services. </p>
 
                     </div>
                 </div>
@@ -418,7 +409,7 @@
                         </div>
                         <h5 class="title">Bookkeeping service</h5>
                         <p class="description">
-                            More than satisfied clients with our Bookkeeping service
+                            More than satisfied clients with our Bookkeeping service.
                         </p>
                     </div>
                 </div>
@@ -430,7 +421,7 @@
                         <h5 class="title">Payroll service</h5>
                         <p class="description">
                             More than satisfied clients
-                            with our Payroll service
+                            with our Payroll service.
                         </p>
                     </div>
                 </div>
@@ -442,7 +433,7 @@
                         <h5 class="title">Taxes service</h5>
                         <p class="description">
                             More than satisfied clients
-                            with our Taxes service
+                            with our Taxes service.
                         </p>
                     </div>
                 </div>
@@ -472,7 +463,7 @@
                     <div class="row row--0 align-items-center content-wrapper theme-shape">
                         <div class="col-lg-12">
                             <div class="inner">
-                                <div class="content text-center">
+                                <div class="content text-center"  data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                                     <h2 class="title">Keep in touch with our expert CPAs</h2>
                                     {{-- <h6 class="subtitle">MEET WITH US</h6> --}}
                                     <div class="call-to-btn">

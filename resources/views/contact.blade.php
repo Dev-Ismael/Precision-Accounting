@@ -9,15 +9,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mb--40">
-                    <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                    <div class="section-title text-center"  data-sal="slide-down" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                         <h4 class="subtitle "><span class="theme-gradient">Contact Form</span></h4>
-                        <h2 class="title w-600 mb--20">Our Contact Address Here.</h2>
+                        <h2 class="title w-600 mb--20">Our Contact Address Here</h2>
                     </div>
                 </div>
             </div>
             <div class="row row--15">
                 <div class="col-lg-12">
-                    <div class="rn-contact-address mt_dec--30">
+                    <div class="rn-contact-address mt_dec--30"  data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-12 mt-3">
                                 <div class="rn-address row">
@@ -73,7 +73,7 @@
             </div>
 
             <div class="row mt--40 row--15 pt--15">
-                <div class="col-lg-7">
+                <div class="col-lg-7"  data-sal="slide-right" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                     <form class="contact-form-1 rwt-dynamic-form" id="contact-form" action="{{ route("contact.send") }}" method="POST" >
                         @csrf
                         <div class="form-group">
@@ -108,7 +108,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-5 mt_md--30 mt_sm--30">
+                <div class="col-lg-5 mt_md--30 mt_sm--30"  data-sal="slide-left" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                     <div class="google-map-style-1">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1268.5097799282705!2d-74.17878609806533!3d40.870958812432235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fe854565461d%3A0xdfd91d80dc47b508!2sPrecision%20Accounting%20Intl%20LLC!5e0!3m2!1sen!2seg!4v1610010205990!5m2!1sen!2seg" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>

@@ -10,18 +10,19 @@
                 <div class="col-lg-12">
                     <div class="inner text-center">
                         {{-- <span class="subtitle">Certified Public Accountants</span> --}}
-                        <h4 class="subtitle d-inline p-1" style="background-color: #fff "><span class="theme-gradient"> Certified Public Accountants </span></h4>
+                        <h4 class="subtitle d-inline p-2" style="background-color: #fff; border-radius:5px"
+                        data-sal="slide-left" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back"><span class="theme-gradient"> Certified Public Accountants </span></h4>
                         <h1 class="title display-two"><span class="theme-gradient">We can help you with</span> <br>
                             <span class="header-caption">
                                 <span class="cd-headline clip is-full-width">
                                     <span class="cd-words-wrapper">
-                                        <b class="is-visible theme-gradient">Bookkeeping.</b>
-                                        <b class="is-hidden theme-gradient">Payroll.</b>
-                                        <b class="is-hidden theme-gradient">Individual Tax.</b>
-                                        <b class="is-hidden theme-gradient">Payroll.</b>
-                                        <b class="is-hidden theme-gradient">Part-Time CFO.</b>
-                                        <b class="is-hidden theme-gradient">Non-profit Organization.</b>
-                                        <b class="is-hidden theme-gradient">Consulting.</b>
+                                        <b class="is-visible theme-gradient">Bookkeeping</b>
+                                        <b class="is-hidden theme-gradient">Payroll</b>
+                                        <b class="is-hidden theme-gradient">Individual Tax</b>
+                                        <b class="is-hidden theme-gradient">Payroll</b>
+                                        <b class="is-hidden theme-gradient">Part-Time CFO</b>
+                                        <b class="is-hidden theme-gradient">Non-profit Organization</b>
+                                        <b class="is-hidden theme-gradient">Consulting</b>
                                     </span>
                             </span>
                             </span>
@@ -29,12 +30,14 @@
                         <p class="description">
                             Set a vision, take a decision, and do both with <strong>Precision</strong>.
                         </p>
-                        <div class="button-group"><a class="btn-default btn-medium round btn-icon" target="_blank"  href="{{ route("consulting") }}">Consulting
-                                 <i class="icon feather-arrow-right">
-                                </i>
+                        <div class="button-group">
+                            <a class="btn-default btn-medium round btn-icon" target="_blank"  href="{{ route("consulting") }}"  data-sal="slide-right" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
+                                Consulting
+                                <i class="icon feather-arrow-right"></i>
                             </a>
-                            <a class="btn-default btn-medium btn-border btn-in-transparent round btn-icon" href="{{ route("contact") }}">Contact Us <i
-                                    class="icon feather-arrow-right"></i>
+                            <a class="btn-default btn-medium btn-border btn-in-transparent round btn-icon" href="{{ route("contact") }}"  data-sal="slide-left" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
+                                Contact Us
+                                <i class="icon feather-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -50,17 +53,17 @@
     <div class="rwt-advance-tab-area rn-section-gap">
         <div class="container">
             <div class="row mb--40">
-                <div class="col-lg-8 offset-lg-2">
+                <div class="col-lg-8 offset-lg-2"  data-sal="slide-right" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                     <div class="section-title text-center">
                         <h4 class="subtitle "><span class="theme-gradient">WHAT WE DO</span></h4>
-                        <h2 class="title w-600 mb--20">Most trustworthy consulting with the best CPAs.</h2>
+                        <h2 class="title w-600 mb--20">Most trustworthy consulting with the best CPAs</h2>
                     </div>
                 </div>
             </div>
 
             <div class="html-tabs" data-tabs="true">
                 <div class="row row--30">
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--30 mt_sm--30">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--30 mt_sm--30"  data-sal="slide-down" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                         <div class="advance-tab-button advance-tab-button-1">
                             <ul class="nav nav-tabs tab-button-list" id="myTab" role="tablist">
                                 <li class="nav-item w-100" role="presentation">
@@ -96,7 +99,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                         <div class="tab-content">
                             <div class="tab-pane fade advance-tab-content-1" id="home" role="tabpanel"
                                 aria-labelledby="home-tab">
@@ -139,22 +142,24 @@
         <div class="wrapper">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 mb--40">
-                    <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="400"
-                        data-sal-delay="150">
+                    <div class="section-title text-center"  data-sal="slide-left" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                         <h4 class="subtitle "><span class="theme-gradient"> More About Us </span></h4>
-                        <h2 class="title w-600 mb--20">Need expert CPAs to run and grow your business so talk to us.</h2>
+                        <h2 class="title w-600 mb--20">  CPAs experts </h2>
+                        <p class="description b1">
+                            Need expert CPAs to run and grow your business so talk to us.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="rn-splite-style bg-color-blackest">
                 <div class="split-wrapper">
                     <div class="row g-0 radius-10 align-items-center">
-                        <div class="col-lg-12 col-xl-6 col-12">
+                        <div class="col-lg-12 col-xl-6 col-12"  data-sal="slide-down" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                             <div class="thumbnail">
                                 <img src="{{ asset('doob_template_assets/images/split/about.jpg') }}"  alt="split Images">
                             </div>
                         </div>
-                        <div class="col-lg-12 col-xl-6 col-12">
+                        <div class="col-lg-12 col-xl-6 col-12"  data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                             <div class="split-inner">
                                 <h5 class="title sal-animate" data-sal="slide-up" data-sal-duration="400"
                                     data-sal-delay="200">PRECISION ACCOUNTING INTL LLC.</h5>

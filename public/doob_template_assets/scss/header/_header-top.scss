@@ -113,14 +113,14 @@
     .header-right {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: right;
         flex-wrap: wrap;
         @media #{$md-layout} {
-            justify-content: center;
+            justify-content: right;
             margin-top: 6px;
         }
         @media #{$sm-layout} {
-            justify-content: center;
+            justify-content: right !important;
             margin-top: 6px;
         }
         .address-content {

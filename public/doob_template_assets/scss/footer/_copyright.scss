@@ -13,7 +13,7 @@
     }
     .copyright-left{
         text-align: left;
-        @media #{$md-layout} {
+        @media #{$sm-layout} {
             text-align: center;
         }
     }

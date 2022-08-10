@@ -11,7 +11,7 @@
                         <h4 class="title"> <i class="fa-solid fa-thumbtack" style="color:#0d3050"></i> Pinned Articles </h4>
                         <div class="col-lg-12 col-xl-6 mt-3">
                                 @if ( isset($pinned_articles[0]) )
-                                    <div class="rn-card box-card-style-default content-transparent post-large h-100">
+                                    <div class="rn-card box-card-style-default content-transparent post-large h-100"  data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                                         <div class="inner">
                                             <div class="thumbnail">
                                                 <a class="image" href="{{ route('article', $pinned_articles[0]->slug) }}">
@@ -34,7 +34,7 @@
                             <div class="row row--5">
                                 <div class="col-lg-6 middle-post">
                                     @if ( isset($pinned_articles[1]) )
-                                        <div class="rn-card box-card-style-default content-transparent h-100">
+                                        <div class="rn-card box-card-style-default content-transparent h-100"  data-sal="slide-down" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                                             <div class="inner h-100">
                                                 <div class="thumbnail h-100">
                                                     <a class="image h-100 w-100" href="{{ route('article', $pinned_articles[1]->slug) }}"  style="background-image: url('{{asset("images/articles/".$pinned_articles[1]->img)}}')">
@@ -57,7 +57,7 @@
                                     <!-- Start Single Post  -->
                                     <div class="rn-card box-card-style-default content-transparent ">
                                         @if ( isset($pinned_articles[2]) )
-                                            <div class="inner">
+                                            <div class="inner"  data-sal="slide-left" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                                                 <div class="thumbnail">
                                                     <a class="image" href="{{ route('article', $pinned_articles[2]->slug) }}">
                                                         <img class="w-100" src="{{ asset("images/articles/".$pinned_articles[2]->img) }}" alt="Blog Image">
@@ -78,7 +78,7 @@
                                     <!-- Start Single Post  -->
                                     <div class="rn-card box-card-style-default content-transparent mt--10">
                                         @if ( isset($pinned_articles[3]) )
-                                            <div class="inner">
+                                            <div class="inner"  data-sal="slide-left" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                                                 <div class="thumbnail">
                                                     <a class="image" href="{{ route('article', $pinned_articles[3]->slug) }}">
                                                         <img class="w-100" src="{{ asset("images/articles/".$pinned_articles[3]->img) }}" alt="Blog Image">
@@ -137,7 +137,7 @@
 
                                         <!---------- Articles ---------->
                                         @foreach ($articles as $article)
-                                            <div class="col-lg-6 col-md-6 col-12 mt--30">
+                                            <div class="col-lg-6 col-md-6 col-12 mt--30"  data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                                                 <div class="rn-card undefined">
                                                     <div class="inner">
                                                         <div class="thumbnail"><a class="image"
