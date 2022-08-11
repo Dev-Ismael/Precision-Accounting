@@ -20,15 +20,17 @@
                                         <b class="is-hidden theme-gradient">Payroll</b>
                                         <b class="is-hidden theme-gradient">Individual Tax</b>
                                         <b class="is-hidden theme-gradient">Payroll</b>
-                                        <b class="is-hidden theme-gradient">Part-Time CFO</b>
                                         <b class="is-hidden theme-gradient">Non-profit Organization</b>
+                                        <b class="is-hidden theme-gradient">Part-Time CFO</b>
                                         <b class="is-hidden theme-gradient">Consulting</b>
                                     </span>
-                            </span>
+                                </span>
                             </span>
                         </h1>
                         <p class="description">
                             Set a vision, take a decision, and do both with <strong>Precision</strong>.
+                            {{-- We help your business improve its financial recordkeeping,
+                            payroll and tax preparation, so you can plan your budget and your financial expenses. --}}
                         </p>
                         <div class="button-group">
                             <a class="btn-default btn-medium round btn-icon" target="_blank"  href="{{ route("consulting") }}"  data-sal="slide-right" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">

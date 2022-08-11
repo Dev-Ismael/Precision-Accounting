@@ -11,7 +11,7 @@
                 <div class="row row--30 align-items-center">
                     <div class="order-2 order-lg-1 col-lg-7">
                         <div class="inner text-left">
-                            <h1 class="title">Making  <br> Accounting Marvels</h1>
+                            <h1 class="title">Making <br> Accounting Marvels</h1>
                             <p class="description">We aim to establish a long-lasting partnership with you from the beginning to the end.</p>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                             <h1 class="title">Free <br> Consulting</h1>
                             <p class="description">
                             You’ll find us providing you with reasonable advice to meet your best interests and supporting you with all your concerns.</p>
-                            <div class="button-group mt--30"><a class="btn-default" target="_blank" href="#">Consulting
+                            <div class="button-group mt--30"><a class="btn-default" target="_blank" href="{{ route("consulting") }}">Consulting
                                     Now</a></div>
                         </div>
                     </div>
@@ -78,8 +78,10 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                         <div class="service service__style--1 icon-circle-style text-center">
                             <div class="service-icon pb-3">
-                                <img src="{{ asset('images/services/' . $service->icon) }}" width="100"
+                                <a href="{{ route('service', $service->slug) }}">
+                                    <img src="{{ asset('images/services/' . $service->icon) }}" width="100"
                                     alt="service-icon">
+                                </a>
                             </div>
                             <div class="content">
                                 <h4 class="title w-600"><a href="{{ route('service', $service->slug) }}">

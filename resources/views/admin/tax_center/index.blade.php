@@ -145,6 +145,7 @@
                                     </div>
                                 </th>
                                 <th class="border-bottom">Title</th>
+                                <th class="border-bottom">Visibility</th>
                                 <th class="border-bottom">Date Created</th>
                                 <th class="border-bottom">Action</th>
                             </tr>
@@ -170,6 +171,13 @@
                                                 <div class="small text-gray">{{ $tax_center->email }}</div>
                                             </div>
                                         </a></td>
+                                    <td class="check-icons">
+                                        @if ( $tax_center->visibility === "0" )
+                                            <span class="text-danger"> <i class="fa-regular fa-circle-xmark fa-2x"></i> </span>
+                                        @else
+                                            <span class="text-success"> <i class="fa-regular fa-circle-check fa-2x"></i> </span>
+                                        @endif
+                                    </td>
                                     <td><span class="fw-normal">{{ $tax_center->created_at }}</span></td>
                                     <td class="actions">
                                         <a href="{{ route('admin.tax_center.show', $tax_center->id) }}" class="text-tertiary"> <i

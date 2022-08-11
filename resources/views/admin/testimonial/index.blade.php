@@ -177,7 +177,7 @@
                                 </a></td>
                                     <td class="check-icons">
                                         @if ( $testimonial->visibility === "0" )
-                                            <span class="text-gray"> <i class="fa-solid fa-minus fa-2x"></i> </span>
+                                            <span class="text-danger"> <i class="fa-regular fa-circle-xmark fa-2x"></i> </span>
                                         @else
                                             <span class="text-success"> <i class="fa-regular fa-circle-check fa-2x"></i> </span>
                                         @endif

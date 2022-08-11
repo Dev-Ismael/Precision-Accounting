@@ -94,7 +94,7 @@
 
 
             @php
-                $tax_centers     = App\Models\TaxCenter::get();
+                $tax_centers     = App\Models\TaxCenter::where('visibility','1')->get();
                 $parent_services = App\Models\Service::where('parent_id', Null)->get();
             @endphp
 
