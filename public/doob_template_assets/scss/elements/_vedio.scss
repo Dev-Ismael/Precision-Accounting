@@ -1,5 +1,5 @@
 /*----------------------------
-    Video Popup Styles  
+    Video Popup Styles
 ------------------------------*/
 .video-popup ,
 .rn-gallery {
@@ -46,14 +46,14 @@
         padding-top: 150px;
     }
     @media #{$sm-layout} {
-        padding-bottom: 40px;
+        padding-bottom: 10px;
         padding-top: 150px;
     }
     .overlay-content {
         padding: 0 60px;
 
         @media #{$sm-layout} {
-            padding: 0 20px;
+            padding: 0 10px;
         }
         .title {
             margin-top: 15px;
@@ -63,7 +63,7 @@
             line-height: 1.4;
             color: var(--color-white);
             @media #{$sm-layout} {
-                font-size: 20px;
+                font-size: 16px;
             }
         }
     }

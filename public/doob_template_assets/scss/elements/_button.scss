@@ -158,6 +158,11 @@ div {
                 width: 70px;
                 height: 70px;
                 line-height: 70px;
+                @media #{$sm-layout} {
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                }
             }
         }
     }

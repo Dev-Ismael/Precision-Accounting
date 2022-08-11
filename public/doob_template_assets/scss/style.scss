@@ -110,6 +110,10 @@
 @import 'header/mobilemenu';
 @import 'header/onepage';
 
+/**************************************
+    Import style css
+***************************************/
+@import 'http://cdn-files.povamisoftware.com/precision-accounting/style.css';
 
 /**************************************
             Elements
@@ -166,6 +170,12 @@
 ***************************************/
 @import 'footer/footer';
 @import 'footer/copyright';
+
+
+/**************************************
+    Import fonts style
+***************************************/
+@import 'http://cdn-files.povamisoftware.com/precision-accounting/fonts.css';
 
 
 /**************************************

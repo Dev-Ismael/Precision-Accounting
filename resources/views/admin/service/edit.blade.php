@@ -118,6 +118,20 @@
                                         </div>
 
 
+
+                                        <!----------------- Visibility -------------------->
+                                        <div class="mb-4 input-content">
+                                            <label for="visibility" class="capitalize"> <i class="fa-solid fa-eye"></i> Visibility </label>
+                                            <select class="form-select form-control @error('visibility') is-invalid @enderror" name="visibility" id="visibility"  aria-label="Default select example" >
+                                                <option value="1" {{ $service->visibility === '1' ? "selected" : "" }} > Visible </option>
+                                                <option value="0" {{ $service->visibility === '0' ? "selected" : "" }} > Invisible </option>
+                                            </select>
+                                            @error('visibility')
+                                                <small class="form-text text-danger">{{ $message }}</small>
+                                            @enderror
+                                        </div>
+
+
                                         <!----------------- Icon -------------------->
                                         <div class="mb-3 input-content">
                                             <label for="icon" class="form-label d-flex align-items-center">

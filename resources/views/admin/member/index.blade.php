@@ -22,7 +22,7 @@
                     </ol>
                 </nav>
                 <h2 class="h4"> <i class="fa-solid fa-users text-primary"></i> Members List</h2>
-                <p class="mb-0">Your web analytics dashboard template.</p>
+                <p class="mb-0">You can manage this table  and do all opration system create , show, edit and delete</p>
             </div>
             <div class="btn-toolbar mb-2 mb-md-0"><a href="{{ route('admin.member.create') }}"
                     class="btn btn-sm btn-primary d-inline-flex align-items-center"> <i class="fa-solid fa-plus"></i> &nbsp;

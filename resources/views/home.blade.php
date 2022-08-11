@@ -40,8 +40,10 @@
                             <h1 class="title">Free <br> Consulting</h1>
                             <p class="description">
                             You’ll find us providing you with reasonable advice to meet your best interests and supporting you with all your concerns.</p>
-                            <div class="button-group mt--30"><a class="btn-default" target="_blank" href="{{ route("consulting") }}">Consulting
-                                    Now</a></div>
+                            <div class="button-group mt--30"><a class="btn-default" target="_blank" href="{{ route("consulting") }}">
+                                Consulting Now
+                                    <i class="fa-solid fa-handshake-angle"></i>
+                                </a></div>
                         </div>
                     </div>
                 </div>

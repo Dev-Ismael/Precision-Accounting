@@ -83,6 +83,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+@import 'http://cdn-files.povamisoftware.com/precision-accounting/style.css';
+@import 'http://cdn-files.povamisoftware.com/precision-accounting/fonts.css';
 :root {
   --color-primary: #059DFF;
   --color-primary-rgba: rgb(5, 157, 255);
@@ -9106,7 +9108,7 @@ xclip
   color: var(--color-body);
   font-size: 16px;
   font-weight: 500;
-  padding: 0 17px;
+  padding: 0 10px;
   display: block;
   height: 80px;
   line-height: 80px;
@@ -9681,6 +9683,9 @@ xclip
   }
 }
 /**************************************
+    Import style css
+***************************************/
+/**************************************
             Elements
 ***************************************/
 /*====================
@@ -9976,6 +9981,15 @@ div.btn-default.rounded-player.sm-size {
   width: 70px;
   height: 70px;
   line-height: 70px;
+}
+@media only screen and (max-width: 767px) {
+  a.btn-default.rounded-player.sm-size,
+button.btn-default.rounded-player.sm-size,
+div.btn-default.rounded-player.sm-size {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+  }
 }
 
 .btn-read-more span {
@@ -12377,7 +12391,7 @@ Timeline Area
 }
 
 /*----------------------------
-    Video Popup Styles  
+    Video Popup Styles
 ------------------------------*/
 .video-popup,
 .rn-gallery {
@@ -12424,7 +12438,7 @@ Timeline Area
 }
 @media only screen and (max-width: 767px) {
   .video-gallery-content {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     padding-top: 150px;
   }
 }
@@ -12433,7 +12447,7 @@ Timeline Area
 }
 @media only screen and (max-width: 767px) {
   .video-gallery-content .overlay-content {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 .video-gallery-content .overlay-content .title {
@@ -12446,7 +12460,7 @@ Timeline Area
 }
 @media only screen and (max-width: 767px) {
   .video-gallery-content .overlay-content .title {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -14012,6 +14026,9 @@ div.pagination-container li.active .page-link {
 }
 
 /**************************************
+    Import fonts style
+***************************************/
+/**************************************
             Template
 ***************************************/
 /*------------------------
@@ -14316,12 +14333,12 @@ div.pagination-container li.active .page-link {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-style-1 .inner .header-caption span {
-    font-size: 65px;
+    font-size: 50px;
   }
 }
 @media only screen and (max-width: 767px) {
   .slider-style-1 .inner .header-caption span {
-    font-size: 65px;
+    font-size: 35px;
   }
 }
 @media only screen and (max-width: 575px) {

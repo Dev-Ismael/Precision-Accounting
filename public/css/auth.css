@@ -1,3 +1,8 @@
+/**************************************
+    Import auth style
+***************************************/
+@import 'http://cdn-files.povamisoftware.com/precision-accounting/auth.css';
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;

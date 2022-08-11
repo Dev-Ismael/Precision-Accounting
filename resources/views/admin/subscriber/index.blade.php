@@ -23,7 +23,7 @@
                     </ol>
                 </nav>
                 <h2 class="h4"> <i class="fa-solid fa-list-check text-primary"></i> Subscribers List</h2>
-                <p class="mb-0">Your web analytics dashboard template.</p>
+                <p class="mb-0">You can manage this table  and do all opration system create , show, edit and delete</p>
             </div>
 
         </div>

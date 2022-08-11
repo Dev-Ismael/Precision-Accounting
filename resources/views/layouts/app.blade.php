@@ -95,7 +95,7 @@
 
             @php
                 $tax_centers     = App\Models\TaxCenter::where('visibility','1')->get();
-                $parent_services = App\Models\Service::where('parent_id', Null)->get();
+                $parent_services = App\Models\Service::where([ ['parent_id', Null] , ['visibility','1'] ])->get();
             @endphp
 
             <!-- Start Header Area  -->
@@ -126,7 +126,7 @@
                                                     <li>
                                                         <a href="{{ route("service", $parent_service->slug ) }}"> {{ $parent_service->title }}  </a>
                                                         @php
-                                                            $sub_services = App\Models\Service::where('parent_id', $parent_service->id)->get();
+                                                            $sub_services = App\Models\Service::where([ ['parent_id', $parent_service->id] , ['visibility','1'] ])->get();
                                                         @endphp
                                                         @if ( !$sub_services->isEmpty())
                                                             <i class="fa-solid fa-arrow-right"></i>
@@ -148,6 +148,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="{{ route("blog") }}">Blog</a></li>
+                                        <li><a href="{{ route("team") }}">Team</a></li>
                                         <li><a href="{{ route("contact") }}">Contact</a></li>
                                         <li><a href="{{ route("resources") }}">Resources</a></li>
                                     </ul>
@@ -249,6 +250,7 @@
                             </ul>
                         </li>
                         <li><a href="{{ route("blog") }}">Blog</a></li>
+                        <li><a href="{{ route("team") }}">Team</a></li>
                         <li><a href="{{ route("contact") }}">Contact</a></li>
                         <li><a href="{{ route("resources") }}">Resources</a></li>
                     </ul>

@@ -22,7 +22,7 @@
                     </ol>
                 </nav>
                 <h2 class="h4"> <i class="fa-solid fa-handshake-simple text-primary"></i> Services List</h2>
-                <p class="mb-0">Your web analytics dashboard template.</p>
+                <p class="mb-0">You can manage this table  and do all opration system create , show, edit and delete</p>
             </div>
             <div class="btn-toolbar mb-2 mb-md-0"><a href="{{ route('admin.service.create') }}"
                     class="btn btn-sm btn-primary d-inline-flex align-items-center"> <i class="fa-solid fa-plus"></i> &nbsp; New Service</a>
@@ -145,6 +145,7 @@
                                     </div>
                                 </th>
                                 <th class="border-bottom">Title</th>
+                                <th class="border-bottom">Visibility</th>
                                 <th class="border-bottom">Date Created</th>
                                 <th class="border-bottom">Action</th>
                             </tr>
@@ -170,6 +171,13 @@
                                                 <div class="small text-gray">{{ $service->email }}</div>
                                             </div>
                                         </a></td>
+                                    <td class="check-icons">
+                                        @if ( $service->visibility === "0" )
+                                            <span class="text-danger"> <i class="fa-regular fa-circle-xmark fa-2x"></i> </span>
+                                        @else
+                                            <span class="text-success"> <i class="fa-regular fa-circle-check fa-2x"></i> </span>
+                                        @endif
+                                    </td>
                                     <td><span class="fw-normal">{{ $service->created_at }}</span></td>
                                     <td class="actions">
                                         <a href="{{ route('admin.service.show', $service->id) }}" class="text-tertiary"> <i
