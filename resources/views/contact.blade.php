@@ -32,9 +32,9 @@
                                                 <a href="https://g.page/PrecisionAccountingIntl?share" target="_blank"> 1035 US Highway 46 East STE B-101, Clifton, NJ 07013 </a>
                                             </p>
                                             <p>
-                                                <span> <i class="feather-phone"></i> <a href="tel:+19733045553"> (973) 304-5553 </a></span>
+                                                <span> <i class="feather-phone"></i> <a href="tel:+19739561040"> (973) 956-1040 </a> </span>
                                                 <span> &nbsp; , &nbsp; </span>
-                                                <span> <i class="feather-message-circle"></i> <a href="sms:+19739561040"> (973) 956-1040 </a></span>
+                                                <span> <i class="feather-message-circle"></i>  <a href="sms:+19733045553"> (973) 304-5553 </a> </span>
                                             </p>
                                         </div>
                                     </div>
