@@ -14090,13 +14090,13 @@ div.pagination-container li.active .page-link {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .height-100vh {
-    height: 80vh;
+    height: 100vh;
     padding: 150px 0;
   }
 }
 @media only screen and (max-width: 767px) {
   .height-100vh {
-    height: 80vh;
+    height: 100vh;
     padding: 150px 0;
     background-position: 30% 100% !important;
   }

@@ -22,7 +22,7 @@ class HomeController extends Controller
         $testimonials = Testimonial::where('visibility', '1')->get();
         $members      = Member::where('slider_show','1')->get();
         $articles     = Article::orderBy('id','desc')->limit(6)->get();
-        $services     = Service::where('parent_id', Null)->orderBy('id','desc')->limit(6)->get();
+        $services     = Service::where('parent_id', Null)->limit(6)->get();
 
         // SEO Trait
         $this->staticPagesSeo(

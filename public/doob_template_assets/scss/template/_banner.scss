@@ -73,12 +73,12 @@
     align-items: center;
 
     @media #{$md-layout} {
-        height: 80vh;
+        height: 100vh;
         padding: 150px 0;
     }
 
     @media #{$sm-layout} {
-        height: 80vh;
+        height: 100vh;
         padding: 150px 0;
         background-position: 30% 100% !important;
     }
