@@ -10987,6 +10987,44 @@ div.btn-default.rounded-player.sm-size {
   opacity: 1;
 }
 
+/* Style Att Iphone Devices */
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */
+  .rn-box-card.rn-team,
+.team-style-default.rn-team {
+    display: grid;
+    height: 75%;
+  }
+  .rn-box-card .inner,
+.team-style-default .inner {
+    background: linear-gradient(180deg, var(--color-lessdark) 20%, rgba(19, 19, 19, 0.4));
+    -webkit-backdrop-filter: blur(4px) opacity(0.95);
+    backdrop-filter: blur(4px) opacity(0.95);
+    border-radius: var(--radius-big);
+    min-height: inherit;
+  }
+  .rn-box-card .inner .thumbnail,
+.team-style-default .inner .thumbnail {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 100%;
+    border: 6px solid var(--color-lessdark);
+    position: relative !important;
+  }
+  .rn-box-card .inner .thumbnail img,
+.team-style-default .inner .thumbnail img {
+    border-radius: 100%;
+  }
+  .rn-box-card .inner .content,
+.team-style-default .inner .content {
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: -30px !important;
+  }
+}
 /*---------------------
     Portfolio Styles  
 -----------------------*/

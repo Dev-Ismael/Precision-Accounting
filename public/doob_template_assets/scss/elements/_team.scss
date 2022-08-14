@@ -220,5 +220,49 @@
         }
     }
 }
-
-
+/* Style Att Iphone Devices */
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    .rn-box-card,
+    .team-style-default {
+        &.rn-team{
+            display: grid;
+            height: 75%;
+        }
+        // margin-top: 75px;
+        .inner {
+            background: linear-gradient(180deg,var(--color-lessdark) 20%,rgba(19,19,19,.4));
+            -webkit-backdrop-filter: blur(4px) opacity(.95);
+            backdrop-filter: blur(4px) opacity(.95);
+            border-radius: var(--radius-big);
+            min-height: inherit;
+            .thumbnail {
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+                max-width: 120px;
+                max-height: 120px;
+                border-radius: 100%;
+                border: 6px solid var(--color-lessdark);
+                // top: -75px !important;
+                position: relative !important;
+                // left: 50%;
+                // transform: translateX(-50%);
+                // min-width: 150px;
+                // min-height: 150px;
+                // overflow: hidden;
+                img {
+                    border-radius: 100%;
+                    // margin-bottom: 0px;
+                }
+            }
+            .content {
+                text-align: center;
+                padding: 0 !important;
+                margin: 0 !important;
+                margin-top: -30px !important;
+                // padding-top: 85px;
+                // padding-bottom: 35px;
+            }
+        }
+    }
+}
