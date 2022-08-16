@@ -169,7 +169,7 @@
                                 </div>
                                 <!-- Start Mobile-Menu-Bar -->
 
-                                <!--------------- Sitvher btn ------------------>
+                                {{-- <!--------------- Sitvher btn ------------------>
                                 <div id="my_switcher" class="my_switcher">
                                     <ul>
                                         <li>
@@ -187,7 +187,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> --}}
 
                             </div>
                         </div>
@@ -424,9 +424,9 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div class="copyright-right text-center text-lg-end">
-                            <p>Powered by
+                            Powered by
                                 <img src="{{ asset("doob_template_assets/images/BluSky-logo.png") }}" alt="BluSky-logo" width="35">
-                                <a href="http://bluskyint.com">BlueSkyInt.Com</a></p>
+                                <a href="http://bluskyint.com">BlueSkyInt.Com</a>
                         </div>
                     </div>
                 </div>
