@@ -169,7 +169,7 @@
                                 </div>
                                 <!-- Start Mobile-Menu-Bar -->
 
-                                {{-- <!--------------- Sitvher btn ------------------>
+                                <!--------------- Sitvher btn ------------------>
                                 <div id="my_switcher" class="my_switcher">
                                     <ul>
                                         <li>
@@ -187,7 +187,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div> --}}
+                                </div>
 
                             </div>
                         </div>

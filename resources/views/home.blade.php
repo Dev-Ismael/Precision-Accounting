@@ -321,7 +321,7 @@
                                                 <li class="separator">/</li>
                                                 <li> {{ date('m-d-Y', strtotime($article->created_at)) }} </li>
                                             </ul>
-                                            <h4 class="title"><a href="{{ route('article', 'post-slug') }}">
+                                            <h4 class="title"><a href="{{ route('article', $article->slug) }}">
                                                     {{ $article->title }}
                                                 </a></h4>
                                         </div>

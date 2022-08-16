@@ -67,9 +67,9 @@
                 <div class="row row--30">
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--30 mt_sm--30"  data-sal="slide-down" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                         <div class="advance-tab-button advance-tab-button-1">
-                            <ul class="nav nav-tabs tab-button-list" id="myTab" role="tablist">
+                            <ul class="nav nav-tabs tab-button-list mb-4" id="myTab" role="tablist">
                                 <li class="nav-item w-100" role="presentation">
-                                    <a href="#" class="nav-link tab-button" id="home-tab" data-bs-toggle="tab"
+                                    <a href="#" class="nav-link tab-button active" id="home-tab" data-bs-toggle="tab"
                                         data-bs-target="#home" role="tab" aria-controls="home" aria-selected="false">
                                         <div class="tab">
                                             <h4 class="title">Payroll management</h4>
@@ -88,7 +88,7 @@
                                 </li>
 
                                 <li class="nav-item w-100" role="presentation">
-                                    <a href="#" class="nav-link tab-button active" id="contact-tab"
+                                    <a href="#" class="nav-link tab-button" id="contact-tab"
                                         data-bs-toggle="tab" data-bs-target="#contact" role="tab"
                                         aria-controls="contact" aria-selected="true">
                                         <div class="tab">
@@ -103,7 +103,7 @@
 
                     <div class="col-lg-8 col-md-12 col-sm-12 col-12" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
                         <div class="tab-content">
-                            <div class="tab-pane fade advance-tab-content-1" id="home" role="tabpanel"
+                            <div class="tab-pane fade advance-tab-content-1 active show" id="home" role="tabpanel"
                                 aria-labelledby="home-tab">
                                 <div class="thumbnail">
                                     <img src="{{ asset('doob_template_assets/images/advance-tab/payroll.jpg') }}"
@@ -118,7 +118,7 @@
                                         alt="advance-tab-image">
                                 </div>
                             </div>
-                            <div class="tab-pane fade advance-tab-content-1 active show" id="contact" role="tabpanel"
+                            <div class="tab-pane fade advance-tab-content-1" id="contact" role="tabpanel"
                                 aria-labelledby="contact-tab">
                                 <div class="thumbnail">
                                     <img src="{{ asset('doob_template_assets/images/advance-tab/quick.jpg') }}"
